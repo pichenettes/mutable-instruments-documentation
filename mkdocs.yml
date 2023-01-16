@@ -1,0 +1,5 @@
+site_name: Mutable Instruments Documentation
+site_author: Émilie Gillet
+dev_addr: 127.0.0.1:1313
+theme:
+    name: readthedocs
