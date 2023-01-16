@@ -7,3 +7,4 @@ Each section follows the same template:
 - **Manual** is the comprehensive online manual.
 - **Original blurb** is an archive of the "marketing" text used to highlight the features of the module.
 - **Open source** contains links to the github repository, and to the schematics. If the module is digital, additional resources for firmware development are provided.
+
