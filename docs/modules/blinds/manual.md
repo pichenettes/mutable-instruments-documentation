@@ -1,19 +1,16 @@
-Installation
-------------
+## Installation
 
 Blinds requires a **-12V/+12V** power supply (2x5 pin connector). The red stripe of the ribbon cable (-12V side) must be oriented on the same side as the "Red stripe" marking on the board. The module draws 70mA from the -12V rail and 70mA from the +12V rail.
 
 Current consumption can reach 90mA on either rail depending on the color and brightness of the LEDs.
 
-Overview and signal flow
-------------------------
+## Overview and signal flow
 
 ![](images/signal_flow.png)
 
 Blinds is a 4-channel voltage-controlled signal polarizer. Each channel consists of a polarizer circuit, also known as a four-quadrant multiplier. This circuit acts like a VCA, except that a negative control voltage will cause the output signal to be inverted, instead of being silenced. Blinds' outputs are daisy-chained, allowing adjacent groups of 2, 3, or all 4 channels, to be mixed together.
 
-Controls, inputs and outputs
-----------------------------
+## Controls, inputs and outputs
 
 ![](images/manual.png)
 
@@ -31,8 +28,7 @@ Controls, inputs and outputs
 
 **5. Output level and polarity indicator.**
 
-Random bits
------------
+## Random bits
 
 ### Output equation
 

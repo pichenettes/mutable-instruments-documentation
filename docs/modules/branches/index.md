@@ -10,7 +10,7 @@ Parameter    | Value
 -------------|------
 Width        | 6HP
 Depth        | 25mm
-+12V current | 10A
++12V current | 10mA
 -12V current | 1mA
 Lifetime     | 02/15 to 12/21
 Modulargrid  | [Link](https://www.modulargrid.net/e/mutable-instruments-branches)

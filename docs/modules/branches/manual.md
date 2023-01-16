@@ -1,10 +1,8 @@
-Installation
-------------
+## Installation
 
 Branches requires a **-12V/+12V** power supply (2x5 pin connector). The ribbon cable connector must be aligned so that the red stripe of the ribbon cable (-12V) is on the same side of the module's power header as the "Red stripe" marking on the board. The power consumption is 10 mA on the +12V rail and 1 mA on the -12V rail.
 
-Controls
---------
+## Controls
 
 ![](images/manual.png)
 
