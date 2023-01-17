@@ -44,5 +44,5 @@ An initial batch of 250 units was made by a dubious CM in the US, only a small f
 
 Hardware revision labelled "v4" with the following differences:
 
-* Green PCB.
+* Green PCB (originally black).
 * Thonkiconn jacks.
