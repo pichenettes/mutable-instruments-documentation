@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Émilie Gillet" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+    <title>Manual - Mutable Instruments Documentation</title>
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Manual";
+        var mkdocs_page_input_path = "modules/peaks/manual.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <script src="../../../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../.." class="icon icon-home"> Mutable Instruments Documentation
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Modules</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="#">Beads</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../beads/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../beads/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../beads/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Blades</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../blades/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../blades/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../blades/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../blades/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Blinds</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../blinds/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../blinds/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../blinds/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../blinds/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Braids</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../braids/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../braids/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../braids/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../braids/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../braids/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Branches</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../branches/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../branches/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../branches/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../branches/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../branches/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Clouds</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../clouds/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../clouds/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../clouds/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../clouds/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../clouds/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Ears</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../ears/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ears/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ears/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ears/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Edges</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../edges/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../edges/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../edges/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../edges/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../edges/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Elements</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../elements/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../elements/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../elements/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../elements/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../elements/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Frames</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../frames/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../frames/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../frames/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../frames/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../frames/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Grids</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../grids/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../grids/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../grids/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../grids/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../grids/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Kinks</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../kinks/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kinks/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kinks/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kinks/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Links</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../links/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../links/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../links/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../links/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Marbles</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../marbles/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../marbles/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../marbles/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../marbles/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../marbles/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Peaks</a>
+    <ul class="current">
+                <li class="toctree-l2"><a class="reference internal" href="../">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2 current"><a class="reference internal current" href="./">Manual</a>
+    <ul class="current">
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../..">Mutable Instruments Documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../.." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+          <li>Modules &raquo;</li>
+          <li>Peaks &raquo;</li>
+      <li>Manual</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h2 id="overview">Overview</h2>
+<p>Peaks is a two-channel, general-purpose, trigger processor: it translates incoming triggers or gates into envelopes, synchronized periodic modulations (LFO and tap-LFO), or drum signals. Peaks can also be directly "played" thanks to its two trigger buttons. Our goal with this module is to give you many different ways of modulating your patches in as little space as possible!</p>
+<h2 id="installation">Installation</h2>
+<p>Peaks is designed for Eurorack synthesizer systems and occupies 8 HP of space. It requires a <strong>-12V/+12V</strong> supply (2x5 connector), consuming 2mA from the -12V rail and 60mA from the +12V rail. The red stripe of the ribbon cable must be oriented on the same side as the "Red stripe" marking on the printed circuit board.</p>
+<h2 id="overview-and-controls">Overview and controls</h2>
+<p>Peaks is a multi-function module, but the general rule is that cool things happen whenever a trigger is received. Its four main functions are:</p>
+<ul>
+<li><strong>Envelope generator</strong> - the gate/trigger input starts and holds the envelope.</li>
+<li><strong>LFO</strong> - the gate/trigger input resets the waveform cycle.</li>
+<li><strong>LFO with tap-tempo synchronization</strong> - the gate/trigger input sets the period of the LFO oscillations. Note that Peaks can "learn" irregular trigger sequences and lock onto them.</li>
+<li><strong>Drum generator</strong> - the gate/trigger input triggers the drum sound.</li>
+</ul>
+<p>Peaks provides two channels of processing - each of them has a gate/trigger input jack, a gate/trigger button with an output indication LED, and an audio/CV output. Both channels provide the same function - the exception being channel 1's drum generator being a bass drum generator, and channel 2's drum generator being a snare drum/hi-hat generator.</p>
+<p>Both channels can be "synchronized" (aka <strong>twin</strong> mode), in that they both share the same front panel controls - for example in ADSR envelope mode, the first knob will control both channel 1 and channel 2's attack time. This can be used not only to create duophonic patches (for which you actually want both channels to behave similarly), but also to obtain two synchronized outputs of the same LFO waveform with different phase shifts...</p>
+<p>Another way of controlling the module is the <strong>split</strong> mode in which the potentiometers 1 and 2 control channel 1's settings; and the potentiometers 3 and 4 control channel 2's settings. This mode only gives access to the 2 most essential parameters of each function (for example attack and decay time for an envelope) - the other parameters being set to default "neutral" settings.</p>
+<p>Finally, if breaking the <em>one knob per function</em> rule is not a taboo for you, an <strong>expert</strong> mode allows individual control of channel 1 and 2.</p>
+<h2 id="controls-inputs-and-outputs">Controls, inputs and outputs</h2>
+<p><img alt="" src="../images/manual.png" /></p>
+<p>The <strong>split</strong> button toggles between the <strong>twin</strong> (LED off) and <strong>split</strong> (LED on) modes. Hold it for a second to enter the <strong>expert</strong> mode. In this mode, the button toggles between channel 1 and 2. Hold it for a second to get back to normal operation.</p>
+<p>The <strong>FUNCTION</strong> button cycles through the 4 main functions.</p>
+<p>The 4 potentiometers modify the settings for the selected function. Please refer to the tables in the next section.</p>
+<p><strong>TRIG 1&amp;2</strong> are channel 1 and 2's trigger inputs. The trigger threshold is 0.7V. Above each of these inputs is a switch that can be pressed to generate a trigger signal. The LED built into the switch shows the variations of the output signal.</p>
+<p>Finally, <strong>OUT 1&amp;2</strong> are channel 1 and 2's outputs.</p>
+<h2 id="parameters">Parameters</h2>
+<p><strong>ENV</strong> function, <strong>twin &amp; expert</strong>:</p>
+<ul>
+<li>Ch. 1&amp;2 Attack</li>
+<li>Ch. 1&amp;2 Decay</li>
+<li>Ch. 1&amp;2 Sustain</li>
+<li>Ch. 1&amp;2 Release</li>
+</ul>
+<p><strong>ENV</strong> function, <strong>split</strong>: Dual A/D envelope generator</p>
+<ul>
+<li>Ch. 1 Attack</li>
+<li>Ch. 1 Decay</li>
+<li>Ch. 2 Attack</li>
+<li>Ch. 2 Decay</li>
+</ul>
+<p><strong>LFO</strong> function, <strong>twin &amp; expert</strong>:</p>
+<ul>
+<li>Ch. 1&amp;2 Frequency</li>
+<li>Ch. 1&amp;2 Waveform (sine, linear slope, square, steps, random)</li>
+<li>Ch. 1&amp;2 Waveform variation (wavefolder for sine; ascending/triangle/descending balance for slope, pulse-width for square, number of steps, and interpolation method)</li>
+<li>Ch. 1&amp;2 Phase on restart</li>
+</ul>
+<p><strong>LFO</strong> function, <strong>split</strong>:</p>
+<ul>
+<li>Ch. 1 Frequency</li>
+<li>Ch. 1 Waveform</li>
+<li>Ch. 2 Frequency</li>
+<li>Ch. 2 Waveform</li>
+</ul>
+<p><strong>TAP</strong> function, <strong>twin &amp; expert</strong>:</p>
+<ul>
+<li>Ch. 1&amp;2 Amplitude</li>
+<li>Ch. 1&amp;2 Waveform</li>
+<li>Ch. 1&amp;2 Waveform variation</li>
+<li>Ch. 1&amp;2 Phase on restart</li>
+</ul>
+<p><strong>TAP</strong> function, <strong>split</strong>:</p>
+<ul>
+<li>Ch. 1 Waveform</li>
+<li>Ch. 1 Waveform variation</li>
+<li>Ch. 2 Waveform</li>
+<li>Ch. 2 Waveform variation</li>
+</ul>
+<p><strong>DRUM</strong> function, <strong>twin &amp; expert</strong>:</p>
+<ul>
+<li>Ch. 1&amp;2 Base frequency</li>
+<li>Ch. 1&amp;2 Frequency modulation ("Punch" for BD, "Tone" for SD)</li>
+<li>Ch. 1&amp;2 High-frequency content ("Tone" for BD, "Snappy" for SD)</li>
+<li>Ch. 1&amp;2 Decay</li>
+</ul>
+<p><strong>DRUM</strong> function, <strong>split</strong>: The original 808 sweet spot!</p>
+<ul>
+<li>Ch. 1 BD Tone</li>
+<li>Ch. 1 BD Decay</li>
+<li>Ch. 2 SD Tone</li>
+<li>Ch. 2 SD Snappy</li>
+</ul>
+<h2 id="for-advanced-users-only">For advanced users only</h2>
+<h3 id="four-more-things">Four more things</h3>
+<p>Hold the FUNCTION button for one second (it starts blinking). Peaks now provides four alternative functions instead of envelope/LFO/tap LFO/drum generation. These functions are:</p>
+<ul>
+<li>Mini step-sequencer (4-step in twin mode, 2-step in split mode)</li>
+<li>Trigger delay/shaper</li>
+<li>Trigger stream randomizer</li>
+<li>Digital drum synth</li>
+</ul>
+<h3 id="parameters_1">Parameters</h3>
+<p>Alternative <strong>ADSR</strong> function, <strong>twin &amp; expert</strong>: 4-step minisequencer. Each knob controls a step. Channel 1 is clocked by <strong>TRIG 1</strong> and reset by <strong>TRIG 2</strong>. Channel 2 is clocked by <strong>TRIG 2</strong>:</p>
+<ul>
+<li>Ch. 1&amp;2 Step 1</li>
+<li>Ch. 1&amp;2 Step 2</li>
+<li>Ch. 1&amp;2 Step 3</li>
+<li>Ch. 1&amp;2 Step 4</li>
+</ul>
+<p>Alternative <strong>ADSR</strong> function, <strong>split</strong>: Dual 2-step minisequencer. Knobs 1&amp;2 control channel 1's steps, knobs 3&amp;4 channel 2's steps. There is no reset, and each channel has its clock.</p>
+<ul>
+<li>Ch. 1 Step 1</li>
+<li>Ch. 1 Step 2</li>
+<li>Ch. 2 Step 1</li>
+<li>Ch. 2 Step 2</li>
+</ul>
+<p>Alternative <strong>LFO</strong> function, <strong>twin &amp; expert</strong>:</p>
+<ul>
+<li>Ch. 1&amp;2 Pre-delay</li>
+<li>Ch. 1&amp;2 Gate duration</li>
+<li>Ch. 1&amp;2 Delay</li>
+<li>Ch. 1&amp;2 Number of repeats</li>
+</ul>
+<p>Alternative <strong>LFO</strong> function, <strong>split</strong>:</p>
+<ul>
+<li>Ch. 1 Delay</li>
+<li>Ch. 1 Number of repeats</li>
+<li>Ch. 2 Delay</li>
+<li>Ch. 2 Number of repeats</li>
+</ul>
+<p>Alternative <strong>TAP</strong> function, <strong>twin &amp; expert</strong>:</p>
+<ul>
+<li>Ch. 1&amp;2 Probability that an incoming trigger is processed</li>
+<li>Ch. 1&amp;2 Probability that the trigger is regenerated after the delay</li>
+<li>Ch. 1&amp;2 Delay time</li>
+<li>Ch. 1&amp;2 Jitter</li>
+</ul>
+<p>Alternative <strong>TAP</strong> function, <strong>split</strong>:</p>
+<ul>
+<li>Ch. 1 Acceptance/regeneration probability</li>
+<li>Ch. 1 Delay</li>
+<li>Ch. 2 Acceptance/regeneration probability</li>
+<li>Ch. 2 Delay</li>
+</ul>
+<p>Alternative <strong>DRUM</strong> function, <strong>twin &amp; expert</strong>:</p>
+<ul>
+<li>Ch. 1&amp;2 frequency</li>
+<li>Ch. 1&amp;2 FM intensity</li>
+<li>Ch. 1&amp;2 FM and AM envelope decay time (the FM envelope has a shorter decay than the AM envelope, but the two values are tied to this parameter)</li>
+<li>Ch. 1&amp;2 Color. At 12 o'clock, no modification is brought to the oscillator signal. Turn right to increase the amount of noise (for snares). Turn left to increase the amount of distortion (for 909 style kicks).</li>
+</ul>
+<p>Alternative <strong>DRUM</strong> function, <strong>split</strong>:</p>
+<ul>
+<li>Ch. 1 BD presets morphing</li>
+<li>Ch. 1 BD presets variations</li>
+<li>Ch. 2 SD presets morphing</li>
+<li>Ch. 2 SD presets variations</li>
+</ul>
+<h2 id="firmware-update-procedure"><a name="firmware"></a> Firmware update procedure</h2>
+<p>Connect the output of your audio interface/sound card to the <strong>TRIG1</strong> input. Power on your modular system with Peaks' <strong>TRIG1</strong> button pressed. The <strong>split</strong>, <strong>TRIG1</strong>, and <strong>TRIG2</strong> LEDs will blink.</p>
+<p>Make sure that no additional sound (such as email notification sounds, background music etc.) from your computer will be played during the procedure. Make sure that your speakers/monitors are not connected to your audio interface - the noises emitted during the procedure are aggressive and can harm your hearing. On non-studio audio equipment (for example the line output from a Desktop computer), you might have to turn up the gain to the maximum.</p>
+<p>When you are all set, play the firmware update file into the module. The LEDs show a cyclic pattern and periodically flash upon receiving a valid block of data. The unit reboots after the last packet has been received.</p>
+<p>In case the signal level is inadequate or too high, the procedure will stop and the LEDs will blink alternatively. Press the <strong>TRIG1</strong> button and retry from the start of the update file.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../firmware/" class="btn btn-neutral float-left" title="Firmware"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../open_source/" class="btn btn-neutral float-right" title="Open source">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../firmware/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../open_source/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '../../..';</script>
+    <script src="../../../js/theme_extra.js" defer></script>
+    <script src="../../../js/theme.js" defer></script>
+      <script src="../../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
