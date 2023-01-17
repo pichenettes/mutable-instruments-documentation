@@ -78,17 +78,17 @@ The X generator generates **three independent random** voltages output on ***X<s
 In the illustration below, the pink histogram represents the distribution of possible output voltages: the tallest bar corresponds to the most likely outcome. The teal oscillogram is an example of
 output voltage sequence.
 
-![](/modules/marbles/images/distributions.jpg)
+![](images/distributions.jpg)
 
 **M. Horizontal and vertical “steppiness”** of the generated voltages. At 12 o’clock, generates the typical S&H steps. Turn CCW to generate smoother edges, then random linear segments, then smooth random curves. Turn CW to quantize the generated voltages to a scale, then to progressively strip the scale of its notes until only the root note remains.
 
 **N. Controls how the outputs** ***X<sub>1</sub>***, ***X<sub>2</sub>*** **and** ***X<sub>3</sub>*** **react** to the settings dialed on the knobs **[K]**, **[L]** and **[M]** – allowing you to obtain different flavors of random voltages from the 3 outputs. Diversity is fun!
 
-![](/modules/marbles/images/x_mode_1.png) All channels follow the settings on the control panel.
+![](images/x_mode_1.png) All channels follow the settings on the control panel.
 
-![](/modules/marbles/images/x_mode_2.png) ***X<sub>2</sub>*** follows the control panel, while ***X<sub>1</sub>*** and ***X<sub>3</sub>*** take opposite values. For example, if STEPS is turned fully CW, ***X<sub>1</sub>*** and ***X<sub>3</sub>*** will be smooth while ***X<sub>2</sub>*** is quantized to the root note and its octaves.
+![](images/x_mode_2.png) ***X<sub>2</sub>*** follows the control panel, while ***X<sub>1</sub>*** and ***X<sub>3</sub>*** take opposite values. For example, if STEPS is turned fully CW, ***X<sub>1</sub>*** and ***X<sub>3</sub>*** will be smooth while ***X<sub>2</sub>*** is quantized to the root note and its octaves.
 
-![](/modules/marbles/images/x_mode_3.png) ***X<sub>3</sub>*** follows the control panel, ***X<sub>1</sub>*** reacts in the opposite direction, and ***X<sub>2</sub>*** always stays in the middle (steppy, unbiased, bell-curve).
+![](images/x_mode_3.png) ***X<sub>3</sub>*** follows the control panel, ***X<sub>1</sub>*** reacts in the opposite direction, and ***X<sub>2</sub>*** always stays in the middle (steppy, unbiased, bell-curve).
 
 **O. External processing mode**.
 
@@ -114,19 +114,19 @@ A couple of interesting notes about external CV processing:
 
 The Y generator, by default, is a **smooth, full-range (-5V to +5V), random source** that is clocked at **1/16** the rate of ***X<sub>2</sub>***. These settings can be modified by holding the button **[N]** and adjusting **RATE** (division factor relative to ***X<sub>2</sub>***, from **1/64** to **1**), **SPREAD**, **BIAS** and **STEPS** while the button is held. The ***Y*** output is never affected by the **DEJA VU** settings.
 
-![](/modules/marbles/images/y_output_settings.jpg)
+![](images/y_output_settings.jpg)
 
 ## STEPS quantizer
 
 The **STEPS** knob progressively eliminates notes from a chromatic scale: first to reveal an interesting scale, then to mask all notes except the most salient ones in this scale. The example below is for a C-major scale (first factory preset).
 
-![](/modules/marbles/images/scale.png)
+![](images/scale.png)
 
 ### Selecting a scale
 
 Hold the voltage range button **[J]** for 2 seconds and repeatedly press it to select a scale. The color of the blinking LED and the rate of blinking indicates the active scale. Six memory slots are available for recording scales. They are pre-programmed with scales rooted in C (0V).
 
-![](/modules/marbles/images/preset_scales.png)
+![](images/preset_scales.png)
 
 ### Programming a scale
 

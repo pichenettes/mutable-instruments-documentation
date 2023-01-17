@@ -38,7 +38,7 @@ DAC          | DAC8164
 * Three generative models, with CV-controlled bias parameter increasing the density of notes on one channel or the other:
 	1. Random routing of each clock pulse to either outputs, following a coin toss.
 	2. Selection of a random division factor for one output, and the reciprocal factor for the other.
-	3. Generation of random kick/snare patterns using a process similar to [Grids](/modules/grids).
+	3. Generation of random kick/snare patterns using a process similar to [Grids](../grids).
 * Adjustable gate duration, from short triggers to full length. Gate duration can be randomized.
 
 ### Random voltage generator
