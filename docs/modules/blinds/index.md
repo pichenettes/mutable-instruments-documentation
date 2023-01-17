@@ -38,3 +38,9 @@ Modulargrid  | [Link](https://www.modulargrid.net/e/mutable-instruments-blinds)
 * CV offset range: +/- 5V.
 * Gain scale: linear, a +5V CV translates to a gain of 1.
 * Gain range: +/- 2.
+
+## Revisions and variants
+
+### 2021
+
+Hardware revision (identified as *2021. v6*) with minor manufacturability improvements, such as dimensions of PCB pads and holes.

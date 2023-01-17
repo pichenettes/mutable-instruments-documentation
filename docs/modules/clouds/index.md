@@ -57,3 +57,11 @@ Codec        | WM8731
 * Audio input gain range: line level to modular level.
 * CV range: +/- 5V. CVs outside of this range are simply clipped.
 * Internal processing: 32kHz, 32-bit floating point. RAM Recording buffer uses 16-bit (high quality) or 8-bit µ-law (low quality) resolution.
+
+## Revisions and variants
+
+### 2015
+
+Hardware revision labelled "v3" with the following differences:
+
+* Metal-shaft **IN GAIN** potentiometer (originally, plastic shaft, with a wobbly feel since it was not fastened to the panel). This potentiometer is hand-soldered, since it can become very scratchy when exposed to the heat of a regular wave-soldering process.
