@@ -244,6 +244,20 @@
                 </li>
     </ul>
                   </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Plaits</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../plaits/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../plaits/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../plaits/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../plaits/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../plaits/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
               </ul>
       </div>
     </div>
@@ -322,12 +336,12 @@ The module draws <strong>80mA</strong> from the +12V rail, and <strong>20mA</str
 <p><strong>L. Distribution bias.</strong> Skews the distribution towards low or high voltages. Think of this as the probabilistic equivalent of an offset: it does not shift the voltage down or up, but biases the decision towards the bottom or top of the voltage range.</p>
 <p>In the illustration below, the pink histogram represents the distribution of possible output voltages: the tallest bar corresponds to the most likely outcome. The teal oscillogram is an example of
 output voltage sequence.</p>
-<p><img alt="" src="/modules/marbles/images/distributions.jpg" /></p>
+<p><img alt="" src="../images/distributions.jpg" /></p>
 <p><strong>M. Horizontal and vertical “steppiness”</strong> of the generated voltages. At 12 o’clock, generates the typical S&amp;H steps. Turn CCW to generate smoother edges, then random linear segments, then smooth random curves. Turn CW to quantize the generated voltages to a scale, then to progressively strip the scale of its notes until only the root note remains.</p>
 <p><strong>N. Controls how the outputs</strong> <strong><em>X<sub>1</sub></em></strong>, <strong><em>X<sub>2</sub></em></strong> <strong>and</strong> <strong><em>X<sub>3</sub></em></strong> <strong>react</strong> to the settings dialed on the knobs <strong>[K]</strong>, <strong>[L]</strong> and <strong>[M]</strong> – allowing you to obtain different flavors of random voltages from the 3 outputs. Diversity is fun!</p>
-<p><img alt="" src="/modules/marbles/images/x_mode_1.png" /> All channels follow the settings on the control panel.</p>
-<p><img alt="" src="/modules/marbles/images/x_mode_2.png" /> <strong><em>X<sub>2</sub></em></strong> follows the control panel, while <strong><em>X<sub>1</sub></em></strong> and <strong><em>X<sub>3</sub></em></strong> take opposite values. For example, if STEPS is turned fully CW, <strong><em>X<sub>1</sub></em></strong> and <strong><em>X<sub>3</sub></em></strong> will be smooth while <strong><em>X<sub>2</sub></em></strong> is quantized to the root note and its octaves.</p>
-<p><img alt="" src="/modules/marbles/images/x_mode_3.png" /> <strong><em>X<sub>3</sub></em></strong> follows the control panel, <strong><em>X<sub>1</sub></em></strong> reacts in the opposite direction, and <strong><em>X<sub>2</sub></em></strong> always stays in the middle (steppy, unbiased, bell-curve).</p>
+<p><img alt="" src="../images/x_mode_1.png" /> All channels follow the settings on the control panel.</p>
+<p><img alt="" src="../images/x_mode_2.png" /> <strong><em>X<sub>2</sub></em></strong> follows the control panel, while <strong><em>X<sub>1</sub></em></strong> and <strong><em>X<sub>3</sub></em></strong> take opposite values. For example, if STEPS is turned fully CW, <strong><em>X<sub>1</sub></em></strong> and <strong><em>X<sub>3</sub></em></strong> will be smooth while <strong><em>X<sub>2</sub></em></strong> is quantized to the root note and its octaves.</p>
+<p><img alt="" src="../images/x_mode_3.png" /> <strong><em>X<sub>3</sub></em></strong> follows the control panel, <strong><em>X<sub>1</sub></em></strong> reacts in the opposite direction, and <strong><em>X<sub>2</sub></em></strong> always stays in the middle (steppy, unbiased, bell-curve).</p>
 <p><strong>O. External processing mode</strong>.</p>
 <p><strong>5. STEPS, SPREAD</strong> and <strong>BIAS</strong> CV inputs.</p>
 <p><strong>6. External clock input.</strong> When patched, all three outputs follow the same external clock, as opposed to being clocked by the three outputs from the t section.</p>
@@ -344,13 +358,13 @@ output voltage sequence.</p>
 </ul>
 <h2 id="y-generator"><em>Y</em> Generator</h2>
 <p>The Y generator, by default, is a <strong>smooth, full-range (-5V to +5V), random source</strong> that is clocked at <strong>1/16</strong> the rate of <strong><em>X<sub>2</sub></em></strong>. These settings can be modified by holding the button <strong>[N]</strong> and adjusting <strong>RATE</strong> (division factor relative to <strong><em>X<sub>2</sub></em></strong>, from <strong>1/64</strong> to <strong>1</strong>), <strong>SPREAD</strong>, <strong>BIAS</strong> and <strong>STEPS</strong> while the button is held. The <strong><em>Y</em></strong> output is never affected by the <strong>DEJA VU</strong> settings.</p>
-<p><img alt="" src="/modules/marbles/images/y_output_settings.jpg" /></p>
+<p><img alt="" src="../images/y_output_settings.jpg" /></p>
 <h2 id="steps-quantizer">STEPS quantizer</h2>
 <p>The <strong>STEPS</strong> knob progressively eliminates notes from a chromatic scale: first to reveal an interesting scale, then to mask all notes except the most salient ones in this scale. The example below is for a C-major scale (first factory preset).</p>
-<p><img alt="" src="/modules/marbles/images/scale.png" /></p>
+<p><img alt="" src="../images/scale.png" /></p>
 <h3 id="selecting-a-scale">Selecting a scale</h3>
 <p>Hold the voltage range button <strong>[J]</strong> for 2 seconds and repeatedly press it to select a scale. The color of the blinking LED and the rate of blinking indicates the active scale. Six memory slots are available for recording scales. They are pre-programmed with scales rooted in C (0V).</p>
-<p><img alt="" src="/modules/marbles/images/preset_scales.png" /></p>
+<p><img alt="" src="../images/preset_scales.png" /></p>
 <h3 id="programming-a-scale">Programming a scale</h3>
 <ol>
 <li>Connect the CV and Gate outputs of a keyboard or MIDI interface to the <strong>SPREAD (5)</strong> and <strong>CLOCK (6)</strong> inputs respectively.</li>

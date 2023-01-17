@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Émilie Gillet" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+    <title>Manual - Mutable Instruments Documentation</title>
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Manual";
+        var mkdocs_page_input_path = "modules/plaits/manual.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <script src="../../../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../.." class="icon icon-home"> Mutable Instruments Documentation
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Modules</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="#">Beads</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../beads/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../beads/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../beads/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Blades</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../blades/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../blades/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../blades/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../blades/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Blinds</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../blinds/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../blinds/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../blinds/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../blinds/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Braids</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../braids/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../braids/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../braids/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../braids/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../braids/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Branches</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../branches/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../branches/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../branches/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../branches/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../branches/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Clouds</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../clouds/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../clouds/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../clouds/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../clouds/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../clouds/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Ears</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../ears/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ears/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ears/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ears/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Edges</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../edges/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../edges/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../edges/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../edges/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../edges/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Elements</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../elements/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../elements/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../elements/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../elements/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../elements/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Frames</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../frames/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../frames/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../frames/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../frames/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../frames/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Grids</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../grids/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../grids/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../grids/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../grids/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../grids/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Kinks</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../kinks/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kinks/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kinks/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kinks/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Links</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../links/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../links/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../links/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../links/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Marbles</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../marbles/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../marbles/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../marbles/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../marbles/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../marbles/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Peaks</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../peaks/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../peaks/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../peaks/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../peaks/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../peaks/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Plaits</a>
+    <ul class="current">
+                <li class="toctree-l2"><a class="reference internal" href="../">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2 current"><a class="reference internal current" href="./">Manual</a>
+    <ul class="current">
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../..">Mutable Instruments Documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../.." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+          <li>Modules &raquo;</li>
+          <li>Plaits &raquo;</li>
+      <li>Manual</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h2 id="installation">Installation</h2>
+<p>Plaits requires a <strong>-12V/+12V</strong> power supply (2x5 pin connector). The red stripe of the ribbon cable (-12V side) must be oriented on the same side as the “Red stripe” marking on the module and on your power distribution board.
+The module draws <strong>50mA</strong> from the <strong>+12V</strong> rail, and <strong>5mA</strong> from the <strong>-12V</strong> rail.</p>
+<h2 id="front-panel">Front panel</h2>
+<p><img alt="" src="../images/manual.png" /></p>
+<h3 id="controls">Controls</h3>
+<p><strong>A. Model selection buttons</strong> and LEDs displaying the active model. Each button cycles through a bank of 8 models. The second bank is focused on noisy and percussive sounds.</p>
+<p><strong>B. Coarse frequency control.</strong> By default, it covers a range of 8 octaves, but it can be narrowed down to 14 semitones (refer to the <strong>FREQUENCY</strong> knob range section).</p>
+<p><strong>C. D. E. Model-dependent tone controls.</strong> Their actual function varies from model to model. In general, <strong>TIMBRE</strong> sweeps the spectral content from dark/sparse to bright/dense, <strong>MORPH</strong> explores lateral timbral variations and <strong>HARMONICS</strong> controls the frequency spread or the balance between the various constituents of the tone.</p>
+<p><strong>F. Attenuverters</strong> for the <strong>TIMBRE</strong>, <strong>FM</strong> and <strong>MORPH</strong> CV inputs. When the corresponding CV input is left unpatched and the trigger input <strong>[3]</strong> is patched, the attenuverter adjusts the modulation amount from the internal decaying envelope generator. When unplugging a CV input, and if the trigger input is patched, remember to reset the attenuverter to 12 o’clock if you do not want the internal envelope to take over!</p>
+<h3 id="inputs-and-outputs">Inputs and outputs</h3>
+<p><strong>1. Model selection CV input.</strong> When this CV input is modulated, two LEDs are lit: the steadily lit LED indicates the current model, and the slowly blinking LED indicates the central value, which would be obtained with a CV of 0V and which is still modifiable with the buttons <strong>[A]</strong>.</p>
+<p>Note that when the trigger input <strong>[3]</strong> is patched, model changes occur only whenever a trigger is received.</p>
+<p><strong>2. CV inputs</strong> for the timbre, frequency, morph and harmonics parameters.</p>
+<p><strong>3. Trigger input.</strong>  Serves four percussive purposes:</p>
+<ul>
+<li>Triggers the internal decaying envelope generator.</li>
+<li>Excites the physical and percussive models.</li>
+<li>Strikes the internal low-pass gate (unless the <strong>LEVEL</strong> CV input <strong>[4]</strong> is patched).</li>
+<li>Samples and holds the value of the <strong>MODEL</strong> CV input.</li>
+</ul>
+<p><strong>4. Level CV input.</strong> Opens the internal low-pass gate, to simultaneously control the amplitude and brightness of the output signal. Also acts as an accent control when triggering the physical or percussive models.</p>
+<p><strong>5. V/Oct CV input.</strong> Controls the fundamental frequency of the sound, from -3 to +7 octaves relative to the root note set by the coarse frequency knob <strong>[B]</strong>.</p>
+<p><strong>6. 7. Outputs.</strong> The <strong>AUX</strong> output carries a variant, sidekick, or by-product of the main signal produced on <strong>OUT</strong>.</p>
+<h2 id="settings">Settings</h2>
+<h3 id="adjusting-the-internal-lpg-and-envelope">Adjusting the internal LPG and envelope</h3>
+<p>Hold the first button <strong>(A)</strong> and:</p>
+<ul>
+<li>Turn the <strong>TIMBRE</strong> knob to adjust the response of the LPG, from VCFA to VCA.</li>
+<li>Turn the <strong>MORPH</strong> knob to adjust the ringing time of the LPG and the decay time of the internal envelope.</li>
+</ul>
+<p>The value of both settings are represented by 4 yellow LEDs.</p>
+<p><img alt="" src="../images/adjust_lpg.png" /></p>
+<h3 id="adjusting-the-frequency-knob-range">Adjusting the <strong>FREQUENCY</strong> knob range</h3>
+<p>Hold the second button <strong>(A)</strong> and turn the <strong>HARMONICS</strong> knob to adjust the range of the <strong>FREQUENCY</strong> knob. The first 8 settings correspond to <strong>C0 +/- 7</strong> semitones, <strong>C1 +/- 7</strong> semitones, and so on. The last setting, with all LEDs lit, corresponds to the <strong>full 8-octave range</strong> from C0 to C8.</p>
+<p><img alt="" src="../images/adjust_frequency.png" /></p>
+<p>After having turned the <strong>HARMONICS</strong>, <strong>TIMBRE</strong> or <strong>MORPH</strong> knob to adjust a setting, the position of the knob might no longer match the original value of the corresponding parameter. When this happens, the response curve of the knob is modified to account for this discrepancy, until the position of the knob and the parameter perfectly line up again!</p>
+<h2 id="synthesis-models">Synthesis models</h2>
+<p><img alt="" src="../images/model_01.png" /></p>
+<p>Virtual-analog synthesis of classic waveforms.</p>
+<p><strong>HARMONICS:</strong> detuning between the two waves.</p>
+<p><strong>TIMBRE:</strong> variable square, from narrow pulse to full square to hardsync formants.</p>
+<p><strong>MORPH:</strong> variable saw, from triangle to saw with an increasingly wide notch (Braids’ <code>CSAW</code>).</p>
+<p><strong>AUX:</strong> sum of two hardsync’ed waveforms, the shape of which is controlled by <strong>MORPH</strong> and detuning by <strong>HARMONICS</strong>.</p>
+<p>A <strong>narrow pulse</strong> or <strong>wide notch</strong> results in <strong>silence</strong>! Use this trick if you want to silence one of the two oscillators, to get a variable square or variable saw.</p>
+<p><img alt="" src="../images/model_01_knobs.png" /></p>
+<hr />
+<p><img alt="" src="../images/model_02.png" /></p>
+<p>An asymmetric triangle processed by a waveshaper and a wavefolder. Sounds familiar? That's the same signal processing chain as in <a href="../tides">Tides</a>, when it runs at audio rate!</p>
+<p><strong>HARMONICS:</strong> waveshaper waveform.</p>
+<p><strong>TIMBRE:</strong> wavefolder amount.</p>
+<p><strong>MORPH:</strong> waveform asymmetry.</p>
+<p><strong>AUX:</strong> variant employing another wavefolder curve, as available in <a href="../warps">Warps</a>.</p>
+<hr />
+<p><img alt="" src="../images/model_03.png" /></p>
+<p>Two sine-wave oscillators modulating each other's phase.</p>
+<p><strong>HARMONICS:</strong> frequency ratio.</p>
+<p><strong>TIMBRE:</strong> modulation index.</p>
+<p><strong>MORPH:</strong> feedback, in the form of operator 2 modulating its own phase (past 12 o’clock, rough!) or operator 1’s phase (before 12 o’clock, chaotic!).</p>
+<p><strong>AUX:</strong> sub-oscillator.</p>
+<p><strong>Note:</strong> turn <strong>MORPH</strong> fully CCW to get the same range of sounds as Braids' <strong>WTFM</strong>. Turn <strong>MORPH</strong> fully CW to recreate the same sounds as Braids' <strong>FBFM</strong>. A gentler palette equivalent to Braids' <strong>FM</strong> is found with <strong>MORPH</strong> at 12 o'clock.</p>
+<p><img alt="" src="../images/model_03_knobs.jpg" /></p>
+<hr />
+<p><img alt="" src="../images/model_04.png" /></p>
+<p>Simulation of formants and filtered waveforms through the multiplication, addition and synchronization of segments of sine waves.</p>
+<p><strong>HARMONICS:</strong> frequency ratio between formant 1 and 2.</p>
+<p><strong>TIMBRE:</strong> formant frequency.</p>
+<p><strong>MORPH:</strong> formant width and shape. This controls the shape of the window by which a sum of two synchronized sine oscillators is multiplied.</p>
+<p><strong>AUX:</strong> simulation of filtered waveforms by windowed sine waves – a recreation of Braids’ <code>Z***</code> models. <strong>HARMONICS</strong> controls the filter type (peaking, LP, BP, HP), with smooth variation from one response to another.</p>
+<p><img alt="" src="../images/model_04_knobs.png" /></p>
+<hr />
+<p><img alt="" src="../images/model_05.png" /></p>
+<p>An additive mixture of harmonically-related sine waves.</p>
+<p><strong>HARMONICS:</strong> number of bumps in the spectrum. Starts with one big bump, and progressively adds ripples around it.</p>
+<p><strong>TIMBRE:</strong> index of the most prominent harmonic. This control is somewhat similar to the cutoff frequency of a band-pass filter.</p>
+<p><strong>MORPH:</strong> bump shape – from flat and wide to peaked and narrow. This control is somewhat similar to the resonance of a band-pass filter.</p>
+<p><strong>AUX:</strong> variant including only the subset of harmonics present in the drawbars of a Hammond organ (frequency ratios of 1, 2, 3, 4, 6, 8, 10 and 12).</p>
+<p><img alt="" src="../images/model_05_knobs.png" /></p>
+<hr />
+<p><img alt="" src="../images/model_06.png" /></p>
+<p>Four banks of 8x8 waveforms, accessed by row and column, with or without interpolation.</p>
+<p><strong>HARMONICS:</strong> bank selection. 4 interpolated banks followed by the same 4 banks, in reverse order, without interpolation.</p>
+<ul>
+<li>Bank A: harmonically poor waveforms obtained by additive synthesis (sine harmonics, drawbar organ waveforms).</li>
+<li>Bank B: harmonically rich waveforms obtained by formant synthesis or waveshaping.</li>
+<li>Bank C: wavetables from the Shruthi-1 / Ambika, sampled from classic wavetable or ROM playback synths.</li>
+<li>Bank D: a joyous semi-random permutation of waveforms from the other 3 banks.</li>
+</ul>
+<p><strong>TIMBRE:</strong> row index. Within a row, the waves are sorted by spectral brightness (except for bank D which is a mess!).</p>
+<p><strong>MORPH:</strong> column index.</p>
+<p><strong>AUX:</strong> low-fi (5-bit) output.</p>
+<p><img alt="" src="../images/model_06_knobs.png" /></p>
+<hr />
+<p><img alt="" src="../images/model_07.png" /></p>
+<p>Four-note chords, played by virtual analogue or wavetable oscillators. The virtual analogue oscillators emulate the stack of harmonically-related square or sawtooth waveforms generated by vintage string&amp;organ machines.</p>
+<p><strong>HARMONICS:</strong> chord type.</p>
+<p><strong>TIMBRE:</strong> chord inversion and transposition.</p>
+<p><strong>MORPH:</strong> waveform. The first half of the knob goes through a selection of string-machine like raw waveforms (different combinations of the organ and string "drawbars"), the second half of the knob scans a small wavetable containing 16 waveforms.</p>
+<p><strong>AUX:</strong> root note of the chord.</p>
+<p><img alt="" src="../images/model_07_knobs.png" /></p>
+<hr />
+<p><img alt="" src="../images/model_08.png" /></p>
+<p>A collection of speech synthesis algorithms.</p>
+<p><strong>HARMONICS:</strong> crossfades between formant filtering, SAM, and LPC vowels, then goes through several banks of LPC words.</p>
+<p><strong>TIMBRE:</strong> species selection, from Daleks to chipmunks. How does it work? This parameter either shifts the formants up or down independently of the pitch; or underclocks/overclocks the emulated LPC chip (with appropriate compensation to keep the pitch unchanged).</p>
+<p><strong>MORPH:</strong> phoneme or word segment selection. When <strong>HARMONICS</strong> is past 11 o'clock, a list of words can be scanned through by turning the <strong>MORPH</strong> knob or by sending a CV to the corresponding input. One can also patch the trigger input <strong>[3]</strong> to trigger the utterance of a word, use the <strong>FM</strong> attenuverter to control the intonation and the <strong>MORPH</strong> attenuverter to control speed.</p>
+<p><strong>AUX:</strong> unfiltered vocal cords’ signal.</p>
+<hr />
+<p><img alt="" src="../images/model_09.png" /></p>
+<p>A swarm of 8 enveloped sawtooth waves.</p>
+<p><strong>HARMONICS:</strong> amount of pitch randomization.</p>
+<p><strong>TIMBRE:</strong> grain density.</p>
+<p><strong>MORPH:</strong> grain duration and overlap. When this setting is fully CW, the grains merge into each other: the result is a stack of eight randomly frequency-modulated waveforms.</p>
+<p><strong>AUX:</strong> variant with sine wave oscillators.</p>
+<p>To get a nice "supersaw" waveform, try a moderate amount of pitch randomization and grain density, with full grain overlap.</p>
+<hr />
+<p><img alt="" src="../images/model_10.png" /></p>
+<p>Variable-clock white noise processed by a resonant filter. The cutoff frequency of the filter is controlled by the <strong>FREQUENCY</strong> knob and the <strong>V/OCT</strong> CV input. This allows proper tracking!</p>
+<p><strong>HARMONICS:</strong> filter response, from LP to BP to HP.</p>
+<p><strong>TIMBRE:</strong> clock frequency.</p>
+<p><strong>MORPH:</strong> filter resonance.</p>
+<p><strong>AUX:</strong> variant employing two band-pass filters, with their separation controlled by <strong>HARMONICS</strong>.</p>
+<p><img alt="" src="../images/model_10_knobs.png" /></p>
+<hr />
+<p><img alt="" src="../images/model_11.png" /></p>
+<p>Dust noise processed by networks of all-pass or band-pass filters.</p>
+<p><strong>HARMONICS:</strong> amount of frequency randomization.</p>
+<p><strong>TIMBRE:</strong> particle density.</p>
+<p><strong>MORPH:</strong> filter type – reverberating all-pass network before 12 o’clock, then increasingly resonant band-pass filters.</p>
+<p><strong>AUX:</strong> raw dust noise.</p>
+<hr />
+<p><img alt="" src="../images/model_12.png" /></p>
+<p><img alt="" src="../images/model_13.png" /></p>
+<p>For your own pleasure, a mini-Rings! Please refer to the <a href="../rings/manual/">Rings manual</a> for more information about modulated/inharmonic string synthesis, and modal resonators.</p>
+<p>When the <strong>TRIG</strong> input is not patched, the string/resonator is excited by dust (particle) noise. Otherwise, the string is excited by a short burst of filtered white noise, or by a low-pass filtered click.</p>
+<p><strong>HARMONICS:</strong> amount of inharmonicity, or material selection.</p>
+<p><strong>TIMBRE:</strong> excitation brightness and dust density.</p>
+<p><strong>MORPH:</strong> decay time (energy absorption).</p>
+<p><strong>AUX:</strong> raw exciter signal.</p>
+<p>Note that Plaits uses a less powerful processor than Rings, and is thus limited to 3 voices of polyphony in inharmonic string modeling mode, and 1 voice of polyphony with 24 partials in modal resonator mode. Plaits does not allow you to control the position of the excitation, which is set to 25% of the length of the string/bar/tube.</p>
+<hr />
+<p><img alt="" src="../images/model_14.png" /></p>
+<p>No fancy acronyms or patented technology here... Just behavioral simulation of circuits from classic drum machines! The drum machine emulated on <strong>OUT</strong> employs a bridged T-network excited by a nicely shaped pulse. As for the signal synthesized on <strong>AUX</strong>, it uses a frequency-modulated triangle VCO, turned into a sine with a pair of diodes, and shaped by a dirty VCA.</p>
+<p><strong>HARMONICS:</strong> attack sharpness and amount of overdrive.</p>
+<p><strong>TIMBRE:</strong> brightness.</p>
+<p><strong>MORPH:</strong> decay time.</p>
+<p>Without any signal patched to the <strong>TRIG</strong> input, a continuous tone is produced. Not particularly useful, but its amplitude can still be modulated by the <strong>MORPH</strong> knob and CV input!</p>
+<hr />
+<p><img alt="" src="../images/model_15.png" /></p>
+<p>The drum machine emulated on <strong>OUT</strong> employs a bunch of bridged T-networks, one for each mode of the shell, excited by a nicely shaped pulse; plus some band-pass filtered noise. As for the signal synthesized on <strong>AUX</strong>, it is based on a pair of frequency-modulated sine VCO, mixed with high-pass filtered noise.</p>
+<p><strong>HARMONICS:</strong> balance of the harmonic and noisy components.</p>
+<p><strong>TIMBRE:</strong> balance between the different modes of the drum.</p>
+<p><strong>MORPH:</strong> decay time.</p>
+<hr />
+<p><img alt="" src="../images/model_16.png" /></p>
+<p>The recipe is similar for both <strong>OUT</strong> and <strong>AUX</strong>: a bunch of square oscillators generate a harsh, metallic tone. The resulting signal is mixed with clocked noise, sent to a HPF, then to a VCA. While <strong>OUT</strong> uses 6 square oscillators and a dirty transistor VCA, <strong>AUX</strong> uses three pairs of square oscillators ring-modulating each other, and a clean, linear VCA.</p>
+<p><strong>HARMONICS:</strong> balance of the metallic and filtered noise.</p>
+<p><strong>TIMBRE:</strong> high-pass filter cutoff.</p>
+<p><strong>MORPH:</strong> decay time.</p>
+<hr />
+<p><img alt="icon" src="../images/model_12.png" /> <img alt="icon" src="../images/model_13.png" /> <img alt="icon" src="../images/model_14.png" /> <img alt="icon" src="../images/model_15.png" /> <img alt="icon" src="../images/model_16.png" /></p>
+<p>The physical and drum models employ their own decay envelope and filter. The internal LPG is disabled for them:</p>
+<ul>
+<li>The <strong>TRIG</strong> input triggers the synthesis of the signal, but doesn't strike the LPG.</li>
+<li>When the <strong>TRIG</strong> input is patched, the <strong>LEVEL</strong> input works as an accent control.</li>
+</ul>
+<hr />
+<h2 id="advanced-topics">Advanced topics</h2>
+<h3 id="calibration-procedure">Calibration procedure</h3>
+<p>To calibrate the unit:</p>
+<ol>
+<li>Disconnect all CV inputs.</li>
+<li>Connect the note CV output of a well-calibrated keyboard interface or MIDI-CV converter to the <strong>V/OCT</strong> input. Leave all the other CV inputs unpatched.</li>
+<li>Press both buttons <strong>(A)</strong>. The first LED slowly blinks in green.</li>
+<li>Send a voltage of 1.000V to the <strong>V/OCT</strong> input.</li>
+<li>Press any button. The first LED now blinks in orange.</li>
+<li>Send a voltage of 3.000V to the <strong>V/OCT</strong> input.</li>
+<li>Press any button.</li>
+</ol>
+<h3 id="firmware-update-procedure"><a name="firmware"></a> Firmware update procedure</h3>
+<p>Unplug all CV inputs/outputs from the module. Connect the output of your audio interface/sound card to the <strong>MODEL</strong> CV input. Set the <strong>FREQUENCY</strong> knob to 12 o'clock. Power on your modular system with the <strong>left</strong> model selection button <strong>(A)</strong> pressed.</p>
+<p>Make sure that no additional sound (such as email notification sounds, background music etc.) from your computer will be played during the procedure. Make sure that your speakers/monitors are not connected to your audio interface - the noises emitted during the procedure are aggressive and can harm your hearing. On non-studio audio equipment (for example the line output from a desktop computer), you might have to turn up the gain to the maximum.</p>
+<p>When you are all set, play the firmware update file into the module. While the module receives data, the first group of 4 LEDs will act as vu-meter (2 or 3 LEDs are lit when the signal level is optimal), while the remaining 4 LEDs represent which proportion of the current packet has been received. Try adjusting the <strong>FREQUENCY</strong> knob to adjust gain. When the end of the audio file is reached, the module automatically restarts - if it is not the case, please retry the procedure from the beginning.</p>
+<p>In case the signal level is inadequate, all LEDs will blink in red. Press the button <strong>(A)</strong> and retry with a higher gain. If this does not help, please retry the procedure from another computer/audio interface, and make sure that no piece of equipment or software effect (equalizer, automatic gain control, FX processor) is inserted in the signal chain.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../firmware/" class="btn btn-neutral float-left" title="Firmware"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../open_source/" class="btn btn-neutral float-right" title="Open source">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../firmware/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../open_source/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '../../..';</script>
+    <script src="../../../js/theme_extra.js" defer></script>
+    <script src="../../../js/theme.js" defer></script>
+      <script src="../../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
