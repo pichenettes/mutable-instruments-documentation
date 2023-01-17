@@ -43,6 +43,7 @@ Following an initial batch of 250 modules manufactured by PCBCart in China, the 
 
 Hardware revision labelled "v4" with the following differences:
 
+* Green PCB.
 * Thonkiconn jacks.
 * SMT Components soldered on the same side as the jacks (not exposed on the back of the module).
 

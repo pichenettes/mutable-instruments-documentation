@@ -38,8 +38,11 @@ Processor    | ATMega88p @ 8 MHz
 
 ## Revisions and variants
 
+An initial batch of 250 units was made by a dubious CM in the US, only a small fraction of which has been sold. The next batches were made in France at the end of 2014.
+
 ### 2014
 
 Hardware revision labelled "v4" with the following differences:
 
+* Green PCB.
 * Thonkiconn jacks.
