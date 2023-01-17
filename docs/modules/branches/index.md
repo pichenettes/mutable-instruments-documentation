@@ -14,7 +14,7 @@ Depth        | 25mm
 -12V current | 1mA
 Lifetime     | 02/15 to 12/21
 Modulargrid  | [Link](https://www.modulargrid.net/e/mutable-instruments-branches)
-Processor    | ATMega88p
+Processor    | ATMega88p @ 8 MHz
 
 ## Original printed manual
 
@@ -35,3 +35,11 @@ Processor    | ATMega88p
 * CV inputs: 100k impedance, +/- 5V.
 * Outputs: +5V for the HIGH level.
 * Response time: 15µs.
+
+## Revisions and variants
+
+### 2014
+
+Hardware revision labelled "v4" with the following differences:
+
+* Thonkiconn jacks.

@@ -14,7 +14,7 @@ Depth        | 25mm
 -12V current | 15mA
 Lifetime     | 08/13 to 10/17
 Modulargrid  | [Link](https://www.modulargrid.net/e/mutable-instruments-braids-2015)
-Processor    | STM32F103CBT6
+Processor    | STM32F103CBT6 @ 72 MHz
 DAC          | DAC8551
 
 ## Original printed manual
@@ -91,7 +91,7 @@ These settings are accessible through a menu, and are not CV controllable.
 
 Hardware revision labelled "v5" with the following differences:
 
-* 2x5 power connector (originally 2x8)
+* 2x5 power connector (originally 2x8).
 * Built-in 5V regulator.
 * **FINE** knob handled in software (originally handled as an offset on the FM signal, not working in **META** mode as a side-effect)
 * Thonkiconn jacks.

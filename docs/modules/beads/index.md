@@ -14,7 +14,7 @@ Depth        | 25mm
 -12V current | 10mA
 Lifetime     | 02/21 to 12/22
 Modulargrid  | [Link](https://www.modulargrid.net/e/mutable-instruments-beads)
-Processor    | STM32H743VIT6
+Processor    | STM32H743VIT6 @ 480 MHz
 Codec        | PCM3060
 
 ## Original printed manual

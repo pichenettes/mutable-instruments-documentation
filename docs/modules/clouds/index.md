@@ -14,7 +14,7 @@ Depth        | 25mm
 -12V current | 10mA
 Lifetime     | 01/15 to 10/17
 Modulargrid  | [Link](https://www.modulargrid.net/e/mutable-instruments-clouds)
-Processor    | STM32F405RGT6
+Processor    | STM32F405RGT6 @ 168 MHz
 Codec        | WM8731
 
 ## Original printed manual
