@@ -19,13 +19,13 @@ Volts                                  | August 2013      | March 2018
 [Elements](./modules/elements/)        | January 2015     | January 2022
 [Streams](./modules/streams/)          | January 2015     | April 2021
 [Shades](./modules/shades_original/)   | February 2015    | April 2020
-[Branches](./modules/branches/).       | February 2015    | December 2021
+[Branches](./modules/branches/)        | February 2015    | December 2021
 Shelves Expander                       | April 2015       | December 2015
 Bag of cables                          | July 2015        | July 2020
 [Links](./modules/links/)              | September 2015   | March 2022
-[Warps](./modules/warps/).             | November 2015    | March 2022
+[Warps](./modules/warps/)              | November 2015    | March 2022
 [Rings](./modules/rings/)              | December 2015    | April 2022
-[Shelves mkII](./modules/shelves/)     | January 2016     | April 2021
+[Shelves 2016](./modules/shelves/)     | January 2016     | April 2021
 [Kinks](./modules/kinks/)              | March 2016       | May 2021
 [Blinds](./modules/blinds/)            | June 2016        | April 2022
 [Veils](./modules/veils_original/)     | June 2016        | September 2020
