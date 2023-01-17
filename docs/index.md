@@ -25,7 +25,7 @@ Bag of cables                          | July 2015        | July 2020
 [Links](./modules/links/)              | September 2015   | March 2022
 [Warps](./modules/warps/)              | November 2015    | March 2022
 [Rings](./modules/rings/)              | December 2015    | April 2022
-[Shelves 2016](./modules/shelves/)     | January 2016     | April 2021
+[Shelves 2015](./modules/shelves/)     | January 2016     | April 2021
 [Kinks](./modules/kinks/)              | March 2016       | May 2021
 [Blinds](./modules/blinds/)            | June 2016        | April 2022
 [Veils](./modules/veils_original/)     | June 2016        | September 2020
