@@ -60,7 +60,7 @@ You can now rotate the **FRAME** knob to move back and forth through the animati
 
 ## Automatically playing an animation
 
-To automatically play the animation, patch an LFO or envelope into the **FRAME CV** input; and adjust the direction of the animation with the **MODULATION** attenuverter. An ascending sawtooth LFO will loop the animation in chronological order (unless the attenuverter is set to a negative amount of course!). Using a triangle LFO will play the animation back and forth. A sequencer can also be used to step through frames without interpolation. Slope generators (such as Mutable Instruments' [Tides](/modules/tides) or Make Noise's [Maths/Function](http://www.makenoisemusic.com/maths.shtml)) are good tools for generating interesting animation CVs.
+To automatically play the animation, patch an LFO or envelope into the **FRAME CV** input; and adjust the direction of the animation with the **MODULATION** attenuverter. An ascending sawtooth LFO will loop the animation in chronological order (unless the attenuverter is set to a negative amount of course!). Using a triangle LFO will play the animation back and forth. A sequencer can also be used to step through frames without interpolation. Slope generators (such as Mutable Instruments' Tides or Make Noise's [Maths/Function](https://www.makenoisemusic.com/modules/maths)) are good tools for generating interesting animation CVs.
 
 The module emits a 1ms long, +5V high pulse on the **FR.STEP** output whenever the animation crosses a keyframe. This signal can be used to synchronize sequences or rhythms with the animation.
 

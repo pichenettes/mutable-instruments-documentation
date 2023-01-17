@@ -24,7 +24,7 @@ Modulargrid  | [Link](https://www.modulargrid.net/e/mutable-instruments-ears)
 ### Ears for your modular
 
 * Built-in contact microphone soldered right under the front panel, turning the panel and your entire case into a microphone.
-* Increasingly spaced ridges on the panel, generating sonically interesting pulses or impulse combs when rubbed. Strike, pick or scratch digital resonators like [Rings](/modules/rings), [Elements](/modules/elements) or the 4ms SMR.
+* Increasingly spaced ridges on the panel, generating sonically interesting pulses or impulse combs when rubbed. Strike, pick or scratch digital resonators like Rings, Elements or the 4ms SMR.
 * High-quality amplification stage suitable for external contact microphones, electro-acoustic instruments like guitars, or plain line-level signals.
 
 ### Extending the Mikrophonie
