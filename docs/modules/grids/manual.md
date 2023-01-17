@@ -14,8 +14,6 @@ Grids has a built-in clock, or it can accept external clock signals of variable 
 
 Grids is designed for Eurorack synthesizer systems and occupies 16 HP of space. It requires a **-12V/+12V** supply (2x5 connector), consuming 1mA from the -12V rail and 25mA from the +12V rail. The red stripe of the ribbon cable must be oriented on the same side as the "Red stripe" marking on the printed circuit board.
 
-{{% fcc_ce_notice %}}
-
 ## Grids' pattern generation algorithm
 
 Grids is a 3-channel, algorithmic, rhythmic pattern generator based on data and models extracted from actual BD drum loops. Two steps are involved in the generation of the drum patterns:
