@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Émilie Gillet" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+    <title>Manual - Mutable Instruments Documentation</title>
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Manual";
+        var mkdocs_page_input_path = "modules/rings/manual.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <script src="../../../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../.." class="icon icon-home"> Mutable Instruments Documentation
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Modules</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="#">Beads</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../beads/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../beads/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../beads/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Blades</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../blades/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../blades/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../blades/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../blades/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Blinds</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../blinds/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../blinds/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../blinds/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../blinds/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Braids</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../braids/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../braids/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../braids/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../braids/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../braids/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Branches</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../branches/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../branches/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../branches/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../branches/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../branches/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Clouds</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../clouds/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../clouds/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../clouds/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../clouds/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../clouds/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Ears</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../ears/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ears/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ears/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ears/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Edges</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../edges/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../edges/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../edges/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../edges/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../edges/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Elements</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../elements/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../elements/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../elements/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../elements/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../elements/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Frames</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../frames/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../frames/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../frames/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../frames/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../frames/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Grids</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../grids/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../grids/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../grids/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../grids/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../grids/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Kinks</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../kinks/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kinks/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kinks/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kinks/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Links</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../links/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../links/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../links/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../links/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Marbles</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../marbles/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../marbles/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../marbles/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../marbles/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../marbles/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Peaks</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../peaks/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../peaks/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../peaks/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../peaks/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../peaks/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Plaits</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../plaits/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../plaits/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../plaits/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../plaits/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../plaits/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Rings</a>
+    <ul class="current">
+                <li class="toctree-l2"><a class="reference internal" href="../">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2 current"><a class="reference internal current" href="./">Manual</a>
+    <ul class="current">
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../..">Mutable Instruments Documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../.." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+          <li>Modules &raquo;</li>
+          <li>Rings &raquo;</li>
+      <li>Manual</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h2 id="overview">Overview</h2>
+<p>Rings is a resonator, the essential ingredient at the core of several physical modelling techniques. It transforms an external, unpitched excitation audio signal (such as a click, a burst of noise, or whatever is captured by a contact microphone) into a full-bodied pitched sound. Rings is the bar, the tube or the bunch of strings you cause to vibrate with an external signal.</p>
+<h2 id="installation">Installation</h2>
+<p>Rings is designed for Eurorack synthesizer systems and occupies 14 HP of space. It requires a <strong>-12V/+12V</strong> supply (2x5 pin connector), drawing 5mA from the -12V rail and 120mA from the +12V rail. The red stripe of the ribbon cable must be oriented on the same side as the "Red stripe" marking on the printed circuit board.</p>
+<h2 id="rings-basics">Rings' basics</h2>
+<h3 id="polyphony-and-synthesis-method">Polyphony and synthesis method</h3>
+<p>How the module operates is governed by two settings controlled by buttons at the top of the module. Once these are set, no hidden mysteries!</p>
+<p><img alt="" src="../images/mono.jpg" /> <img alt="" src="../images/duo.jpg" /> <img alt="" src="../images/quad.jpg" /></p>
+<p>The first button selects the polyphony of the module: one, two, or four notes. Enabling four notes polyphony doesn't mean that four CV input jacks will magically appear on the module, but simply that four notes played in sequence will nicely overlap without cutting each other's tails. To play chords, you will need to "strum" the module by playing a rapid sequence of notes - something you might have already encountered with Braids' <strong>PLUK</strong> model. Note that the module might reduce the number of harmonics in the generated signals to cope with the higher polyphony.</p>
+<p>The second button selects the three available types of resonators. They are:</p>
+<p><img alt="" src="../images/modal.jpg" /></p>
+<p>Modal synthesis works by simulating the phenomena of resonance at play in vibrating structures, that is to say the way a string or plate (for instance) will absorb certain frequencies while it will "ring" at some other frequencies, called the modes. When we pluck a string, strike a drum or blow in a tube, the short burst of energy of the blow/impact contains many frequencies. Some of these fall outside of the modes, and are absorbed. Some of these excite the modes, producing a stable, pitched sound. Each mode corresponds to a harmonic or partial in the spectrum of the sound, and is modelled by a band-pass filter. The Q factor of the filter determine how sustained the oscillations of the corresponding partial are. Various materials or structures are characterized by different relationships between the frequencies of their modes, which Rings recreates.</p>
+<p><img alt="" src="../images/strings.jpg" /></p>
+<p>Some interesting string instruments (such as the sitar or sarod), make use of strings that are not directly struck/plucked by the musician, but which are just responding to vibration of the other strings, and add extra overtones or undertones to it. Rings simulates this phenomenon with a bunch of virtual strings (made with comb filters), allowing the addition of extra tones to an incoming audio signal. The tuning ratio between these strings can be altered.</p>
+<p><img alt="" src="../images/modstrings.jpg" /></p>
+<p>This last method is perhaps the most familiar (in appearance!), since it is based on the extended Karplus-Strong method: the excitation signal is sent to a comb filter with an absorption filter, simulating the multiple reflection of a wave propagating on a string and being absorbed at its ends. However, to bring more variety to the sound, Rings adds three extra ingredients to this classic: a delay-compensated all-pole absorption filter creating more drastic plucking effects, delay time modulation emulating the sound of instruments with a curved bridge (like the sitar or tanpura), and all-pass filters in the delay loop, shifting the position of the partials and recreating the tension of piano string or completely bonkers inharmonic timbres.</p>
+<h3 id="making-the-right-connections">Making the right connections</h3>
+<p>Ideally, Rings would need three input signals:</p>
+<ul>
+<li>A trigger signal on the <strong>STRUM</strong> input, which indicates that the currently playing note should fade away, and that a new note is starting.</li>
+<li>A CV signal on the <strong>V/OCT</strong> input, which controls the frequency of the note.</li>
+<li>An audio signal on the <strong>IN</strong> input, which will hit, strike or caress the resonator.</li>
+</ul>
+<p>Because it might not always be possible to get these three signals in your setup, Rings makes the following assumptions:</p>
+<p>First, if nothing is patched in the <strong>IN</strong> audio input, the module will synthesize an excitation signal whenever a note is strummed. This excitation signal is either a low-pass filtered pulse, or a burst of noise depending on the resonator type.</p>
+<p>Secondly, if nothing is patched in the <strong>STRUM</strong> audio input, the module will determine that a new string should be strummed either by:</p>
+<ul>
+<li>Detecting note changes on the <strong>V/OCT</strong> input, or</li>
+<li>Detecting sharp transients within the <strong>IN</strong> audio signal if nothing is patched in the <strong>V/OCT</strong> input.</li>
+</ul>
+<p>If there should be one take-home (take-to-the-studio?) message from this, it is that you can perfectly play Rings with just one CV output taken from a sequencer or S&amp;H module: the note changes on the CV input will be interpreted as note changes; and the module will produce a suitable excitation signal internally for these note changes to be heard!</p>
+<h2 id="controls-inputs-and-outputs">Controls, inputs and outputs</h2>
+<p><img alt="" src="../images/manual.png" /></p>
+<p><strong>A. Polyphony setting.</strong> Selects between monophonic, duophonic and quadriphonic operation.</p>
+<p><strong>B. Resonator type.</strong> Selects between modal, sympathetic and string resonators.</p>
+<p><strong>C. Coarse frequency</strong>, adjusted by semitone increments. This control spans 5 octaves.</p>
+<p><strong>D. Harmonic structure.</strong> With the modal resonator, this parameter controls the frequency ratio between partials (and by doing so, the perceived structure - plate, bar, string). With the sympathetic string resonator, this parameter controls the set of frequency ratios between all strings (with virtual notches at octaves or fifths). Finally, with the modulated/inharmonic string resonator, this parameter controls the amount of modulation and detuning of the partials.</p>
+<p><strong>E. Brightness.</strong> Adjusts the level of higher harmonics in the signal, by the simultaneous action of a low-pass filter on the exciter signal (closed at 8 o'clock, fully open at 12 o'clock), and the damping filter (or Q factor of the higher modes) on the rest of the course of the potentiometer. Low values simulate materials like wood or nylon. High values simulate materials like glass or steel.</p>
+<p><strong>F. Damping.</strong> Controls the decay time of the sound, from less than 100ms to about 10s.</p>
+<p><strong>G. Excitation position.</strong> Controls on which point of the string/surface the excitation is applied. Applying the excitation right in the middle of the surface will cause, by symmetry, the even harmonics to cancel each other, resulting in a "hollow" sound reminiscent of a square wave. This setting will remind you of the PWM control on a square oscillator – or of the comb-filtering effect of a phaser.</p>
+<p><strong>H. Attenuverters</strong> for the CV inputs.</p>
+<p><strong>1. Resonator parameters CV inputs</strong>. Note that the <strong>FREQUENCY</strong> CV input is normalized to a 1/12 V voltage, allowing its attenuverter to be used as a fine frequency control when no patch cable is inserted.</p>
+<p><strong>2. Strumming trigger input</strong>, for polyphonic operation. Whenever a trigger is received on this input, the module freezes the currently playing voice and lets it decay, and starts a note on the next voice. Normalized to a step detector on the <strong>V/OCT</strong> input and a transient detector on the <strong>IN</strong> input.</p>
+<p><strong>3. V/oct CV input.</strong> Controls the main frequency of the resonator.</p>
+<p><strong>4. Audio INPUT</strong> for the excitation signal. Modular levels are expected! Normalized to a pulse/burst generator that reacts to note changes on the <strong>V/OCT</strong> input.</p>
+<p><strong>5. Odd and even audio outputs.</strong> In monophonic mode, these two outputs carries two complementary components of the signal (odd and even numbered partials with the modal resonator, dephased components due to picking position and pickup placement with the string resonators). In polyphonic mode, splits the signal into odd and even numbered strings/plates. Note that you need to insert a jack into each output to split the signals: when only one jack is inserted, both signals are mixed together.</p>
+<h2 id="advanced-topics">Advanced topics</h2>
+<h3 id="calibration-procedure">Calibration procedure</h3>
+<p>To calibrate the unit:</p>
+<ol>
+<li>Disconnect all CV inputs.</li>
+<li>Connect the note CV output of a well-calibrated keyboard interface or MIDI-CV converter to the <strong>V/OCT</strong> input.</li>
+<li>Connect a patch cable to the <strong>FREQUENCY</strong> CV input. Leave the other end of the cable unplugged (this prevents the internal connection to +/- 1 semitone to be activated).</li>
+<li>Hold both the polyphony and resonator type buttons for two seconds. This is the "secret handshake" to enter the calibration procedure. The first LED blinks in orange.</li>
+<li>Play a C2 note, or send a 1V voltage from your CV source.</li>
+<li>Press the polyphony button. The second LED blinks in orange.</li>
+<li>Play a C4 note, or send a 3V voltage from your CV source.</li>
+<li>Press the polyphony button to complete the calibration. If the calibration is successful, the module returns to its normal state. Otherwise, the two LEDs will blink in RED for a couple of seconds.</li>
+</ol>
+<p>Note: a symptom of incorrectly performing (or forgetting) step 3 is that the <strong>FREQUENCY</strong> attenuverter will no longer work as a fine tuning control when the corresponding input is left unpatched.</p>
+<h3 id="firmware-update-procedure"><a name="firmware"></a> Firmware update procedure</h3>
+<p>Unplug all CV inputs/outputs from the module. Connect the output of your audio interface/sound card to the <strong>IN</strong> input. Set the <strong>FREQUENCY (C)</strong> knob to 12 o'clock. Power on your modular system with the polyphony button <strong>(A)</strong> pressed. Both LEDs will blink in orange.</p>
+<p>Make sure that no additional sound (such as email notification sounds, background music etc.) from your computer will be played during the procedure. Make sure that your speakers/monitors are not connected to your audio interface - the noises emitted during the procedure are aggressive and can harm your hearing. On non-studio audio equipment (for example the line output from a desktop computer), you might have to turn up the gain to the maximum.</p>
+<p>When you are all set, play the firmware update file into the module. While the module receives data, the first LED will blink in green, and the second LED will monitor the signal level. Signal reception is optimal when the second LED is lit in green or yellow. Try adjusting the <strong>FREQUENCY</strong> knob to change gain. The module periodically pauses with both LEDs lit in orange to write data on its permanent memory. When the end of the audio file is reached, the module automatically restarts - if it is not the case, please retry the procedure from the beginning.</p>
+<p>In case the signal level is inadequate, the LEDs will blink in red with an alternating pattern. Press the polyphony button <strong>(A)</strong> and retry with a higher gain. If this does not help, please retry the procedure from another computer/audio interface, and make sure that no piece of equipment (equalizer, FX processor) is inserted in the signal chain.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../firmware/" class="btn btn-neutral float-left" title="Firmware"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../open_source/" class="btn btn-neutral float-right" title="Open source">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../firmware/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../open_source/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '../../..';</script>
+    <script src="../../../js/theme_extra.js" defer></script>
+    <script src="../../../js/theme.js" defer></script>
+      <script src="../../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
