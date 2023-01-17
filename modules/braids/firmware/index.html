@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Émilie Gillet" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+    <title>Firmware - Mutable Instruments Documentation</title>
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Firmware";
+        var mkdocs_page_input_path = "modules/braids/firmware.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <script src="../../../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../.." class="icon icon-home"> Mutable Instruments Documentation
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Modules</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="#">Beads</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../beads/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../beads/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../beads/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Blades</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../blades/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../blades/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../blades/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../blades/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Blinds</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../blinds/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../blinds/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../blinds/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../blinds/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Braids</a>
+    <ul class="current">
+                <li class="toctree-l2"><a class="reference internal" href="../">Index</a>
+                </li>
+                <li class="toctree-l2 current"><a class="reference internal current" href="./">Firmware</a>
+    <ul class="current">
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Branches</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../branches/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../branches/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../branches/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../branches/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../branches/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Clouds</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../clouds/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../clouds/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../clouds/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../clouds/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../clouds/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Ears</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../ears/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ears/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ears/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ears/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../..">Mutable Instruments Documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../.." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+          <li>Modules &raquo;</li>
+          <li>Braids &raquo;</li>
+      <li>Firmware</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h2 id="download">Download</h2>
+<p><a href="../downloads/braids_1.8.wav">Latest version (1.8)</a></p>
+<p><a href="../manual#firmware">Firmware update procedure</a></p>
+<h2 id="revisions">Revisions</h2>
+<h3 id="v18">v1.8</h3>
+<ul>
+<li>Rewrote from scratch the band-limited waveform synthesis code used in the analog waveform models (CS-80 saw, waveform morphing, square-saw morphing, sync square, triple saw, triple square). As a result, the sound quality of these models has been improved. The generated waveforms are crisper, with a more consistent amplitude, and less aliasing.</li>
+<li>Increased the range of the <strong>TIMBRE</strong> and <strong>COLOR</strong> settings on the <strong>CSAW</strong> model. It is still possible to synthesize the CS-80 "sawtooth with a notch" waveform of the previous revisions, but this model now covers a larger range of saw/square hybrid tones.</li>
+<li>Added a new synthesis model, <strong>HARM</strong>, which generates a mixture of sine harmonics. <strong>COLOR</strong> modifies the distribution of the amplitudes of each harmonics, around a central frequency set by <strong>TIMBRE</strong>.</li>
+<li>Improved the quality of the <strong>Z?PF</strong> models when they are played with fast envelopes, by adding linear interpolation to the <strong>TIMBRE</strong> parameter.</li>
+<li>Improved the quality of the <strong>VFOF</strong> model.</li>
+<li>Removed some of the "clickiness" of the built-in VCA.</li>
+<li>Improved the <strong>DRFT</strong> setting, which generates analog-style frequency drifting and detuning. The random process generating the noise has a more realistic behavior; and the amount of frequency drifting can be adjusted (instead of a plain on/off switch).</li>
+<li>Reworked the <strong>SIGN</strong> setting, which was designed to give each module a unique tone coloration, and glitches, generated from its serial number. The generated curves are now more "fuzzy" and "organic"; and the amount of coloration can be adjusted (instead of a plain on/off switch).</li>
+<li>Exposed many of the parameters of the internal AD envelope. The <strong>TDST</strong> setting has been replaced by 4 new individual settings to control the amount of <strong>FM</strong>, <strong>TIMBRE</strong>, <strong>COLOR</strong> and VCA modulation from the internal AD envelope – making it dead easy to create drum sounds with Braids. The <strong>TENV</strong> setting (the preset envelope shapes with silly names) has disappeared and you can now control both the attack and decay of the internal AD.</li>
+<li>Added many scales (about 50!) to the built-in quantizer, whose code has been rewritten from scratch to allow all kind of stuff not based on the 12TET system. A new setting, <strong>ROOT</strong>, selects the root note upon which the scale is built.</li>
+<li>Reversed the polarity of the output signal, so that the sawtooth wave ramps up.</li>
+</ul>
+<h3 id="v17">v1.7</h3>
+<ul>
+<li>Added 808 kick and snare models.</li>
+<li>Added cymbal noise model.</li>
+<li>Added triple sine and triple triangle models.</li>
+</ul>
+<h3 id="v16">v1.6</h3>
+<ul>
+<li>Fixed an issue causing rare glitches with the sawtooth and square modes.</li>
+</ul>
+<h3 id="v15">v1.5</h3>
+<ul>
+<li>Added a new <strong>TDST</strong> option to assign a behavior to the trigger input: phase reset (sync), AD timbre modulation, AD amplitude envelope, and AD timbre/amplitude modulation.</li>
+<li>Visual feedback added to the <strong>META</strong> mode.</li>
+<li>The CV-controlled model change in <strong>META</strong> mode is now relative to the current model, as selected by the encoder.</li>
+</ul>
+<h3 id="v14">v1.4</h3>
+<ul>
+<li>Fixed a bug that prevented the system settings to be written in memory in some situations.</li>
+<li>Added a new setting to the <strong>RANG</strong> menu that locks the output frequency to 440 Hz (useful as a reference for tuning other modules).</li>
+<li>Altered the phase and amplitude of some waveforms in the <strong>WTBL</strong> and <strong>WMAP</strong> modes to make the interpolation/scanning smoother.</li>
+<li>Added a new wavetable mode, <strong>WLIN</strong>, which allows the wavetable data to be scanned linearly by the <strong>TIMBRE</strong> control; while <strong>COLOR</strong> morphs between various interpolation methods and resolutions (between waveforms or within waveform sample data).</li>
+<li>Added a new wavetable mode, <strong>WTx4</strong>, generating four voices of wavetable synthesis. <strong>TIMBRE</strong> morphs through a representative selection of the waveforms; while <strong>COLOR</strong> selects various intervals between the four voices (unison with detuning, octaves, chords…)</li>
+<li>Added two new synthesis modes, with 3 voices of anti-aliased sawtooth or square waves. <strong>TIMBRE</strong> and <strong>COLOR</strong> control the interval/detuning of the second and third voices.</li>
+<li>Added a new synthesis model, <strong>DRUM</strong>, which is a variant of <strong>BELL</strong> generating an additive timpani-like sound. <strong>TIMBRE</strong> controls its decay, while <strong>COLOR</strong> the tone brightness.</li>
+<li>Reworked the <strong>FOLD</strong> mode to provide more destructive wavefolding on its triangle/sine internal inputs. The amount of wavefolding decreases when note frequency is increased to prevent aliasing.</li>
+<li>Reworked the <strong>FBFM</strong> mode. The range of the FM index control (<strong>TIMBRE</strong>) is dynamically adjusted as a function of the COLOR and main frequency settings. This allows a greater amount of destructive FM in the low and mid ranges, while keeping aliasing under control when the frequency reaches the higher octaves.</li>
+</ul>
+<h3 id="v13">v1.3</h3>
+<p>Initial release.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../" class="btn btn-neutral float-left" title="Index"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../manual/" class="btn btn-neutral float-right" title="Manual">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../manual/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '../../..';</script>
+    <script src="../../../js/theme_extra.js" defer></script>
+    <script src="../../../js/theme.js" defer></script>
+      <script src="../../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

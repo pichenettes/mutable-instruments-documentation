@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Émilie Gillet" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+    <title>Manual - Mutable Instruments Documentation</title>
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Manual";
+        var mkdocs_page_input_path = "modules/braids/manual.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <script src="../../../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../.." class="icon icon-home"> Mutable Instruments Documentation
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Modules</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="#">Beads</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../beads/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../beads/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../beads/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Blades</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../blades/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../blades/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../blades/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../blades/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Blinds</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../blinds/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../blinds/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../blinds/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../blinds/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Braids</a>
+    <ul class="current">
+                <li class="toctree-l2"><a class="reference internal" href="../">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2 current"><a class="reference internal current" href="./">Manual</a>
+    <ul class="current">
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Branches</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../branches/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../branches/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../branches/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../branches/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../branches/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Clouds</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../clouds/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../clouds/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../clouds/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../clouds/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../clouds/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Ears</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../ears/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ears/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ears/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ears/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../..">Mutable Instruments Documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../.." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+          <li>Modules &raquo;</li>
+          <li>Braids &raquo;</li>
+      <li>Manual</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <blockquote>
+<p>This user manual documents the version 1.8 of the firmware. If the settings and menus of your unit look a bit different, it's likely that an older firmware revision is installed. You can find out which version is installed by clicking on the encoder and scrolling to the end of the menu. If an older version is installed, <a href="../firmware">Please upgrade!</a></p>
+</blockquote>
+<h2 id="overview">Overview</h2>
+<p>Braids is a voltage-controlled digital sound source. It features 45 waveform synthesis models, which cover techniques such as FM, wavetable synthesis, waveguide synthesis or analog emulation. Most synthesis models are built with one or several oscillators connected through crossfaders, modulators, filters, or delay lines. Each synthesis model is controlled by 2 parameters, called <strong>Timbre</strong> and <strong>Color</strong>. Most of the time, Timbre will impact the brightness of the sound.</p>
+<h2 id="installation">Installation</h2>
+<p>Braids is designed for Eurorack synthesizer systems and occupies 16 HP of space.</p>
+<p>Boards manufactured prior to july 2015 require a <strong>-12V/+12V</strong> / +5V supply (2x8 connector), and draw 15mA from the <strong>-12V/+12V</strong> rails and 85mA from the +5V rail.</p>
+<p>Boards manufactured after july 2015 require a <strong>-12V/+12V</strong> (2x5 connector), and draw 15mA from the -12V rail and 100mA from the +12V rail.</p>
+<p>In any case, the red stripe of the ribbon cable must be oriented on the same side as the "Red stripe" marking on the printed circuit board.</p>
+<h2 id="controls">Controls</h2>
+<p><img alt="" src="../images/manual.png" /></p>
+<p><strong>A</strong>: LED display and rotary encoder. When the module starts, the LED display shows the name of the active synthesis model, and the encoder can be used to select a model. Click the encoder to display a list of additional settings and options. Click the encoder to select an option and modify its value. Once the value has been modified to your liking, click the encoder to get back to the list of options. Selecting the first option ("WAVE"), saves to memory the current setup and brings you back in model selection mode.</p>
+<p><strong>B, C:</strong> Fine and coarse frequency control.</p>
+<p><strong>D</strong>: Frequency modulation attenuverter. This knob controls the amount and polarity of modulation applied to frequency, from the <strong>FM</strong> CV input jack.</p>
+<p><strong>E</strong>: Timbre. This parameter controls the main evolution and motion of the timbre - for example pulse width for a square oscillator or modulation index for a FM model.</p>
+<p><strong>F</strong>: Modulation attenuverter. This knob controls the amount and polarity of modulation applied to the <strong>TIMBRE</strong> parameter, from the <strong>TIMBRE</strong> CV input jack.</p>
+<p><strong>G</strong>: Color. This knob controls a second dimension of sound, for example the symmetry of an oscillator or the modulation frequency for a FM model.</p>
+<h2 id="inputs-and-outputs">Inputs and outputs</h2>
+<p><strong>TRIG</strong>: This trigger input serves three purposes. 1/ Braids' physical models need to be "excited" by an impulse on this input to give birth to a sound. 2/ The other models will treat the trigger as a reset signal, bringing the phase of the oscillator(s) to 0. 3/ This input can also be used to trigger an internal AD envelope applied to the parameters of your choice, to create sound animation and attacks without an external envelope module.</p>
+<p><strong>V/OCT</strong>: 1V/Oct frequency CV input.</p>
+<p><strong>FM</strong>: Frequency modulation CV input - the scale and polarity of this signal is set by the FM attenuverter.</p>
+<p><strong>TIMBRE</strong> and <strong>COLOR</strong>: Control voltages for the Timbre and Color parameters. A value of 0V corresponds to the minimum position of the knob. A value of +5V corresponds to the maximum position of the knob. This CV is offset by the current position of the knob.</p>
+<p><strong>OUT</strong>: Signal output. Loudness is model-dependent - for example a pure sine wave is always at maximum amplitude; while a ring-modulated sine-wave will have peaks and valleys due to amplitude modulation, and will thus sound quieter.</p>
+<h2 id="models">Models</h2>
+<h4 id="csaw">CSAW</h4>
+<p>This model is inspired by a quirk/defect of the Yamaha CS80 sawtooth wave shape, consisting of a fixed-width "notch" after the raising edge. The width of the notch can be controlled by <strong>TIMBRE</strong>; and its depth and polarity can be controlled by <strong>COLOR</strong> - producing phasing effects.</p>
+<h4 id="-_-_">/\/|-_-_</h4>
+<p>This model produces the classic waveform trajectory from triangle to sawtooth to square to pulse found in synthesizers such as the RSF Kobol or the Moog Voyager. <strong>TIMBRE</strong> sweeps through the waveforms. <strong>COLOR</strong> morphs from several tonal characters by increasingly removing the high-frequencies with a 1-pole filter, and recreating them with a waveshaper.</p>
+<h4 id="-_-__1">/|/|-_-_</h4>
+<p>This model blends a sawtooth wave with dephasing control, with a square wave with PWM. <strong>TIMBRE</strong> controls the dephasing amount or pulse width, and <strong>COLOR</strong> morphs the waveshape from sawtooth to square.</p>
+<h4 id="fold">FOLD</h4>
+<p>This model is built with sine and triangle oscillators sent into a wavefolder. <strong>TIMBRE</strong> controls the wavefolder strength, and <strong>COLOR</strong> controls the balance between the sine and triangle signals sent to it.</p>
+<h4 id="_____">_|_|_|_|_</h4>
+<p>This digital synthesis algorithm generates a smooth sequence of waveforms, transitioning from a sine wave to a Dirac comb, as controlled by <strong>TIMBRE</strong>. The intermediary steps are reminiscent of a single formant. Two such waveshapes are blended together, with the detuning amount controlled by <strong>COLOR</strong>.</p>
+<h4 id="syn-_-_-syn">SYN-_-_ SYN/|</h4>
+<p>These model synthesize the classic 2-oscillator hardsync patch, with both oscillators emitting square or saw waves. The main oscillator frequency controls the master frequency. The interval between master and slave is controlled by <strong>TIMBRE</strong>. <strong>COLOR</strong> controls the balance between the two oscillators.</p>
+<h4 id="x3-_-_x3-x3-six3">/|/|x3 -_-_x3 /\x3 SIx3</h4>
+<p>Three sawtooth (or square, triangle, sine) oscillators which can be individually tuned. <strong>COLOR</strong> and <strong>TIMBRE</strong> control the relative frequency of the second and third oscillator with respect to the main oscillator. These two controls are quantized to "snap" on musical intervals like octaves or fifths.</p>
+<h4 id="ring">RING</h4>
+<p>Three sine wave oscillators are ring-modulated together, and colored by a waveshaper. The main oscillator frequency controls the frequency of the first sine wave, and <strong>TIMBRE</strong> and <strong>COLOR</strong> control the relative frequency of the second and third sine waves.</p>
+<h4 id="_1">/|/|/|/|</h4>
+<p>This model simulates a swarm of 7 sawtooth waves. <strong>TIMBRE</strong> controls their detuning, and <strong>COLOR</strong> applies a high-pass filter to the resulting sound.</p>
+<h4 id="___">/|/|_|_|_</h4>
+<p>This model generates a sawtooth waveform, and sends it into a comb filter (tuned delay line). The frequency of the delay line tracks the frequency of the sawtooth oscillator, with a transposition controlled by the <strong>TIMBRE</strong> knob. <strong>COLOR</strong> selects the feedback amount and polarity: at 12 o'clock, no feedback is applied. From 12 o'clock to 5 o'clock, positive feedback is increasingly applied. From 12 o'clock to 7 o'clock, negative feedback is progressively applied.</p>
+<h4 id="toy">TOY*</h4>
+<p>This model traverses a space of timbres typical of (circuit-bent) electronic musical toys. <strong>TIMBRE</strong> simulates an alteration of the toy's clock rate, while <strong>COLOR</strong> creates glitches or short-circuits on a converter or memory chip's data lines.</p>
+<h4 id="zlpf-zpkf-zbpf-zhpf">ZLPF, ZPKF, ZBPF, ZHPF</h4>
+<p>This family of models directly synthesize in the time-domain the response of a low-pass, peaking, band-pass or high-pass filter excited by classic analog waveforms. Rather than synthesizing the waveform and filtering it (which is what a VA synthesizer would do), this approach directly aims at building the filtered waveshape from scratch. This technique has been used in the Casio CZ or the Roland D series, but is extended here to cover different filter types and waveshapes. <strong>TIMBRE</strong> controls the cutoff frequency of the filter. <strong>COLOR</strong> continuously modifies the waveshape, from saw to square to triangle.</p>
+<h4 id="vosm">VOSM</h4>
+<p>This model uses a combination of 3 oscillators arranged in a clever ring-modulation/hardsync patch to emulate formant synthesis - a technique named VOSIM and described by Kaegi and Tempelaars. <strong>COLOR</strong> and <strong>TIMBRE</strong> control the relative frequencies of the two formants.</p>
+<h4 id="vowl-vfof">VOWL, VFOF</h4>
+<p>Both models synthesize vowel sounds. <strong>VOWL</strong> is a faithful recreation of early computer speech synthesis programs. <strong>VFOF</strong> uses a simplified version of Rodet's FOF synthesis technique. Both have the same control layout: <strong>TIMBRE</strong> controls the vowel, morphing between a, e, i, o, u. <strong>COLOR</strong> shifts the formants in frequency. Main oscillator frequency and <strong>COLOR</strong> can be used altogether to simulate age and gender transformations.</p>
+<h4 id="harm">HARM</h4>
+<p>This model uses additive synthesis, by summing 12 sine harmonics. <strong>COLOR</strong> modifies the distribution of the amplitudes of each harmonics, around a central frequency set by <strong>TIMBRE</strong>.</p>
+<h4 id="fm-fbfm-wtfm">FM, FBFM, WTFM</h4>
+<p>Three flavors of 2-operator phase-modulation synthesis. <strong>TIMBRE</strong> controls the modulation amount. <strong>COLOR</strong> controls the relative frequency interval between modulator and carrier. <strong>FM</strong> is a well-behaved implementation. <strong>FBFM</strong> uses feedback from the carrier to itself to produce harsher tones. <strong>WTFM</strong> uses two feedback paths, from carrier to modulator and carrier to itself to achieve droning, unstable tones.</p>
+<h4 id="pluk">PLUK</h4>
+<p>Raw plucked string synthesis. <strong>TIMBRE</strong> controls the damping, <strong>COLOR</strong> the plucking position. This model needs to be "excited" by a trigger signal.</p>
+<h4 id="bowd">BOWD</h4>
+<p>Bowed string modeling. <strong>TIMBRE</strong> controls the friction level, <strong>COLOR</strong> the bowing position. A trigger or gate signal is required. Note that this model does not include a body filter - which would be necessary to simulate an actual string instrument.</p>
+<h4 id="blow-flute">BLOW, FLUTE</h4>
+<p>Reed or flute instrument model. <strong>TIMBRE</strong> controls the air pressure, <strong>COLOR</strong> the geometry of the instrument. Note that this model does not include a filter - which would have been necessary to simulate an actual instrument.</p>
+<h4 id="bell">BELL</h4>
+<p>This model established by Risset uses additive synthesis to recreate the tone of a bell. <strong>TIMBRE</strong> controls the damping of the sound; and <strong>COLOR</strong> the inharmonicity of the sound. This model needs to be "excited" by a trigger signal (or raising edge of a gate signal).</p>
+<h4 id="drum">DRUM</h4>
+<p>This variant of the <strong>BELL</strong> model uses different parameters (partials frequencies and amplitudes) to generate a sound reminiscent of a metallic drum. <strong>TIMBRE</strong> controls the damping and <strong>COLOR</strong> the brightness.</p>
+<h4 id="kick">KICK</h4>
+<p>This model is a simulation of the TR-808 bass drum circuit. <strong>TIMBRE</strong> controls the decay time, while <strong>COLOR</strong> controls the brightness ("tone") of the sound. The main oscillator frequency controls the tuning of the bridged-T filter.</p>
+<h4 id="cymb">CYMB</h4>
+<p>Raw material for cymbal sound synthesis, as inspired by the TR-808 circuits. <strong>COLOR</strong> controls the balance between a droning sum of square waves and noise. <strong>TIMBRE</strong>controls the cutoff of a band-pass filter applied on the resulting signal.</p>
+<h4 id="snar">SNAR</h4>
+<p>This model is a simulation of the TR-808 snare drum circuit. <strong>TIMBRE</strong> controls the balance between the two modes of the resonator ("tone"), and <strong>COLOR</strong> controls the amount of noise ("snappy").</p>
+<h4 id="wtbl">WTBL</h4>
+<p><strong>WTBL</strong> is a classic implementation of wavetable synthesis. <strong>TIMBRE</strong> sweeps the wavetable, and <strong>COLOR</strong> selects one of the 20 wavetables to play with. The waveforms are interpolated when traveling through a wavetable, but not when switching from one table to another.</p>
+<h4 id="wmap">WMAP</h4>
+<p><strong>WMAP</strong> is a two-dimensional implementation of wavetable synthesis. 256 waveforms have been laid out in a 16x16 grid, so that adjacent waveforms are similar sounding. The <strong>TIMBRE</strong> parameter scans the table in the X direction, and the <strong>COLOR</strong> parameter scans the table in the Y direction, with smooth interpolation across the two directions.</p>
+<h4 id="wlin">WLIN</h4>
+<p><strong>WLIN</strong> allows one dimensional scanning through the entirety of Braids' wavetables. <strong>TIMBRE</strong> moves through the waves, while <strong>COLOR</strong> selects the interpolation method. When <strong>COLOR</strong> is at 7 o'clock, no interpolation is applied. When <strong>COLOR</strong> is at 10 o 'clock, interpolation is applied between samples, but not between waves. When <strong>COLOR</strong> is at 12 o'clock, interpolation is always applied. When <strong>COLOR</strong> goes past 12 o'clock, interpolation is applied between waves, but the resolution of the playback resolution is decreased.</p>
+<h4 id="wtx4">WTx4</h4>
+<p>This mode is a 4-voice variant of <strong>WLIN</strong>. <strong>TIMBRE</strong> morphs through a small selection of 16 waves. <strong>COLOR</strong> selects the harmonic structures between the 4 voices - from a predefined set of chords. When <strong>COLOR</strong> is at 7 o'clock, all voices are playing the same note with a variable amount of detuning, creating a thick chorus effect.</p>
+<h4 id="nois">NOIS</h4>
+<p>This model filters white noise with a state-variable filter. The main oscillator frequency controls the cutoff frequency of the filter. <strong>TIMBRE</strong> controls the resonance of the filter. <strong>COLOR</strong> performs a crossfade between the low-pass and high-pass outputs of the filter.</p>
+<h4 id="twnq">TWNQ</h4>
+<p>This "Twin Peaks" model generates white noise and process it with two band-pass filters (resonators). <strong>TIMBRE</strong> controls the Q factor of the filters, and <strong>COLOR</strong> changes their spacing. The frequency of both filters track the main frequency.</p>
+<h4 id="clkn">CLKN</h4>
+<p>This model generates random samples at a given rate, determined by the main pitch control. <strong>TIMBRE</strong> controls the periodicity of the generator (up to a 2 samples cycle), and <strong>COLOR</strong> its quantization level (from 2 distinct values to 32 distinct values).</p>
+<h4 id="clou-prtc">CLOU, PRTC</h4>
+<p>These granular synthesis models create natural textures by mixing short grains of windowed sine waves (CLOU) or short decaying "pings" (PRTC). The frequency of the grains is controlled by the main frequency control, but is randomized by an amount proportional to the <strong>COLOR</strong> control. <strong>TIMBRE</strong> controls the density and overlap of the grains.</p>
+<h4 id="qpsk">QPSK</h4>
+<p>This model generates - in the audio frequency range - the kind of modulated signals used in digital telecommunication systems. The main oscillator frequency is the carrier frequency. The bit-rate is controlled by the <strong>TIMBRE</strong> knob. The <strong>COLOR</strong> knob sets an 8-bit value which is modulated into the carrier using QPSK modulation. A 16-byte synchronization frame is sent on every trigger/gate, or every 256 data bytes.</p>
+<h2 id="options">Options</h2>
+<p><strong>META</strong> allows the synthesis model to be selected by the FM CV. When this mode is active, frequency modulation through the FM CV input is no longer possible - but is replaced by CV-controlled model selection. This option is great for creating sequences featuring the different synthesis models. Keep in mind that discontinuities might be heard when switching from one model to the other! The <strong>EDIT</strong> encoder can still be used to scroll through synthesis models; and the CV applies to the FM input allows you to scroll forward (positive voltage) or backwards (negative voltage) in the list.</p>
+<p><strong>BITS</strong> selects the bit-depth of the data sent to DAC.</p>
+<p><strong>RATE</strong> selects the refresh rate of the DAC. Note that a handful of models are internally rendered at 48kHz (instead of 96kHz); so the difference between 48kHz and 96kHz might be non-existent for the most complex models. Note also that conversely, to reduce aliasing, the simplest models are rendered internally at 192kHz or 384kHz.</p>
+<p><strong>TSRC</strong> selects a trigger source:</p>
+<ul>
+<li><strong>EXT.</strong> uses the gate/trigger jack;</li>
+<li><strong>AUTO</strong> additionally tracks changes in the V/OCT frequency input larger than a semitone and generates a trigger on each of these. This allows, for example, the physical models or the internal AD generator to be controlled by a note sequencer which does not provide gate outputs.</li>
+</ul>
+<p><strong>TDLY</strong> applies a delay between the moment the trigger is received and the moment the note is "struck" on the physical models. We have observed that some CV-gate converters or sequencers sometimes have slow settling times, or have a short timing errors between the refresh of their analog and digital outputs. Delaying the processing of the trigger allows the physical model to sample the accurate CV rather than a fluctuating one - which can cause unwanted glitches or portamento-like effects at note onsets.</p>
+<p><strong>|\ATT, |\DEC</strong> are the attack and decay time of the internal AD envelope generator.</p>
+<p><strong>|\FM, |\TIM, |\COL, |\VCA</strong> control the amount of modulation from the internal AD envelope generator to the FM, Timbre, Color and output amplitude parameters. When all these settings are null, the <strong>TRIG</strong> input works as a sync / reset input.</p>
+<p><strong>RANG</strong> chooses the range of the "coarse" knob.</p>
+<ul>
+<li><strong>EXT.</strong> adjusts the range of this knob +/- 4 octaves around the note received on the V/Oct input. Because of this, when no frequency CV signal is sent to the module (which would be the equivalent to sending a CV of 0V - corresponding to a very low note!), the coarse button will have a bias towards low frequencies, which might not always be desirable.</li>
+<li><strong>FREE</strong> adjusts the range of the coarse knob to +/- 4 octave centered around C3 (261.5 Hz). This setting is recommended when the module is used with no external signal on the V/Oct CV input.</li>
+<li><strong>XTND</strong> (extended) provides a larger frequency range, but disables accurate V/Oct scaling as a side effect.</li>
+<li>The last option (<strong>440</strong>) locks the oscillator frequency to 440 Hz exactly - helpful for tuning another VCO.</li>
+</ul>
+<p><strong>OCTV</strong> is a transposition (by octave) switch.</p>
+<p><strong>QNTZ</strong> applies a quantification to the incoming <strong>V/OCT</strong> control voltage. The frequency can be quantized to semitones, or to one of the many available scales, or disabled. <strong>ROOT</strong> selects the root note upon which is built the quantizer's scale.</p>
+<p><strong>FLAT</strong> applies a detuning in the lower and higher frequencies, to recreate some of the tuning imperfections of VCOs.</p>
+<p><strong>DRFT</strong> recreates the drifting of a disastrously designed VCO.</p>
+<p><strong>SIGN</strong> applies grungy glitches/waveform imperfections to the output signal. The exact behavior of this option is unique to each module built.</p>
+<p><strong>BRIG</strong> adjusts the screen brightness.</p>
+<h2 id="calibration">Calibration</h2>
+<p><strong>The module is factory-calibrated using precision voltage sources. Follow this procedure only if you want to compensate for inaccuracies in your CV sources, or if your module has lost its calibration settings following a fault or the installation of alternative firmware.</strong></p>
+<p>To calibrate the unit, disconnect any signal from the FM input, and connect the note CV output of a well-calibrated keyboard interface or MIDI-CV converter to the V/OCT input. Move the <strong>COARSE</strong> and <strong>FINE</strong> knobs to 12 o'clock position. Go to <strong>CAL.</strong> in the options list, and keep the encoder pressed for 1s (this is not an option you want to select by mistake during a performance !). The screen displays <strong>&gt;C2</strong>.</p>
+<p>Send a voltage of 1V to the CV input. Click on the encoder.</p>
+<p>The screen displays <strong>&gt;C4</strong> . Send a voltage of 3V to the CV input. Click on the encoder to finish calibration.</p>
+<p>Because Braids uses this software calibration procedure, it is compatible with the 1.2V/Oct standard too! Here is a tip: you can very well perform the calibration procedure with another pair of notes 2 octaves apart, and with the COARSE knob in another position. This can be used to shift up or down the range of the COARSE knob.</p>
+<h2 id="toys">Toys</h2>
+<p>Following <strong>CAL.</strong> in the menu is a screen showing a visual representation of the internal ADC readings for the <strong>TIMBRE</strong>, <strong>COLOR</strong>, <strong>V/OCT</strong> and <strong>FM</strong> inputs. This page is helpful for visualizing the polarity and range of incoming CV signals.</p>
+<p>The next option shows a scrolling line of text. <strong>TIMBRE</strong> controls the scrolling; and a gate/trigger can be used to scroll the text left by one column. To edit the text, keep the encoder pressed for more than 1s. Rotate the encoder to select the first character. Click to move to the next character and continue editing. Once the line of text has been composed, select the last character (all segments lit) to confirm. At any time, you can also hold the encoder to leave the edit mode.</p>
+<h2 id="firmware-update-procedure"><a name="firmware"></a> Firmware update procedure</h2>
+<p>Unplug all CV inputs/outputs from the module. Connect the output of your audio interface/sound card to the FM input (<strong>3</strong>). Set the FINE knob (<strong>B</strong>) to 12 o'clock , and the FM attenuverter (<strong>D</strong>) to 5 o'clock. Power on your modular system with Braids' encoder pressed. The screen will show <strong>_RDY</strong>, with a "snake" pattern on the first character. Make sure that no additional sound (such as email notification sounds, background music etc.) from your computer will be played during the procedure.</p>
+<p>Make sure that your speakers/monitors are not connected to your audio interface - the noises emitted during the procedure are aggressive and can harm your hearing. On non-studio audio equipment (for example the line output from a Desktop computer), you might have to turn up the gain to the maximum.</p>
+<p>When you are all set, play the firmware update file into the module. The display shows the number of data packets received. The firmware contains between 90 and 112 packets, and the unit reboots after the last packet has been received. In case the signal level is inadequate, the unit will display <strong>@SYN</strong>. Try adjusting the position of the FM attenuverter, click the encoder and retry from the start of the update file. The unit displays <strong>@CRC</strong> if a data packet is corrupted. It is suggested in this case to retry the procedure from another computer/audio interface, and to make sure that no piece of equipment (equalizer, FX processor) is inserted in the signal chain.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../firmware/" class="btn btn-neutral float-left" title="Firmware"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../open_source/" class="btn btn-neutral float-right" title="Open source">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../firmware/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../open_source/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '../../..';</script>
+    <script src="../../../js/theme_extra.js" defer></script>
+    <script src="../../../js/theme.js" defer></script>
+      <script src="../../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
