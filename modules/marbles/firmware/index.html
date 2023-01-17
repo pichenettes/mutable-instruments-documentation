@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Émilie Gillet" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+    <title>Firmware - Mutable Instruments Documentation</title>
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Firmware";
+        var mkdocs_page_input_path = "modules/marbles/firmware.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <script src="../../../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../.." class="icon icon-home"> Mutable Instruments Documentation
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Modules</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="#">Beads</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../beads/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../beads/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../beads/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Blades</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../blades/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../blades/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../blades/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../blades/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Blinds</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../blinds/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../blinds/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../blinds/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../blinds/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Braids</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../braids/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../braids/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../braids/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../braids/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../braids/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Branches</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../branches/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../branches/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../branches/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../branches/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../branches/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Clouds</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../clouds/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../clouds/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../clouds/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../clouds/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../clouds/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Ears</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../ears/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ears/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ears/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ears/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Edges</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../edges/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../edges/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../edges/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../edges/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../edges/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Elements</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../elements/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../elements/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../elements/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../elements/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../elements/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Frames</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../frames/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../frames/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../frames/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../frames/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../frames/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Grids</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../grids/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../grids/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../grids/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../grids/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../grids/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Kinks</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../kinks/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kinks/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kinks/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kinks/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Links</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../links/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../links/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../links/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../links/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Marbles</a>
+    <ul class="current">
+                <li class="toctree-l2"><a class="reference internal" href="../">Index</a>
+                </li>
+                <li class="toctree-l2 current"><a class="reference internal current" href="./">Firmware</a>
+    <ul class="current">
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../..">Mutable Instruments Documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../.." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+          <li>Modules &raquo;</li>
+          <li>Marbles &raquo;</li>
+      <li>Firmware</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h2 id="download">Download</h2>
+<p><a href="../downloads/marbles_1.3.wav">Latest version (1.3)</a></p>
+<p><a href="../manual#firmware">Firmware update procedure</a></p>
+<h2 id="revisions">Revisions</h2>
+<h3 id="v13-final">v1.3 (final)</h3>
+<h4 id="fixes-and-minor-improvements">Fixes and minor improvements</h4>
+<ul>
+<li>Fixed a bug causing spurious jumps in the <strong>DEJA VU</strong> loop playback position (occurring randomly, when <strong>DEJA VU</strong> is turned CCW), and another bug causing an unexpected change in the loop (occurring randomly, on average once every 37 hours) when <strong>DEJA VU</strong> is locked at 12 o'clock. Thanks to Tyler/<a href="https://github.com/float32">float32</a> for finding these two!</li>
+<li>Fixed a bug occurring when a buggy external clock source "stutters" by sending two rapid rising edges distant by a few ms at each clock tick. </li>
+<li>Lowered the amount of hysteresis in the quantizers responsible for converting a voltage or knob position into discrete settings (eg: a clock divider ratio, or <strong>LENGTH</strong>). This makes the relationship between a voltage (or knob position) and a specific setting more consistent.</li>
+<li>Increased the width of the "virtual notch" for the 14-step setting of the <strong>LENGTH</strong> knob.</li>
+</ul>
+<h4 id="implicit-and-explicit-reset">Implicit and explicit reset</h4>
+<ul>
+<li>If a clock pulse arrives after a long pause (3 seconds, or 4 times the interval between two clock ticks, whichever the longest), the module will reset all counters, dividers, patterns, and the step number of the relevant section (t or X). Provided <strong>DEJA VU</strong> is enabled and set at 12 o'clock, this gives a completely reproducible behavior at each restart of the clock.</li>
+<li>Hold the t and X section mode buttons (labelled <strong>E</strong> and <strong>N</strong> in the manual) simultaneously to repurpose the <strong>JITTER</strong> and <strong>STEPS</strong> CV inputs as explicit reset inputs for the <strong>t</strong> and <strong>X</strong> sections. The corresponding LEDs blink temporarily for 2s when the repurposed reset inputs are enabled, and go off when they are disabled (which is the default setting).</li>
+</ul>
+<p>The <strong>JITTER CV</strong> input is repurposed as a reset input for the t section: a rising edge on this input will reset, <strong>on the next clock tick</strong>, the clock divider, the step counter in the <strong>DEJA VU</strong> loop and the position of the rhythmic pattern.</p>
+<p>The <strong>STEPS CV</strong> input is repurposed as a reset input for the X section: a rising edge on this input will reset, <strong>on the next clock tick</strong>, the position of the <strong>DEJA VU</strong> loop.</p>
+<p>If a reset is received on the <strong>t</strong> side, this reset will be cascaded to the <strong>X</strong> section in the two following situations:
+* The <strong>X</strong> section's clock input is left unpatched (ie, X1, X2, X3 are internally clocked by t1, t2, t3 respectively).
+* The <strong>X</strong> section's clock is directly patched from t1, t2 or t3 (self-patching detection).</p>
+<p>Outside of these cases, the <strong>X</strong> section is considered to be running independently from the <strong>t</strong> section, and a reset on the <strong>t</strong> side won't be propagated to the <strong>X</strong> side.</p>
+<p>Emphasis was put on <strong>on the next clock tick</strong>: for this reset feature to work accurately, the reset pulse must precede, ideally by 1ms, the subsequent clock pulse. If the reset arrives right at the same time as the first clock pulse, the behavior is unspecified! Don't hesitate to delay your clock (or advance your reset) if you experience odd timing.</p>
+<h3 id="v12">v1.2</h3>
+<ul>
+<li>
+<p>When the module is in external processing mode, with an external clock for the <strong>X</strong> section, and when this clock's patch cable is unplugged from the <strong>X</strong> clock input, so that an internal clock is now used for the <strong>X</strong> section, the acquired CV data on output <strong>X1</strong> (which was shifted to outputs <strong>X2</strong> and <strong>X3</strong>) is now copied to the <strong>DEJA VU</strong> loop of all three outputs.</p>
+</li>
+<li>
+<p>If a 3-second pause (or a pause lasting more than 4 clock ticks, whichever is the longest) is observed on the <strong>t</strong> section's clock signal, the rhythmic pattern played by the <strong>t</strong> section will reset to the first step at the next clock tick.</p>
+</li>
+<li>
+<p>New <em>super lock</em> feature. A long press on the <strong>t</strong> or <strong>X</strong> <strong>DEJA VU</strong> buttons locks the random generation for this section – which will stop responding to the <strong>DEJA VU</strong> knob. When a section is in this <em>super locked</em> state, the illuminated push-button blinks rapidly. Press it to bring it back to normal. In other words, the <strong>t</strong> and <strong>X</strong> section can be in these 3 states:</p>
+</li>
+<li>Illuminated push-button off: random without repetition (equivalent to <strong>DEJA VU</strong> set to the minimum).</li>
+<li>Illuminated push-button on: randomness amount controlled by the <strong>DEJA VU</strong> knob.</li>
+<li>Illuminated push-button rapidly blinking: locked loop without randomness (equivalent to <strong>DEJA VU</strong> locked to 12 o’clock).</li>
+</ul>
+<h3 id="v11">v1.1</h3>
+<ul>
+<li>
+<p>Powering the module on while pressing the <strong>X</strong> mode selection button <strong>(N)</strong> enables (or disables) the color-blind mode. LED brightness and blinking patterns are more contrasted. Glowing, moderate brightness for the first setting, high intensity for the middle setting, low brightness for the last setting. When selecting scales, the number of blinks (from 1 to 6 – continuous) indicates the selected scale.</p>
+</li>
+<li>
+<p>Fixed a bug causing the X's section clock follower to temporarily go haywire when a patch cable is inserted in the clock input of the X section.</p>
+</li>
+</ul>
+<h3 id="v10">v1.0</h3>
+<p>Initial release.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../" class="btn btn-neutral float-left" title="Index"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../manual/" class="btn btn-neutral float-right" title="Manual">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../manual/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '../../..';</script>
+    <script src="../../../js/theme_extra.js" defer></script>
+    <script src="../../../js/theme.js" defer></script>
+      <script src="../../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
