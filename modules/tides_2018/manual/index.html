@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Émilie Gillet" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+    <title>Manual - Mutable Instruments Documentation</title>
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Manual";
+        var mkdocs_page_input_path = "modules/tides_2018/manual.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <script src="../../../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../.." class="icon icon-home"> Mutable Instruments Documentation
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Modules</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="#">Beads</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../beads/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../beads/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../beads/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Blades</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../blades/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../blades/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../blades/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../blades/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Blinds</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../blinds/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../blinds/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../blinds/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../blinds/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Braids</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../braids/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../braids/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../braids/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../braids/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../braids/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Branches</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../branches/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../branches/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../branches/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../branches/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../branches/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Clouds</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../clouds/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../clouds/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../clouds/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../clouds/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../clouds/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Ears</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../ears/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ears/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ears/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ears/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Edges</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../edges/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../edges/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../edges/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../edges/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../edges/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Elements</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../elements/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../elements/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../elements/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../elements/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../elements/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Frames</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../frames/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../frames/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../frames/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../frames/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../frames/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Grids</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../grids/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../grids/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../grids/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../grids/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../grids/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Kinks</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../kinks/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kinks/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kinks/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kinks/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Links</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../links/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../links/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../links/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../links/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Marbles</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../marbles/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../marbles/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../marbles/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../marbles/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../marbles/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Peaks</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../peaks/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../peaks/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../peaks/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../peaks/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../peaks/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Plaits</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../plaits/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../plaits/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../plaits/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../plaits/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../plaits/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Rings</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../rings/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../rings/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../rings/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../rings/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../rings/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Ripples 2020</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../ripples_2020/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ripples_2020/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ripples_2020/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ripples_2020/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Ripples original</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../ripples_original/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ripples_original/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ripples_original/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ripples_original/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Shades 2020</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../shades_2020/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shades_2020/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shades_2020/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shades_2020/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Shades original</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../shades_original/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shades_original/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shades_original/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shades_original/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Shelves</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../shelves/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shelves/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shelves/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shelves/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Stages</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../stages/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../stages/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../stages/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../stages/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../stages/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Streams</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../streams/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../streams/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../streams/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../streams/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../streams/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Tides 2018</a>
+    <ul class="current">
+                <li class="toctree-l2"><a class="reference internal" href="../">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2 current"><a class="reference internal current" href="./">Manual</a>
+    <ul class="current">
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Tides original</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../tides_original/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../tides_original/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../tides_original/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../tides_original/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../tides_original/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../..">Mutable Instruments Documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../.." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+          <li>Modules &raquo;</li>
+          <li>Tides 2018 &raquo;</li>
+      <li>Manual</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h2 id="about-tides">About Tides</h2>
+<p><strong>Flow</strong>: a voltage goes up.</p>
+<p><strong>Ebb</strong>: a voltage goes back down to its initial level.</p>
+<p>All the functions performed by Tides are variations on this theme. Make ebb and flow cyclic and you have an LFO or VCO. Do it just once in reaction to a trigger and you have an attack/decay or attack(/sustain)/release envelope.</p>
+<h2 id="installation">Installation</h2>
+<p>Tides requires a <strong>-12V/+12V</strong> power supply (2x5 pin connector). The red stripe of the ribbon cable (-12V side) must be oriented on the same side as the “Red stripe” marking on the module and on your power distribution board.
+The module draws <strong>50mA</strong> from the <strong>+12V</strong> rail, and <strong>20mA</strong> from the <strong>-12V</strong> rail.</p>
+<h2 id="front-panel">Front panel</h2>
+<p><img alt="" src="../images/manual.png" /></p>
+<h3 id="controls">Controls</h3>
+<p><strong>A. Frequency range.</strong> Selects the central value of the <strong>FREQUENCY</strong> knob: 1/8 Hz (movements), 2 Hz (rhythms and modulations), or 130.8 Hz (audible tones).</p>
+<p><strong>B. Output mode.</strong> Selects the relationship between the four signals generated on Tides’ four outputs. Refer to the next section for more details.</p>
+<p><strong>C. Ramp mode.</strong></p>
+<p><img alt="" src="../images/icon_ad_envelope.png" /> One-shot unipolar AD envelope generation.</p>
+<p><img alt="" src="../images/icon_cyclic.png" /> Cyclic bipolar oscillations.</p>
+<p><img alt="" src="../images/icon_ar_envelope.png" /> One-shot unipolar AR envelope generation.</p>
+<p><strong>D. Frequency.</strong> Spans a range of ±4 octaves around the central value set by the frequency range button <strong>[A]</strong>. The direction of this knob is reversed compared to the rate control you would find on classic envelope generators: when the one-shot AD or AR mode is selected, turn clockwise for faster envelopes, and counter-clockwise for slower envelopes.</p>
+<p><strong>E. Shape</strong> of the ascending and descending segments.</p>
+<p><strong>F. Ratio</strong> between the durations of the ascending and descending segments. Classic envelope generators have separate attack and decay controls. With Tides, one first adjusts how fast the whole envelope will complete (with <strong>FREQUENCY</strong>), then adjusts how much of this time is spent on the decay or release relatively to the attack (with <strong>SLOPE</strong>).</p>
+<p><strong>G. Waveshape transformation.</strong> From 12 o’clock to 7 o’clock (counter-clockwise), a 2-pole low-pass filter is applied to smooth the edges of the waveform. From 12 o’clock to 5 o’clock (clockwise), a wavefolder adds kinks and bumps along the slope.</p>
+<p><strong>H. Output polarization and shifting.</strong> Depending on the output mode selected by <strong>[B]</strong>, this knob either adjusts the amplitude and polarity of the first output (LED B off), or the shift in amplitude/time/frequency between each of the four outputs (LED B lit).</p>
+<p><strong>I. Attenuverters</strong> for the CV inputs.</p>
+<h3 id="inputs-and-outputs">Inputs and outputs</h3>
+<p><strong>1. CV inputs</strong> for Slope, Frequency, Smoothness, Shape and Shift. Two inputs affect the frequency: the frequency modulation CV input, which applies exponential FM with an amount set by the attenuverter, and V/OCT, which follows the Volt/octave scale.</p>
+<p><strong>2. Trigger/Gate input.</strong> In AD mode, a trigger will reset the envelope to 0V and initiate an attack/decay cycle. No matter how short the trigger is, the attack/decay cycle will always complete.</p>
+<p>In cyclic mode, a trigger will reset the oscillator so that it starts a new ascending phase.</p>
+<p>In AR mode, the rising edge of the gate will cause the envelope to raise to +8V from its current value, and the falling edge of the gate will cause the envelope to fall to 0V from its current value – the same way an ADSR envelope with a null decay time and a 100% sustain level would behave.</p>
+<p><strong>3. Clock input</strong> for tempo or frequency-locked operation. When this input is patched, the <strong>FREQUENCY</strong> knob controls the ratio between the frequency of the signal sent to this input, and the frequency of the signals generated by Tides.</p>
+<p><strong>4. Outputs.</strong> Refer to the next section.</p>
+<h2 id="output-modes">Output modes</h2>
+<p><img alt="" src="../images/mode_0.png" /></p>
+<p>In this mode, the four outputs produce four different waveshapes taken throughout Tides’ signal processing chain.
+<strong>SHIFT/LEVEL</strong> acts as an attenuverter on the main signal.</p>
+<p><img alt="" src="../images/mode_0_illustration.png" /></p>
+<p><img alt="" src="../images/mode_1.png" /></p>
+<p>In this mode, the <strong>SHIFT/LEVEL</strong> knob selects to which output the signal is sent, with smooth crossfading between adjacent outputs. It is thus possible to route Tides’ signal to different destinations.</p>
+<p><img alt="" src="../images/mode_2.png" /></p>
+<p>In this mode, the <strong>SHIFT/LEVEL</strong> knob shifts in time the apex of the waveform. This effect is achieved by applying a different <strong>SLOPE</strong> setting to each output (in <strong>AD</strong> or <strong>AR</strong> mode), or by applying a phase shift between each output (in cyclic mode).</p>
+<p><img alt="" src="../images/mode_2_illustration.png" /></p>
+<p><img alt="" src="../images/mode_3.png" /></p>
+<p>In this mode, the <strong>SHIFT/LEVEL</strong> knob adjusts the frequency ratio between each output. At 12 o’clock, all outputs are locked to the same frequency. Turn clockwise, and outputs 2, 3, 4 will have an increasing frequency. Turn counter-clockwise and outputs 2, 3, 4 will have a decreasing frequency.</p>
+<p>At low frequencies, this generates poly-rhythmic LFOs: try using a low <strong>SLOPE</strong> to generate signals whose edges are sharp enough to trigger other modules.</p>
+<p>At audio frequencies, this creates just intonation chords.</p>
+<h2 id="external-clocking">External clocking</h2>
+<p>Patch a clock or a clean and pure oscillator signal to Tides’ <strong>CLOCK</strong> input <strong>(3)</strong>, and Tides will follow the frequency of this clock/oscillator, multiplied by a ratio set by the <strong>FREQUENCY</strong> knob <strong>[D]</strong>. A ratio of 1:1 is used when this knob is at 12 o’clock.</p>
+<p>If the trigger input <strong>(2)</strong> is left unpatched, an AD or AR envelope will be generated at each tick of the clock, and the oscillations will be in phase with the clock. Remember that the <strong>FREQUENCY</strong> knob multiplies or divides the clock!</p>
+<p>It is also possible to patch both the <strong>CLOCK (3)</strong> and <strong>TRIG (2)</strong> inputs. In this case, Tides needs to receive a trigger on the trigger input to generate an envelope, but adjusts the envelope duration so that it matches the external clock rate.</p>
+<p>Tempo-synchronized LFOs, generation of just-intonation chords or overtones, and clock division/multiplication/phase-shifting are all possible with this feature.</p>
+<h2 id="audio-rate-operation">Audio rate operation</h2>
+<p>Because we do not perceive the trajectory of a 1 Hz LFO the same way we hear the waveform of a 100 Hz oscillator, Tides adapts its behavior when the frequency range selector <strong>[A]</strong> is set to the audio range setting:</p>
+<ul>
+<li>The SHAPE control <strong>[E]</strong> offers a different palette of waveshapes – chosen so that there is a more striking timbral difference between them.</li>
+<li>The SLOPE control <strong>[F]</strong> uses a linear scale (instead of exponential) for smooth pulse-width modulation effects.</li>
+<li>In order to prevent aliasing, the range of the <strong>SHAPE [E]</strong> and <strong>SMOOTHNESS [G]</strong> knobs is narrowed down when high frequency tones are generated.</li>
+<li>When using the frequency multiplication/division output mode, a different set of frequency ratios is chosen for each output, corresponding to musical intervals.</li>
+<li>A different algorithm favoring pitch accuracy and lack of jitter is used to track the <strong>CLOCK (3)</strong> input. This algorithm makes the assumption that a periodic waveform is present on the clock input, and does not offer any guarantee that the phase of Tides’ signal will match the phase of the external clock.</li>
+</ul>
+<p>Conversely, if the frequency range selector <strong>[A]</strong> is set to the lower or intermediate frequency setting, Tides accurately locks onto the phase of the clock and can follow irregular (but repetitive) rhythmic pattern or clocks with shuffle/swing.</p>
+<h2 id="advanced-topics">Advanced topics</h2>
+<h3 id="calibration-procedure">Calibration procedure</h3>
+<p>To calibrate the unit:</p>
+<ol>
+<li>Disconnect all CV inputs.</li>
+<li>Connect the note CV output of a well-calibrated keyboard interface or MIDI-CV converter to the <strong>V/OCT</strong> input. Leave all the other CV inputs unpatched.</li>
+<li>Press both buttons <strong>[A]</strong> and <strong>[B]</strong> simultaneously. The first LED slowly blinks in orange.</li>
+<li>Send a voltage of 1.000V to the <strong>V/OCT</strong> input.</li>
+<li>Press any button. The second LED blinks in orange.</li>
+<li>Send a voltage of 3.000V to the <strong>V/OCT</strong> input.</li>
+<li>Press any button.</li>
+</ol>
+<h3 id="firmware-update-procedure"><a name="firmware"></a> Firmware update procedure</h3>
+<p>Unplug all CV inputs/outputs from the module. Connect the output of your audio interface/sound card to the <strong>SLOPE</strong> CV input <strong>(1)</strong>. Set the <strong>SLOPE</strong> knob <strong>[F]</strong> to an intermediate position. Power on your modular system with the frequency range selection button <strong>[A]</strong> pressed.</p>
+<p>Make sure that no additional sound (such as email notification sounds, background music etc.) from your computer will be played during the procedure. Make sure that your speakers/monitors are not connected to your audio interface - the noises emitted during the procedure are aggressive and can harm your hearing. On non-studio audio equipment (for example the line output from a desktop computer), you might have to turn up the gain to the maximum.</p>
+<p>When you are all set, play the firmware update file into the module. While the module receives data, the frequency range LED will act as vu-meter (lit in orange when the signal level is optimal). Try adjusting the <strong>SLOPE</strong> knob to adjust gain. When the end of the audio file is reached, the module automatically restarts - if it is not the case, please retry the procedure from the beginning.</p>
+<p>In case the signal level is inadequate, all LEDs will blink in red. Press the button <strong>[C]</strong> and retry with a higher gain. If this does not help, please retry the procedure from another computer/audio interface, and make sure that no piece of equipment or software effect (equalizer, automatic gain control, FX processor) is inserted in the signal chain.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../firmware/" class="btn btn-neutral float-left" title="Firmware"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../open_source/" class="btn btn-neutral float-right" title="Open source">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../firmware/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../open_source/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '../../..';</script>
+    <script src="../../../js/theme_extra.js" defer></script>
+    <script src="../../../js/theme.js" defer></script>
+      <script src="../../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
