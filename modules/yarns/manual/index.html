@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Émilie Gillet" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+    <title>Manual - Mutable Instruments Documentation</title>
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Manual";
+        var mkdocs_page_input_path = "modules/yarns/manual.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <script src="../../../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../.." class="icon icon-home"> Mutable Instruments Documentation
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Modules</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="#">Beads</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../beads/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../beads/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../beads/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Blades</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../blades/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../blades/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../blades/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../blades/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Blinds</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../blinds/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../blinds/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../blinds/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../blinds/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Braids</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../braids/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../braids/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../braids/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../braids/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../braids/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Branches</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../branches/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../branches/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../branches/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../branches/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../branches/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Clouds</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../clouds/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../clouds/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../clouds/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../clouds/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../clouds/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Ears</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../ears/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ears/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ears/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ears/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Edges</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../edges/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../edges/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../edges/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../edges/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../edges/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Elements</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../elements/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../elements/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../elements/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../elements/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../elements/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Frames</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../frames/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../frames/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../frames/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../frames/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../frames/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Grids</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../grids/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../grids/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../grids/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../grids/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../grids/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Kinks</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../kinks/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kinks/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kinks/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kinks/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Links</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../links/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../links/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../links/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../links/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Marbles</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../marbles/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../marbles/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../marbles/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../marbles/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../marbles/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Peaks</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../peaks/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../peaks/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../peaks/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../peaks/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../peaks/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Plaits</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../plaits/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../plaits/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../plaits/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../plaits/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../plaits/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Rings</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../rings/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../rings/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../rings/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../rings/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../rings/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Ripples 2020</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../ripples_2020/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ripples_2020/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ripples_2020/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ripples_2020/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Ripples original</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../ripples_original/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ripples_original/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ripples_original/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ripples_original/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Shades 2020</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../shades_2020/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shades_2020/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shades_2020/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shades_2020/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Shades original</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../shades_original/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shades_original/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shades_original/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shades_original/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Shelves</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../shelves/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shelves/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shelves/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shelves/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Stages</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../stages/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../stages/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../stages/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../stages/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../stages/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Streams</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../streams/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../streams/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../streams/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../streams/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../streams/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Tides 2018</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../tides_2018/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../tides_2018/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../tides_2018/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../tides_2018/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../tides_2018/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Tides original</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../tides_original/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../tides_original/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../tides_original/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../tides_original/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../tides_original/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Veils 2020</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../veils_2020/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../veils_2020/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../veils_2020/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../veils_2020/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Veils original</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../veils_original/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../veils_original/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../veils_original/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../veils_original/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Warps</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../warps/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../warps/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../warps/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../warps/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../warps/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Yarns</a>
+    <ul class="current">
+                <li class="toctree-l2"><a class="reference internal" href="../">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2 current"><a class="reference internal current" href="./">Manual</a>
+    <ul class="current">
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../..">Mutable Instruments Documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../.." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+          <li>Modules &raquo;</li>
+          <li>Yarns &raquo;</li>
+      <li>Manual</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <p>This manual documents the latest version of the firmware, v1.5, which can be downloaded <a href="../firmware">here</a>.</p>
+<h2 id="overview">Overview</h2>
+<p>Yarns is a MIDI to CV interface. Thanks to its flexible architecture, it can manage up to 4 voices of polyphony or up to 4 individual channels. Yarns embeds an arpeggiator, a note sequencer, and an euclidean pattern generator.</p>
+<h2 id="installation">Installation</h2>
+<p>Yarns is designed for Eurorack synthesizer systems and occupies 12 HP of space. It requires a <strong>-12V/+12V</strong> supply (2x5 connector), consuming 2mA from the -12V rail and 60mA from the +12V rail. The red stripe of the ribbon cable must be oriented on the same side as the "Red stripe" marking on the printed circuit board.</p>
+<h2 id="controls">Controls</h2>
+<p><img alt="" src="../images/manual.png" /></p>
+<p>At the right of Yarns' display is an encoder which is used to increment/decrement values and scroll through options. The typical way of modifying Yarns' settings is to scroll through the list of settings, click the encoder to select one of them, then rotate the encoder to increment/decrement the value of setting, and click again once you are done. Yarns' display is small, so settings names are abbreviated into 2 letters code (VR = "Vibrato range"). To ease navigation, the unabbreviated form of each setting or value scrolls on the display after a few seconds of inactivity.</p>
+<p>Below the display are 3 buttons, whose primary functions are to control the sequencer:</p>
+<ul>
+<li><strong>REC</strong> starts and ends step-by-step recording.</li>
+<li><strong>START/STOP</strong> starts and stops the sequencer.</li>
+<li><strong>TAP</strong> acts as a tap-tempo.</li>
+</ul>
+<p>In addition:</p>
+<ul>
+<li>In recording mode, <strong>START/STOP</strong> and <strong>TAP</strong> enter a tie step (extends the duration of the previous note onto this step) or a rest (blank step) in the sequence.</li>
+<li>Holding the <strong>START/STOP</strong> button for a few moments latches the arpeggiator (if it is running), or starts and hold a note. More on that in the <em>Latch and keyboard-free operation</em> section!</li>
+</ul>
+<h2 id="yarns-architecture-voices-parts-and-layouts">Yarns' architecture: voices, parts and layouts</h2>
+<p>Three important concepts are used throughout this documentation: <em>voice</em>, <em>part</em>, and <em>layout</em>.</p>
+<p>You can think of a <em>voice</em> as a group of CV and Gate outputs working together to convey information about a single note of music. A traditional monophonic MIDI interface manages only one voice. In its simplest expression, a voice would need only one CV output (to output the note frequency information), and one Gate output (to output the note on/off status) - though additional CV and Gate signals can be produced, for example an extra trigger or a velocity CV.</p>
+<p>A <em>part</em> is a group of voices responding to the same MIDI channel. Whenever a note is played on this MIDI channel, it will be dispatched to one of the voices in the group.</p>
+<p>Yarns can handle up to 4 parts, and there are enough CV/Gate outputs for 4 voices. This means that there are many different ways of getting these to work together! Each of these configurations are called <em>Layouts</em>.</p>
+<p>Yarns provides the following layouts:</p>
+<ul>
+<li><strong>1M</strong>. Monophonic. Yarns offers a single voice of CV/Gate conversion.</li>
+<li><strong>2M</strong>. Dual monophonic. Yarns provides two independent monophonic voices. The voices are independent in the sense that they can play different sequences, respond to different MIDI channels, etc.</li>
+<li><strong>4M</strong>. Quad monophonic. Yarns provides four independent monophonic voices.</li>
+<li><strong>2P</strong>. Duophonic. Yarns provides a single part made of two voices. The incoming notes are dispatched to these two voices.</li>
+<li><strong>4P</strong>. Quadraphonic. Yarns provides a single part made of four voices. The incoming notes are dispatched to these four voices.</li>
+<li><strong>2&gt;</strong>. Duophonic with polychaining. Yarns provides a single part made of two voices. However, only the first voice is handled by Yarns' CV/Gate outputs. The second voice is simply forwarded as MIDI Note on/off messages the MIDI out. This allows "ping-pong" play between the modules connected to Yarns and another MIDI instrument. This can also be used to chain several instances of Yarns to get more CV outputs.</li>
+<li><strong>4&gt; and 8&gt;</strong>. Quadraphonic and octophonic with polychaining. Yarns provides a single part made of 4 or 8 voices. Only the first half of the voices are handled by Yarns' CV/Gate outputs. Notes allocated to the other voices are forwarded to the MIDI output.</li>
+<li><strong>4T</strong>. Quad trigger mode. This layout is optimized for controlling percussion patches (for example from MIDI drum pads, or from a MIDI drum sequencer). It offers 4 parts, each of them listening to a single MIDI note. No control-voltage is emitted - just a trigger, freeing some outputs to emit additional gate and clock signals.</li>
+<li><strong>4V</strong>. Raw conversion of continuous controllers into CVs.</li>
+<li><strong>3+</strong>. Polyphonic + monophonic. This layout provides a combination of a 3-voice polyphonic part, and a monophonic part, for example for chords and a bass line.</li>
+</ul>
+<p>The layout can be changed by selecting the LA(YOUT) setting, clicking the encoder, selecting a layout in the list, and clicking the encoder to confirm.</p>
+<h2 id="cvgate-outputs-mappings">CV/Gate outputs mappings</h2>
+<p>Yarns offers 4 CV outputs and 4 Gate outputs. What do they correspond to? It all depends on the selected layout!</p>
+<h3 id="single-voice-layouts">Single voice Layouts</h3>
+<p>In single-voice layouts (<strong>1M</strong>, and <strong>2&gt;</strong>), the 4 CV outputs are assigned to:</p>
+<ul>
+<li>V/Oct note</li>
+<li>Velocity</li>
+<li>Modulation wheel</li>
+<li>Assignable (aftertouch, expression pedal, breath controller, LFO... More on that in the "Layout and MIDI options")</li>
+</ul>
+<p>The 4 gate/trigger outputs are assigned to:</p>
+<ul>
+<li>Gate (a signal at a +5V level whenever a key is pressed and held)</li>
+<li>Trigger (short pulse at the beginning of each note)</li>
+<li>Clock</li>
+<li>Start/bar trigger (more on that in the "Clock and tempo" section).</li>
+</ul>
+<h3 id="dual-voice-layouts">Dual voice Layouts</h3>
+<p>In dual-voice layouts (<strong>2M</strong>, <strong>2P</strong> and <strong>4&gt;</strong>), the 4 CV outputs are assigned to:</p>
+<ul>
+<li>Voice 1 V/Oct note</li>
+<li>Voice 2 V/Oct note</li>
+<li>Modulation wheel</li>
+<li>Assignable</li>
+</ul>
+<p>The 4 gate/trigger outputs are assigned to:</p>
+<ul>
+<li>Voice 1 gate</li>
+<li>Voice 2 gate</li>
+<li>Clock</li>
+<li>Start/bar trigger</li>
+</ul>
+<h3 id="quad-voice-layouts">Quad voice layouts</h3>
+<p>In four-voice layouts (<strong>4M</strong>, <strong>4P</strong>, <strong>8&gt;</strong>, <strong>3+</strong>), the 4 CV outputs are assigned to each voice's V/Oct note. The 4 gate/trigger outputs are assigned to each voice's gate.</p>
+<p>It is also possible to repurpose channel 3 and 4's gate outputs as a clock and start/reset signal, with the <strong>C&gt;</strong> setting.</p>
+<h3 id="quad-triggers-layout">Quad triggers layout</h3>
+<p>In the quad trigger layout (<strong>4T</strong>) mode, which is optimized for percussions patches, the 4 CV outputs emit excitation pulses. In their simplest form, the excitation pulses are the +5V trigger you've learnt to love - but options are provided to stretch them in time, shape them like envelopes, or even scale them with velocity! This produces signals particularly useful for "pinging" filters, low-pass gates, or tuned delay lines.</p>
+<p>The 4 gate/trigger outputs are assigned to:</p>
+<ul>
+<li>Voice 1's trigger with routing controlled by voice 2's gate.</li>
+<li>Voice 1's trigger with routing controlled by voice 2's gate.</li>
+<li>Clock</li>
+<li>Start/bar trigger</li>
+</ul>
+<p>A word about this mysterious voice 1/2 routing affair... Here is how it works: if voice 2 is off when a trigger arrives on voice 1, it'll come out of the trigger output 1. If voice 2 is on when a trigger arrives on voice 1, it'll come out of the trigger output 2. This feature can be used creatively for getting the same drum sound (voice 1) played differently depending on whether it is played alongside another drum sound (voice 2). Don't panic though - the regular triggers are of course available on the 4 CV outputs!</p>
+<h3 id="quad-cv-layout">Quad CV layout</h3>
+<p>In the <strong>4V</strong> layout, a MIDI channel and a CC is assigned to each part. The corresponding CC messages are mapped to the 0V to 5V range and output on each CV output. The gate/trigger output will output +5V when a note is held on the assigned channel, 0V otherwise.</p>
+<h3 id="summary">Summary</h3>
+<p><img alt="" src="../images/layouts.png" /></p>
+<h2 id="layout-and-midi-options">Layout and MIDI options</h2>
+<p>This section lists the different settings related to layout and MIDI reception.</p>
+<p><strong>LA(YOUT)</strong>: Voices/parts layout. The different options have been exposed in the "Yarns' architecture" section.</p>
+<p><strong>PA(RT)</strong>: Active part. Many settings - such as the MIDI channel, arpeggiator pattern, etc. - can be set to different values for each part. When a layout is made of several parts (2M, 4M, 4T), this setting is used to select the part to modify. This option is not visible in mono-timbral layouts.</p>
+<p><strong>CH(ANNEL)</strong>: MIDI reception channel. A part can be made to respond to all MIDI channels (omni mode).</p>
+<p><strong>NO(TE)</strong>: MIDI reception note. This option is only shown with the 4T layout, in which each part is triggered by a different MIDI note.</p>
+<p><strong>&gt;&gt; (OUTPUT MIDI MODE)</strong>: MIDI output routing. When set to OFF, none of the events received by this part are forwarded to the MIDI out. When set to THRU, all events received by this part are forwarded to the MIDI out without any processing. Finally, when set to AR(P/SEQ), all the notes generated by this part's arpeggiator/sequencer are sent to the MIDI OUT.</p>
+<p><strong>VO(ICING)</strong>: Voice allocation method. This option is shown when more than one voices are assigned to the part (2P, 4P, 2&gt;, 4&gt;, 8&gt;):</p>
+<ul>
+<li><strong>PO(LY)</strong> is a natural voice-stealing algorithm: when a new note is played, the least recently triggered voice is used.</li>
+<li><strong>CY(CLIC)</strong> dispatches the note to each voice one after the other. This is a very naive approach to polyphony!</li>
+<li><strong>RA(NDOM)</strong> randomly assigns the note to a voice.</li>
+<li><strong>VE(LOCITY)</strong> dispatches low-velocity notes to the first voice, high-velocity notes to the last one, and anything else in-between.</li>
+<li><strong>SO(RTED)</strong> dispatches the lowest note to CV/Gate outputs 1, the second note to CV/Gate outputs 2 and so on, from lowest to highest on the keyboard. Releasing a key does not reassign notes to channels.</li>
+<li><strong>U1</strong> and <strong>U2</strong> are unison modes. When a single note is played, it is routed to all available output channels in unison; but when a chord is played, each note of the chord is dispatched to a different voice (lowest note to the first channel, highest note to the last channel). This option is available in the 2P mode to recreate the behaviour of pseudo-duophonic synths like the Polivoks or Odyssey. It is also available in the 4P mode even if, to our knowledge, no polysynth ever had such a feature! The difference between the variants 1 and 2 is the following: when two keys are held, and one of the keys is released, <strong>U1</strong> reassigns the remaining note to all channels (hardcore Odyssey behavior) ; while <strong>U2</strong> doesn't change anything (nice for playing and letting decay 2-note chords).</li>
+<li><strong>ST(EAL MOST RECENT)</strong> steals the most recently played note when the maximum polyphony is reached. This allows you to hold a note or chord on the left hand, and play legato a melody on the right hand that won't cut the chord.</li>
+</ul>
+<p><strong>NP (NOTE PRIORITY)</strong>: Note priority. This option is only shown when a single voice is assigned to a part, and decides what to do when several keys are pressed simultaneously. The LO(W)est and HI(GH)est note priority options are "historical" settings, reproducing the behavior of early keyboard scanners. LA(TEST) note priority is the most natural behavior and is the one found in modern monosynths. You play and hold a C... you get a C. You play a G... the G takes over. Now you release the G... the C springs back.</p>
+<p><strong>RC (REMOTE CONTROL CHANNEL)</strong>. This specifies a MIDI channel which can be used to simultaneously control the parameters of each of the four parts. Please refer to <a href="https://docs.google.com/spreadsheet/pub?key=0Ai4xPbRS5YZjdDlVWG5XWFZuM1I3X08tdVQ2eU5WT0E&amp;gid=1">the MIDI implementation chart</a>.</p>
+<h2 id="cv-gate-and-trigger-generation-parameters">CV, gate and trigger generation parameters</h2>
+<p>The first sections were focusing on how MIDI messages flow through the unit - sent in parallel to parts and then allocated to voices. This section presents the options related to the CV/Gate conversion itself. Note that some of these options might not be available with the 4T layout - portamento or vibrato are not very relevant to rhythmic pulses!</p>
+<p><strong>LG (LEGATO)</strong>: This setting is only available in the monophonic layouts (<strong>1M</strong>, <strong>2M</strong>, <strong>4M</strong>), and controls how the gate output and portamento respond to overlapping notes.</p>
+<ul>
+<li><strong>OFF</strong>: A trigger is sent at each new note, and portamento is applied to the note CV irrespectively of the playing style.</li>
+<li><strong>AU(TO PORTAMENTO)</strong>: Notes played legato are not retriggered, and portamento is applied only on notes played legato.</li>
+<li><strong>ON</strong>: Notes played legato are not retriggered, portamento is applied to the note CV irrespectively of the playing style.</li>
+</ul>
+<p><strong>PO(RTAMENTO)</strong>: Portamento speed. This setting controls the time taken by notes to glide into one another. The first values, displayed as <strong>T0, T1, T2</strong>... up to 50 correspond to constant-time (RC filtering, exponential curve) portamento. The following values, displayed as <strong>R0, R1, R2</strong>... up to 50 correspond to constant-time (slew-limiting, linear ramp) portamento.</p>
+<p><strong>BR (BEND RANGE)</strong>: Pitch bend range in semitones. Controls by how many semitones (up to 24) the note is shifted up or down when the pitch bend lever is set to its extreme positions. When this setting is 0, pitch-bend is disabled.</p>
+<p><strong>VR (VIBRATO RANGE)</strong>: Vibrato range in semitones. The vibrato amount is controlled by the modulation wheel. When this setting is 0, vibrato is disabled.</p>
+<p><strong>VS (VIBRATO SPEED)</strong>: Vibrato speed. The last settings are clock divisions - in this case the vibrato LFO will be locked to the MIDI clock.</p>
+<p><strong>T- (TRIGGER DURATION)</strong>: Duration of the trigger pulse. With the <strong>1M</strong> or <strong>2&gt;</strong> layouts, the trigger duration is expressed in milliseconds. In 4T mode, the trigger duration follows an exponential scale, to reach durations in the order of seconds. Other layouts do not offer trigger outputs.</p>
+<p><strong>T* (TRIGGER SCALING)</strong>: This setting (available only with the <strong>4T</strong> layout) can scale the amplitude of the trigger output according to velocity. This is of no use when using the trigger as a logic signal (for example to start an envelope), but suddenly makes much more sense when the trigger is used to "ping" a filter or LPG; or when it is directly used as an envelope or modulation source sent, for example, to a VCA.</p>
+<p><strong>T/| (TRIGGER WAVESHAPE)</strong>: Various shapes of trigger pulses are available, producing different results when "pinging" filters. <strong>SQ</strong> is the standard square "logic" pulse. <strong>LI(NEAR)</strong> is a linear decay. <strong>EX(PO)</strong> is an exponential decay. <strong>RI(NG)</strong> is a short sinusoidal burst with an exponential decay, similar to a damped kick or to a clave depending on the trigger duration. <strong>ST(EP)</strong> is a rapid-fire sequence of pulses with decaying amplitude. Finally, <strong>BU(RST)</strong> is a burst of white noise with an exponential decay.</p>
+<p><strong>3&gt;, 4&gt;, CV</strong>: This setting controls which signal is sent to the 3rd (and/or 4th) CV output in the single and dual voice layouts. The options are: <strong>VE(LOCIY)</strong>, <strong>MO(DULATION)</strong> (MIDI CC#1), <strong>AT(AFTERTOUCH)</strong>, <strong>BR(EATH)</strong> controller (MIDI CC# 2), <strong>PE(DAL)</strong> (MIDI CC#4), pitch <strong>BE(ND)</strong>, <strong>VI(BRATO LFO)</strong> - which is a triangle LFO whose amplitude is controlled by the modulation wheel, and whose speed is controlled by the <strong>VS (VIBRATO SPEED)</strong> setting. <strong>LFO</strong> is similar to <strong>VIBRATO LFO</strong>, except that the amplitude is constant, instead of being controlled by the modulation wheel.</p>
+<h2 id="yarns-as-an-oscillators">Yarns as (an) oscillator(s)</h2>
+<p>Some of Yarns' CV output channels can be reconfigured as digital oscillators. To do so, select the <strong>OS(CILLATOR)</strong> setting. The available waveforms are sawtooth, 25% rectangle, square, triangle and sine. The oscillator signal is produced:</p>
+<ul>
+<li>On CV4 in monophonic mode (1M)</li>
+<li>On CV3 and CV4 in duophonic modes (2M or 2P)</li>
+<li>On CV1, CV2, CV3, CV4 in quadraphonic modes (4M or 4P)</li>
+</ul>
+<p>The first setting of the OS parameter <strong>(OFF)</strong> disables audio output and causes the channel to behave as a CV output as expected.</p>
+<h2 id="tuning-systems">Tuning systems</h2>
+<p>Yarns uses highly accurate 16-bit DACs for CV conversion, and is capable of very precise control over tuning.</p>
+<p><strong>TT (TRANSPOSE)</strong> applies a coarse transposition to the input note, expressed in semitones. Note that this is equivalent to a keyboard transposition, rather than an offset on the output voltage - this might not matter much when using equal temperament, but matters when other tuning systems are used.</p>
+<p><strong>TF (FINE TUNING)</strong> applies a fine transposition to the output CV, expressed in 1/128th of a semitone (0.65mV increments).</p>
+<p><strong>TS (TUNING SYSTEM)</strong> selects alternative scales and tuning systems. <strong>EQ(UAL TEMPERAMENT)</strong> is the default choice. <strong>JU(ST INTONATION)</strong> uses a simple algorithm to adjust each note by a few cents within its equal temperament value to increase consonance with the notes played on the other channels, or the most recently played notes. <strong>PY(THAGOREAN)</strong> uses a pythagorean scale, in which all notes' frequency ratios are expressed as rational numbers (as opposed to powers of 2\^-1/2 for equal temperament). <strong>EB</strong>, <strong>E</strong>, and <strong>EA</strong> have these respective notes shifted down by one quartertone. The settings numbered from 01 to 27 are ragas from the <a href="http://en.wikipedia.org/wiki/Maihar_gharana">Maihar Gharana</a> - these settings not only affect tuning but also eliminate some notes from the scale to leave only the shrutis belonging to the raga. The last setting, <strong>CU(STOM)</strong> uses an octave pitch table which can be sent by SysEx using the <a href="http://www.midi.org/techspecs/midituning.php">MIDI Tuning Scale/Octave Extensions (CA-021/RP-020)</a> of the MIDI standard. This <a href="https://scale-editor-350013.ew.r.appspot.com/">web app</a> can be used to create tunings using the very popular Scala scale description language.</p>
+<p><strong>TR (TUNING ROOT)</strong> acts in the same way as a transposition control, but instead of shifting notes up/down, it rotates up or down the tuning table (whether it is one of the preset tables or the one received by MIDI). For example, if a tuning table with a quarter-tone E has been programmed, setting TR (TUNING ROOT) to C# will rotate the tuning table one semitone up, and the quarter-tone will be on the note F instead. This setting has no effect in equal temperament tuning. For the ragas settings, this is equivalent to moving the "Sa" up or down on the keyboard.</p>
+<p><strong>Tx TUNING FACTOR</strong> multiplies or divides the output voltage in order to obtain interesting scales (for example, a whole octave stretched to 24 keys, or reversely, 2 octaves crammed in 12 keys). <a href="../images/tuning_factor.jpg">Here is a nice illustration</a> from the D50 manual showing what can be achieved with this feature. The last setting corresponds to an alpha scale (ratio of 0.77965). Note that the <strong>TR TUNING ROOT</strong> setting determines the central key around which tuning is stretched.</p>
+<h2 id="clock-and-tempo">Clock and tempo</h2>
+<p>Before diving into the sequencer and arpeggiator, a presentation of Yarns' clocking system... All the timing information for the sequencers, arpeggiators, and euclidean pattern generators derive from the same clock - though each part can be tuned to its own subdivision of this clock.</p>
+<h4 id="clock-settings">Clock settings</h4>
+<p>Yarns can use either its own internal clock, or an external MIDI clock source. The tempo is adjusted by modifying the <strong>TE(MPO)</strong> setting. Below 40 BPM, the display shows <strong>EX(TERNAL)</strong> - which means that the internal clock will not be used and that external MIDI clock messages are expected. Note that the display only shows the last 2 digits of the tempo; but rhythmically blinks - so there's no confusion between 60 and 160, or 120 and 220! The tempo can also be set by tapping on the tap tempo button on the front panel.</p>
+<p>Some swing might be applied to the clock - its amount is controlled by the <strong>SW(ING)</strong> setting.</p>
+<p>A divider is applied to this tempo. Its ratio can be controlled by the <strong>I/ (INPUT CLK DIV)</strong> setting. This can be used to create drastic tempo changes in a sequence.</p>
+<p>The <strong>MS (MANUAL START)</strong> setting prevents the internal clock from automatically starting when a key is pressed. When this setting is active, the internal clock can only be started by pressing the <strong>START/STOP</strong> button on the front panel.</p>
+<h4 id="clock-output-settings">Clock output settings</h4>
+<p>With single and dual voice layouts (<strong>1M</strong>, <strong>2M</strong>, <strong>2P</strong>, <strong>2&gt;</strong>, <strong>4&gt;</strong>), or with the quad-trigger layout (<strong>4T</strong>), a clock and bar/reset output is available on gate outputs 3 and 4. In the quad voice layouts (<strong>4M</strong>, <strong>4P</strong>, <strong>8&gt;</strong>), gate outputs 3 and 4 are reserved for controlling the gate of voice/channel 3 and voice/channel 4. However, these outputs can be replaced by clock and bar/reset outputs, by enabling the <strong>C&gt; (CLOCK OUTPUT)</strong> setting.</p>
+<p>The clock output emits a pulse signal at a division of the main clock. The rhythmic subdivision is selected by the <strong>O/ (OUTPUT CLK DIV)</strong> setting - the default value being <strong>16 (1/16th note)</strong>. The start/bar trigger output emits a trigger whenever the sequencer is started, but can also be configured to re-emit a trigger every Nth quarter note. This value is defined by the <strong>B- (BAR DURATION)</strong> setting. Set it to oo and a pulse will only be emitted when the sequence start. Set it to, for example, 4, and a pulse will be emitted at the beginning of each 4-beats bar. Set it to 0 and the output will stay high while the sequence is running.</p>
+<p>Some sequencers do not handle correctly the simultaneous reception of a clock and reset pulse. The  <strong>NU(DGE FIRST TICK)</strong> setting increases the delay separating the reset pulse and the first clock pulse. This may solve synchronization issues!</p>
+<h2 id="arpeggiator-euclidean-generator">Arpeggiator / Euclidean Generator</h2>
+<p>The arpeggiator allows chords to be transformed into monophonic sequences, according to preset arpeggio movements (up, down) and rhythmic patterns. In addition, an Euclidean generator can take over the arpeggiator's rhythmic generator. This section describes all settings related to arpeggiation.</p>
+<p><strong>C/ (CLOCK DIV)</strong>: elementary rhythmic division of the patterns generated by the arpeggiator and sequencer (in other words: step duration or "scale" in x0x speak). The default setting is 1/16 (1/16th note).</p>
+<p><strong>G- (GATE LENGTH)</strong>: duration of the events generated by the arpeggiator and sequencer - expressed as a number of steps. For example, if the clock division is 1/16 and the gate length is 4, the duration of the notes generated by the arpeggiator will be 1 quarter note.</p>
+<p><strong>AR (ARP RANGE)</strong>: arpeggiator range in octaves. The arpeggiator does not run when this setting is zero. Note that when the <strong>4T</strong> layout is selected - this setting is called <strong>RG (RHYTHMIC GENERATOR)</strong> and provides only ON and OFF setting - talking about arpeggiation range and direction does not make a lot of sense when dealing with rhythms... but it's still the same arpeggiator and euclidean sequencer doing the hard work! Settings related to arpeggiator direction are not displayed either.</p>
+<p><strong>AD (ARP DIRECTION)</strong>: arpeggio type. The first options are the classic UP, DN (down), UD (up &amp; down) and RA(NDOM) modes. PL(AYED) arpeggiates the notes in the order in which they have been pressed. CH(ORD) is a gated chord effect - rhythmically repeating all pressed notes.</p>
+<p><strong>AP (ARP PATTERN)</strong>: arpeggiator rhythmic pattern. Note that when the euclidean generator is enabled, it takes control of the rhythmic pattern and this setting is ignored. This setting is called <strong>RP (RHYTHMIC PATTERN)</strong> when the 4T layout is selected.</p>
+<p><strong>E- (EUCLIDEAN LENGTH)</strong>: length of the euclidean pattern. When set to 0, the euclidean generator is disabled, and the AR (ARP PATTERN) setting is used. Otherwise, this sets the duration, in steps, of the rhythmical pattern.</p>
+<p><strong>EF (EUCLIDEAN FILL)</strong>: number of filled steps in the euclidean pattern. For example length = 4 and fill = 1 will give a basic 4/4 "Four to the floor" beat. Fill = 2 will create a pattern of eighth notes instead. Fill = 3 produces a pattern of 3 sixteenth note and a sixteenth note rest. Finally, fill = 4 will create a pattern of sixteenth notes. More complex patterns can be created by increasing the length, and using odd values for Fill!</p>
+<p><strong>ER (EUCLIDEAN ROTATE)</strong>: this setting shifts and wraps the euclidean pattern. This is particularly useful when using several parts (for example in 4T mode to drive 4 percussive sub-patches). If two parts are configured with the same settings (For example length = 4 and fill = 1 to get a "four to the floor" beat), they will be synchronized and this can be boring. The rotate setting can be used to offset a part with respect to the other, and create more interesting rhythms.</p>
+<h2 id="playing-with-yarns-latch-and-keyboard-free-operation">Playing with Yarns: latch and keyboard-free operation</h2>
+<p>Yarns' arpeggiator starts immediately whenever a key is pressed on the keyboard. When all keys are released, the arpeggiator continues running for a few clock ticks (a length equivalent to an eighth note); and if no key has been pressed in this short period, it stops. This short window allows glitch-free play when transitioning from one chord to another in an arpeggiated sequence.</p>
+<p>The arpeggiator has a latched mode. While an arpeggio is playing, hold the <strong>START/STOP</strong> button for a second to latch the arpeggiator. The display shows "//". In latched mode, releasing all keys will no longer stop the arpeggiator - the arpeggiated pattern will continue until a new chord is played. To leave the latched mode, press the <strong>START/STOP</strong> button again. This will not stop the arpeggiator - instead, it will continue with the current pattern, until a new key is pressed.</p>
+<p>Yarns also provides a way of triggering one-note arpeggios or hold notes without the need for an external keyboard. Hold the <strong>START/STOP</strong> button for a second. A note will be played and held. Its value is shown on the screen and can be adjusted using the encoder. Click the encoder to access other settings, and press the start/stop button again to stop the held note.</p>
+<h2 id="sequencer">Sequencer</h2>
+<p>A monophonic, 64-step sequencer is available for each part. The sequencer is inspired by the SH-101, in that the primary way of inputting sequences is to use a keyboard and record the notes step by step.</p>
+<p>Each step can store either:</p>
+<ul>
+<li>a note (with its velocity value and a "slide" status).</li>
+<li>a rest, which indicates a silent step.</li>
+<li>or a tie, whichs indicate that the note triggered at the previous step is not stopped, but rather prolonged unto this step.</li>
+</ul>
+<p>To record a sequence, press the <strong>REC</strong> button. When a multi-timbral layout is used, the display will blink to let you select which part has to be recorded. Select a part number and click the encoder to confirm.</p>
+<p>The display then indicates the index of the step to be recorded. Play a note on the MIDI keyboard to add it to the sequence. Press one of the <strong>TIE</strong> or <strong>REST</strong> buttons to insert a tie or rest. Press <strong>REC</strong> when you are done, to leave the recording mode. Observe that the sequencer goes back to step 1 once you go past the 64th step - the sequence is not lost when this happens!</p>
+<p>303-style slides can be recorded by wiggling the pitch-bend lever before playing a note. The exact motion of the pitch-bend lever will not be recorded - but the sequencer will remember that the following step will be played with a long portamento.</p>
+<p>In case an error is made during recording, the encoder can be used to go back to a previously recorded step and re-record it.</p>
+<p>Recording notes without keyboard is also possible: Click the encoder, select a note (it will be sent to the CV output so you can hear the result), and click the encoder to enter it. Notes recorded this way always have a full velocity.</p>
+<p>To play a sequence, press the <strong>START/STOP</strong> button. To stop playback, press the <strong>START/STOP</strong> button again. When the unit is configured to use an external clock, the sequencer can also be started/stopped by sending the corresponding MIDI messages. While the sequencer is playing, the keyboard can be used to transpose the sequence. In monotimbral modes, transposition is relative to the first note in the sequence.</p>
+<p>While a sequence is playing, pressing the <strong>REC</strong> button will put the unit in recording mode, but the original sequence will not be immediately erased. Instead, it will continue looping and be progressively replaced by the notes you input. This allows the sequence to be edited and rewritten on the fly while it is playing.</p>
+<p>An important thing to remember about the sequencer is that the sequencer and arpeggiator cannot be used together. When the <strong>START/STOP</strong> front panel button is pressed, or when a MIDI start message is received, the sequencer starts. When the sequencer is not running and a Note message from the keyboard is received, the arpeggiator starts instead.</p>
+<h2 id="saving-recalling-and-backing-up-programs">Saving, recalling and backing up programs</h2>
+<p>8 memory slots are available to store and recall programs - which capture all of Yarns' settings including sequences and the tuning information received by MIDI.</p>
+<p>Press the encoder for a second to display the load/save menu. When this menu is displayed, the display pulsates. Select <strong>*L(OAD*)</strong> and click the encoder to select the number of the program you want to load. Select <strong>--</strong> to cancel.</p>
+<p>Select <strong>*S(AVE*)</strong> and click the encoder to save the current settings into one of the 8 slots. Select <strong>--</strong> to cancel.</p>
+<p>Select <strong>*I(NIT*)</strong> and click the encoder to reset the current settings to basic settings (120 BPM, mono layout, no arpeggiator or sequencer).</p>
+<p>Select <strong>*Q(UICK SETUP*)</strong> and click the encoder to rapidly build a setup from notes input from a MIDI keyboard (see next section).</p>
+<p>Select <strong>*&gt;(SYSEX DUMP)*</strong> to send the current settings as a block of SysEx data to the MIDI out. They can be recorded in a SysEx librarian utility and sent back later to restore these settings.</p>
+<p><strong>*C(ALIBRATE)*</strong> displays the calibration menu (see next section).</p>
+<p><strong>*E(XIT)*</strong> leaves the LOAD/SAVE menu.</p>
+<p>When Yarns is powered on, the first program (P1) is always loaded. It is recommended to regularly save your work there.</p>
+<h2 id="quick-setup">Quick setup</h2>
+<p>Yarns offers a "quick setup" option to rapidly cut through the menu diving when setting up channels and layouts. Press the encoder for a second to display the load/save menu. Select *Q(UICK SETUP*) and click the encoder to start. The display shows "++". Play notes from your keyboard(s)/controller(s) and click the encoder.</p>
+<ul>
+<li>If only one note has been played, a monophonic setup (1M) is created for the channel on which the note has been received.</li>
+<li>If two notes have been played on the same channel, a duophonic (2P) setup is created. More than 2 notes, and a quadraphonic (4P) setup is created.</li>
+<li>If notes have been received from 2 or more different channels, a multi-timbral setup is created for these channels (2M or 4M).</li>
+<li>If adjacent notes (such as B and C ; or F and F#) have been played, a split is created at this point.</li>
+<li>If all notes are received on channel 10 (traditionally assigned to drums in the GM standard), a Triggers setup (4T) is created, with each part being triggered by one of the played notes.</li>
+<li>If some notes are received on channel 10, and some notes on other channels, a multi-timbral setup is created, with one part per note on the channel 10 (for triggering percussions), and general purpose monophonic parts assigned to the other channels.</li>
+</ul>
+<h2 id="calibration-procedure">Calibration procedure</h2>
+<p>A multimeter with at least 4 1/2 digits of precision is needed for this step.</p>
+<p>To enter the calibration menu, press the encoder for one second and select <strong>*C(ALIBRATE)*</strong> in the list. The display shows the active CV output. Use the encoder to select the output to calibrate, or select OK to exit the calibration mode.</p>
+<p>Once a CV output has been selected, connect a patch cable from this output to your multimeter. The display indicates the voltage, in Volts, that should be read on the multimeter (-3 at the beginning of the procedure), when measuring the voltage between ground and the CV output of the module. If the reading is incorrect, click the encoder (the display blinks), and rotate the encoder until the target voltage is reached. Each increment corresponds to about 0.2mV. You can also hold the <strong>TAP</strong> button while rotating the encoder for a faster adjustment, by 6mV increments. Click when you are done - the display no longer blinks. Select the next voltage in the list, and do the necessary adjustments. Calibration has to be done for all voltages between -3V and +7V. Select "OK" after the last voltage has been adjusted. The part selection menu is shown. Calibrate the other CV output channels if necessary.</p>
+<h2 id="firmware-update-procedure"><a name="firmware"></a> Firmware update procedure</h2>
+<p>Power on your modular system with Yarns' encoder pressed. The first character of the display will show a "snake" pattern. Yarns is now waiting for a SysEx data transfer on its MIDI input port.</p>
+<p>The SysEx data needs to be sent with a delay of at least 100ms between packets. As packets are received, the number on the screen is updated, indicating the total amount of data, in kilobytes, received. The firmware contains between 64 and 100 packets.</p>
+<p>Once the last packet has been received, <strong>OK</strong> is displayed, and the unit restart after one second.</p>
+<p>In case of a transmission error, the display shows <strong>Er</strong> and you have to restart the transmission. Try increasing the delay between bytes and/or the delay between packets - some MIDI interfaces have rather small buffers and choke on large blocks of SysEx data. We recommend Elektron's C6 tool (available for both Windows and OS X) or Snoize SysEx Librarian.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../firmware/" class="btn btn-neutral float-left" title="Firmware"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../open_source/" class="btn btn-neutral float-right" title="Open source">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../firmware/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../open_source/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '../../..';</script>
+    <script src="../../../js/theme_extra.js" defer></script>
+    <script src="../../../js/theme.js" defer></script>
+      <script src="../../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Émilie Gillet" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+    <title>Firmware - Mutable Instruments Documentation</title>
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Firmware";
+        var mkdocs_page_input_path = "modules/yarns/firmware.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <script src="../../../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../.." class="icon icon-home"> Mutable Instruments Documentation
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Modules</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="#">Beads</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../beads/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../beads/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../beads/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Blades</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../blades/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../blades/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../blades/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../blades/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Blinds</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../blinds/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../blinds/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../blinds/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../blinds/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Braids</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../braids/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../braids/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../braids/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../braids/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../braids/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Branches</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../branches/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../branches/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../branches/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../branches/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../branches/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Clouds</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../clouds/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../clouds/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../clouds/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../clouds/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../clouds/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Ears</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../ears/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ears/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ears/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ears/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Edges</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../edges/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../edges/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../edges/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../edges/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../edges/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Elements</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../elements/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../elements/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../elements/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../elements/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../elements/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Frames</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../frames/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../frames/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../frames/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../frames/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../frames/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Grids</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../grids/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../grids/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../grids/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../grids/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../grids/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Kinks</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../kinks/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kinks/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kinks/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kinks/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Links</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../links/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../links/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../links/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../links/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Marbles</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../marbles/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../marbles/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../marbles/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../marbles/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../marbles/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Peaks</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../peaks/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../peaks/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../peaks/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../peaks/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../peaks/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Plaits</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../plaits/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../plaits/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../plaits/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../plaits/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../plaits/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Rings</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../rings/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../rings/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../rings/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../rings/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../rings/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Ripples 2020</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../ripples_2020/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ripples_2020/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ripples_2020/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ripples_2020/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Ripples original</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../ripples_original/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ripples_original/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ripples_original/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ripples_original/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Shades 2020</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../shades_2020/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shades_2020/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shades_2020/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shades_2020/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Shades original</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../shades_original/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shades_original/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shades_original/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shades_original/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Shelves</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../shelves/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shelves/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shelves/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shelves/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Stages</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../stages/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../stages/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../stages/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../stages/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../stages/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Streams</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../streams/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../streams/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../streams/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../streams/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../streams/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Tides 2018</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../tides_2018/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../tides_2018/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../tides_2018/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../tides_2018/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../tides_2018/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Tides original</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../tides_original/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../tides_original/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../tides_original/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../tides_original/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../tides_original/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Veils 2020</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../veils_2020/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../veils_2020/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../veils_2020/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../veils_2020/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Veils original</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../veils_original/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../veils_original/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../veils_original/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../veils_original/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Warps</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../warps/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../warps/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../warps/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../warps/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../warps/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Yarns</a>
+    <ul class="current">
+                <li class="toctree-l2"><a class="reference internal" href="../">Index</a>
+                </li>
+                <li class="toctree-l2 current"><a class="reference internal current" href="./">Firmware</a>
+    <ul class="current">
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../..">Mutable Instruments Documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../.." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+          <li>Modules &raquo;</li>
+          <li>Yarns &raquo;</li>
+      <li>Firmware</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h2 id="download">Download</h2>
+<p><a href="../downloads/yarns_1.5.syx">Latest version (1.5)</a></p>
+<p><a href="../manual#firmware">Firmware update procedure</a></p>
+<h2 id="revisions">Revisions</h2>
+<h3 id="v15-final">v1.5 (final)</h3>
+<ul>
+<li>Added a new <strong>STEAL MOST RECENT</strong> voice allocation mode, which steals the most recently played note (duh!) when the maximum polyphony is reached. This allows you to hold a note or chord on the left hand, and play legato a melody on the right hand that won't cut the chord.</li>
+<li>When several parts are receiving on the same MIDI channel, and when recording is enabled for one of them while a sequence is playing on the other parts, the received <code>Note On</code> MIDI messages no longer cause spurious transpositions of the sequences (original fix proposed by Chris Rogers).</li>
+<li>Added a new <strong>Tx TUNING FACTOR</strong> setting which multiplies or divides the output voltage in order to obtain interesting scales (for example, a whole octave stretched to 24 keys, or reversely, 2 octaves crammed in 12 keys). <a href="../images/tuning_factor.jpg">Here is a nice illustration</a> from the D50 manual showing what can be achieved with this feature. Note that the <strong>TR TUNING ROOT</strong> setting determines the central key around which tuning is stretched.</li>
+<li>The <strong>O/ OUTPUT CLK DIV</strong> and <strong>B- BAR DURATION</strong> settings are now available in the <strong>4T</strong> layout.</li>
+<li>The swing setting is no longer limited to the internal clock only, but can also be applied on top of an external MIDI clock.</li>
+<li>A new setting, <strong>NUDGE FIRST TICK</strong>, increases the delay separating the reset pulse sent at every bar or when the master clock is started, and the first clock pulse. This may solve synchronization issues with some sequencers that do not like receiving those two almost simultaneously.</li>
+<li>A new setting, <strong>MS (MANUAL START)</strong> prevents the clock from automatically starting when a key is pressed. When this setting is active, the clock can only be started by pressing the <strong>START/STOP</strong> button on the front panel.</li>
+<li>The <strong>LG LEGATO</strong> setting now has three options: <strong>OFF</strong> (as before), <strong>AUTO PORTAMENTO</strong> (notes played legato are not retriggered, portamento is applied only on notes played legato, similar to <strong>ON</strong> in the previous version, and to the SH-101's <em>AUTO</em> portamento setting), and <strong>ON</strong> (notes played legato are not retriggered, portamento is applied irrespectively of playing style).</li>
+<li>Fixed a bug causing the calibration data to be temporarily erased when using the <strong>INIT</strong> menu.</li>
+</ul>
+<h3 id="v14">v1.4</h3>
+<ul>
+<li>Minor bug fixes.</li>
+</ul>
+<h3 id="v13">v1.3</h3>
+<ul>
+<li>Added new settings to freely assign the CV outputs in the <strong>1M</strong>, <strong>2&gt;</strong>, <strong>2P</strong> and <strong>4&gt;</strong> layouts. The corresponding settings are called <strong>3&gt;</strong> and <strong>4&gt;</strong> and deprecate <strong>AUX</strong>. The available data sources that can be converted to CV are: velocity, modulation wheel (CC 1), aftertouch, breath controller (CC 2), foot pedal (CC 4), pitch bend, vibrato LFO (the intensity is controlled by the mod. wheel), and raw vibrato LFO (constant intensity).</li>
+<li>Added new settings to freely assign the third and fourth CV outputs in the <strong>2M</strong> layout. The corresponding setting is called <strong>CV</strong>, and affects CV output 3 or 4 depending on whether part #1 or #2 is selected with the <strong>PA</strong> setting.</li>
+<li>Added a new layout called <strong>4V</strong>, for raw conversion of continuous controllers into CVs. It consists of 4 parts. For each part <strong>PA</strong>, you can select a MIDI channel <strong>CH</strong> and a data source <strong>CV</strong>. Values are mapped between 0V and +5V.</li>
+<li>Fixed a bug occurring when Yarns had to forward pitch bend messages from its MIDI IN to its MIDI OUT.</li>
+</ul>
+<h3 id="v12">v1.2</h3>
+<ul>
+<li>Fixed a bug in the just intonation code.</li>
+</ul>
+<h3 id="v11">v1.1</h3>
+<ul>
+<li>Upgraded the version of gcc required to build the code. Might help DIYers in building the code!</li>
+<li>Fixed a bug which caused a spurious pulse to appear on the clock reset output, when the <strong>B-</strong> setting (<strong>BAR DURATION</strong>) was set to a value different from 0 and +oo ; and for some specific tempo values.</li>
+<li>Rewrote the band-limited synthesis code used for the audio oscillator mode (same change as for the recent Braids' firmware upgrade). In addition to a slight decrease of CPU use and an increase in "crispiness" at low frequencies, this drastically reduces the firmware size, giving more room for future fixes and upgrades.</li>
+<li>Solved a conflict in the handling of CC120 / CC121 / CC123. In the previous firmware revision, these messages were always assigned to "All sound off", "Reset controllers" and "All notes off" respectively. In this new version, they can be remapped to "Part 4 clock division", "Part 4 gate length" and "Part 4 arp direction" as stated in the MIDI implementation chart, when the "remote control" feature is enabled. The "remote control" feature provides extended editing facilities through Control Change messages.</li>
+<li>Added a coarse adjustment function to the calibration mode: press the TAP button while turning the encoder to increase/decrease the output voltage by about 5mV (instead of 0.2mV). WARNING: use Yarns' per-octave calibration mode at your own risk. We suggest you to perform the calibration adjustments on your VCO side and leave Yarns in its factory-calibrated configuration! Yarns is calibrated with precision equipment to give 1.000V, 2.000V, 3.000V, etc. for each C note.</li>
+<li>Fixed a bug which caused the state of the polyphonic voice allocation algorithm to be reset whenever the clock stopped.</li>
+<li>Added a new polyphonic voice allocation algorithm: <strong>SO(RTED)</strong>. In this mode, the lowest note is always played on CV/Gate outputs 1, the second note on CV/Gate outputs 2 and so on, from lowest to highest on the keyboard. Releasing a key does not reassign notes to channels.</li>
+<li>Added two new polyphonic voice allocation algorithms: <strong>U1 (UNISON 1)</strong> and <strong>U2 (UNISON 2)</strong>. When a single note is played, it is routed to all available output channels in unison; but when a chord is played, each note of the chord is dispatched to a different voice (lowest note to the first channel, highest note to the last channel). This option is available in the 2P mode to recreate the behaviour of pseudo-duophonic synths like the Polivoks or Odyssey. It is also available in the 4P mode even if, to our knowledge, no polysynth ever had such a feature! The difference between the variants 1 and 2 is the following: when two keys are held, and one of the keys is released, <strong>U1</strong> reassigns the remaining note to all channels (hardcore Odyssey behavior) ; while <strong>U2</strong> doesn't change anything (nice for playing and letting decay 2-note chords).</li>
+<li>Changed the behaviour of the portamento setting. The first values, displayed as <strong>T0, T1, T2</strong>... up to 50 correspond to constant-time (RC filtering, exponential curve) portamento, as implemented in the previous firmware version. The following values, displayed as <strong>R0, R1, R2</strong>... up to 50 correspond to constant-time (slew-limiting, linear ramp) portamento.</li>
+<li>Mapped CC#112 and CC#113 to "record tie" and "record rest" actions. It is thus possible to assign pads/buttons on a controller to these functions, to assist in the recording of sequences.</li>
+</ul>
+<h3 id="v102-released-08012014">v1.02 (released 08/01/2014)</h3>
+<ul>
+<li>Most parameters can now be modified by MIDI control change messages. A global remote control channel can also be configured - this allows all parts of a multi-channel setup to be edited from a single channel. Please refer to <a href="https://docs.google.com/spreadsheet/pub?key=0Ai4xPbRS5YZjdDlVWG5XWFZuM1I3X08tdVQ2eU5WT0E&amp;gid=1">this chart</a>.</li>
+<li>The vibrato LFO can now be locked to the MIDI clock. The first settings (0 to 99) correspond to a free-running LFO of increasing speed, the following settings correspond to clock divisions.</li>
+<li>The vibrato LFO (without any modulation wheel attenuation) can be output on the aux output in <strong>1M</strong> / <strong>2M</strong> modes.</li>
+<li>From now on, the firmware version number is displayed when the module starts up (02 is displayed in this version).</li>
+</ul>
+<h3 id="v101-released-05142014">v1.01 (released 05/14/2014)</h3>
+<ul>
+<li>Visual feedback (a blinking <strong>//</strong> symbol) is now provided on the display when an arpeggio or note is latched.</li>
+<li>New <strong>3+</strong> mode with 2 parts, designed specially for <a href="../../edges">Edges</a>. The first part has 3 voices of polyphony on channels 1-3, and the second part is monophonic, on channel 4.</li>
+<li>The <strong>B- (BAR DURATION)</strong> setting has been modified to allow the generation of a short reset pulse only when the sequencer starts (<strong>oo</strong> setting), or the generation of a continuous gate while the sequencer runs (<strong>0</strong> setting).</li>
+<li>A glitchy pitch discontinuity - which occurred when both the portamento and transposition features were used simultaneously - has been removed.</li>
+<li>The display refresh screen has been increased to reduce risks of power supply buzz on sensitive modules nearby.</li>
+</ul>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../" class="btn btn-neutral float-left" title="Index"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../manual/" class="btn btn-neutral float-right" title="Manual">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../manual/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '../../..';</script>
+    <script src="../../../js/theme_extra.js" defer></script>
+    <script src="../../../js/theme.js" defer></script>
+      <script src="../../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
