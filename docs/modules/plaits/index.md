@@ -14,7 +14,7 @@ Depth        | 25mm
 -12V current | 5mA
 Lifetime     | 03/18 to 11/22
 Modulargrid  | [Link](https://www.modulargrid.net/e/mutable-instruments-plaits)
-Processor    | STM32F373CCT6 @ 168 MHz
+Processor    | STM32F373CCT6 @ 72 MHz
 Codec        | PCM5100A
 
 ## Original printed manual
