@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Émilie Gillet" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+    <title>Manual - Mutable Instruments Documentation</title>
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Manual";
+        var mkdocs_page_input_path = "modules/streams/manual.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <script src="../../../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../.." class="icon icon-home"> Mutable Instruments Documentation
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Modules</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="#">Beads</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../beads/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../beads/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../beads/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Blades</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../blades/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../blades/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../blades/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../blades/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Blinds</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../blinds/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../blinds/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../blinds/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../blinds/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Braids</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../braids/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../braids/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../braids/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../braids/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../braids/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Branches</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../branches/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../branches/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../branches/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../branches/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../branches/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Clouds</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../clouds/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../clouds/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../clouds/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../clouds/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../clouds/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Ears</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../ears/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ears/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ears/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ears/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Edges</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../edges/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../edges/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../edges/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../edges/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../edges/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Elements</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../elements/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../elements/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../elements/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../elements/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../elements/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Frames</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../frames/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../frames/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../frames/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../frames/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../frames/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Grids</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../grids/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../grids/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../grids/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../grids/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../grids/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Kinks</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../kinks/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kinks/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kinks/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kinks/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Links</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../links/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../links/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../links/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../links/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Marbles</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../marbles/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../marbles/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../marbles/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../marbles/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../marbles/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Peaks</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../peaks/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../peaks/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../peaks/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../peaks/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../peaks/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Plaits</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../plaits/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../plaits/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../plaits/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../plaits/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../plaits/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Rings</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../rings/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../rings/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../rings/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../rings/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../rings/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Ripples 2020</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../ripples_2020/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ripples_2020/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ripples_2020/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ripples_2020/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Ripples original</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../ripples_original/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ripples_original/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ripples_original/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ripples_original/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Shades 2020</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../shades_2020/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shades_2020/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shades_2020/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shades_2020/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Shades original</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../shades_original/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shades_original/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shades_original/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shades_original/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Shelves</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../shelves/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shelves/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shelves/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shelves/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Stages</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../stages/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../stages/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../stages/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../stages/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../stages/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Streams</a>
+    <ul class="current">
+                <li class="toctree-l2"><a class="reference internal" href="../">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2 current"><a class="reference internal current" href="./">Manual</a>
+    <ul class="current">
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../..">Mutable Instruments Documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../.." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+          <li>Modules &raquo;</li>
+          <li>Streams &raquo;</li>
+      <li>Manual</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h2 id="overview">Overview</h2>
+<p>Streams provides two channels of extremely flexible signal dynamics manipulation.</p>
+<p>When we perceive a sound as "loud", or conversely "soft", amplitude is not the only factor at play - the spectral content itself should be taken into account. A "dull" timbre, as obtained with a low-pass filter removing high harmonics, will sound softer than a "bright" timbre. This intuition inspired Don Buchla to design the so-called "Low-pass gate" - a circuit combining the effects of an amplifier and low-pass filter - as an electronic mean of reproducing the concept of dynamics in music.</p>
+<p>This very same motivation explains why the core circuit in Streams is an analogue, voltage-controlled filter and amplifier (VCFA). More accurately: two of them since Streams is a dual module! What is very specific to Streams is the way the cutoff frequency and gain of the VCFAs are controlled: a multi-purpose control signal input, called <strong>EXCITE</strong>, is analyzed by a microcontroller to generate and emulate various gain and frequency control schemes:</p>
+<ul>
+<li>Envelope generation: the gain and frequency are controlled by an internal envelope generator tuned to produce the natural attack/decay curve of acoustic instruments. The envelope is triggered by a pulse on the <strong>EXCITE</strong> input.</li>
+<li>Vactrol emulation: the <strong>EXCITE</strong> input is fed into a digital model of a resistive opto-isolator (vactrol). This generates a slow, moody, non-linear response.</li>
+<li>Envelope and filter follower: the signal on the <strong>EXCITE</strong> input is analyzed, and its envelope and cutoff frequency are extracted and applied to the signal on the audio input.</li>
+<li>Dynamics compression: the signal on the <strong>EXCITE</strong> input is used as a side-chain to limit the gain of the input signal, just as a sidechain compressor would do. In the absence of a signal on the <strong>EXCITE</strong> input, the module operates like a compressor/limiter.</li>
+</ul>
+<p>It is of course possible to bypass the digital control section and directly drive the amplitude through a dedicated analog CV input - but by doing so you'll be missing some of the fun!</p>
+<h2 id="installation">Installation</h2>
+<p>Streams is designed for Eurorack synthesizer systems and occupies 12 HP of space. It requires a <strong>-12V/+12V</strong> supply (2x5 connector), consuming 30mA from the -12V rail and 100mA from the +12V rail. The red stripe of the ribbon cable must be oriented on the same side as the "Red stripe" marking on the printed circuit board.</p>
+<h2 id="controls-inputs-and-outputs">Controls, inputs and outputs</h2>
+<p><img alt="" src="../images/manual.png" /></p>
+<p><strong>A. Channel envelope shape.</strong> This knob controls the overall attack and decay characteristics of the selected function - for example envelope times, and vactrol or envelope followers reaction time.</p>
+<p><strong>B. Channel modulation amount.</strong> This knob adjusts the amount of brightness (cutoff frequency) modulation applied to the signal, in addition to amplitude modulation.</p>
+<p><strong>C. Channel amplitude modulation CV.</strong> This is an attenuator for the <strong>LEVEL</strong> CV input, which is directly routed to the amplitude control port of the VCFA.</p>
+<p><strong>D. Channel function selector.</strong> Press the button to display the current function of a channel, and press again to cycle through the four functions.</p>
+<p><strong>E. Channel amplitude response curve.</strong> This adjusts the response of the VCA, from exponential to linear.</p>
+<p><strong>F. Metering button.</strong> Press the button to show the bargraphs. Press again to select which signal is to be monitored.</p>
+<p><strong>1. EXCITE input.</strong> Audio or CV are accepted. This is a multi-purpose control port, its function depends on the selected mode!</p>
+<p><strong>2. Signal input.</strong> Audio and CV are accepted. When no jack is inserted in this input, a +3.3V signal is internally routed to the VCFA. This allows the module to be used for CV generation - for example to generate an AD envelope or for envelope following.</p>
+<p><strong>3. Level input.</strong> This input is directly wired to the amplitude control section of the VCFA, allowing the channel to be used as a VCA in the most straightforward way. This signal is attenuated by the <strong>LEVEL MOD</strong> knob. When no jack is inserted in this input, a +8V signal is internally generated. The <strong>LEVEL MOD</strong> knob will thus work like an offset control.</p>
+<p><strong>4. Signal output.</strong></p>
+<h2 id="metering">Metering</h2>
+<p>The 2-channel LED bargraph can be used to monitor the level of the inputs and outputs.</p>
+<p>If the display is not showing the bargraph - for example if it is showing the current function of one of the two channels - press the <strong>METER</strong> button to bring it back.</p>
+<p>When the bargraph is active, press the <strong>METER</strong> button to cycle between the 4 visualization modes: </p>
+<p><img alt="" src="../images/bargraph.png" /></p>
+<p>Note that the arrangement of the LEDs mirrors the arrangement of the physical inputs/outputs of the channel 1 of the module.</p>
+<p>The module detects whether an input signal is a CV or an audio signal. When the signal is a CV, the length of the bar is proportional to the CV level. The 4 bars are lit for a CV of 8V. The LEDs are green or red depending on the polarity of the signal. When the signal is an audio signal the maximum level corresponds to 16V pp, and then each LED represents a level change of 6dB, with the lower two LEDs lit in green and the upper two lit in orange and red.</p>
+<p>When the compressor mode is active, when monitoring the output level, the bargraph will display the amount of gain reduction rather than the final output level.</p>
+<h2 id="changing-channel-functions">Changing channel functions.</h2>
+<p>Press channel 1 or 2's function selection button to disable the bargraph display, and then to cycle through the four functions.</p>
+<p>The next section explain in details how each function operates.</p>
+<p><img alt="" src="../images/icon_envelope.png" /></p>
+<p>In this mode, amplitude and brightness are controlled by an internal envelope generator. The envelope is triggered by sending a trigger pulse to the <strong>EXCITE</strong> input. Properties of the trigger pulse - such as its amplitude, duration, and slew rate are taken into account to bring variations to the envelope shape. </p>
+<p><img alt="" src="../images/shape.png" /></p>
+<p>The <strong>SHAPE</strong> knob controls the envelope shape. Over the first half of the course of the knob, envelopes with immediate attacks and increasingly long decay times are available. Over the second half, the attack progressively increases as decay shortens, producing envelopes more typical of brass instruments. </p>
+<p><img alt="" src="../images/mod.png" /></p>
+<p>The <strong>MOD</strong> knob controls how the brightness (filter cutoff frequency) is affected by the envelope. Starting from the minimum setting, turning the knob clockwise will progressively increase the amount of envelope modulation on the brightness - with the maximum amount reached when the knob is at noon. Then, turning the knob will reduce the envelope amount, but will compensate by adding an offset. Thus, at 7 o'clock, there is no modulation and the filter is fully closed; and at 5 o'clock, there is no modulation and the filter is fully opened.</p>
+<p>Tip: adjust the VCA response curve, from exponential to linear, for more variations.</p>
+<p>Tip: unplug the IN jack. This will patch a constant +3.3V source to the IN input, and the module will directly output the internal envelope. Adjust the MOD knob for subtle variations in slew-rate; and of course the exponential/linear control!</p>
+<p><img alt="" src="../images/icon_vactrol.png" /></p>
+<p>This mode emulates the mysterious response of a resistive opto-isolator (vactrol).</p>
+<p>The <strong>SHAPE</strong> knob controls the slowness of the vactrol. Over the first half of the course of the knob, the decay time of the vactrol increases, with a relatively small, proportional increase of the attack time. Over the second half of the course of the knob, stranger contours are produced, in which the vactrol responds "backwards".</p>
+<p>The <strong>MOD</strong> knob controls how much the brightness (filter cutoff frequency) follows the amplitude change to further damp the sound. Starting from the minimum setting, turning the knob clockwise will progressively increase the amount of filter damping - with the maximum amount reached when the knob is at noon. Then, turning the knob will reduce the damping, but will compensate by adding an offset. Thus, at 7 o'clock, there is no modulation and the filter is fully closed; and at 5 o'clock, there is no modulation and the filter is fully opened.</p>
+<p>Tip: the model is correct when the VCA response curve is set to linear - but who cares about correctness?</p>
+<p>Tip: unplug the IN jack. A "vactrolized" version of the signal on the <strong>EXCITE</strong> input will be produced on the <strong>OUT</strong> output.</p>
+<p><img alt="" src="../images/icon_follower.png" /></p>
+<p>In this mode, the signal on the <strong>EXCITE</strong> input is analyzed to extract two pieces of information: its amplitude envelope, and its spectral centroid. The spectral centroid is a number indicating how "bright" a sound is. With a bit of hand-waving, we could say that if the sound had been made with a low-pass filter, this would be its cutoff frequency! The spectral centroid will be low for "dark" sounds, and high for "bright" sounds.</p>
+<p>The two extracted parameters - envelope and centroid - are routed to the amplitude and frequency CV of the VCFA. As a result, the signal routed to the IN input is modulated in amplitude and brightness to mimic the signal on the EXCITE input. This gives a totally new dimension to the concept of an envelope follower!</p>
+<p>The <strong>SHAPE</strong> knob controls the reaction time of the envelope follower. Over the first half of the course of the knob, the detector goes from fast to muddy. Over the second half ot the course of the knob, the detector goes from muddy to wobbly.</p>
+<p>The <strong>MOD</strong> knob controls how much the brightness (filter cutoff frequency) follows the EXCITE audio signal. Starting from the minimum setting, turning the knob clockwise will progressively increase the amount of cutoff modulation - with the maximum amount reached when the knob is at noon. Then, turning the knob will reduce the damping, but will compensate by adding an offset. Thus, at 7 o'clock, there is no modulation and the filter is fully closed; and at 5 o'clock, there is no modulation and the filter is fully opened.</p>
+<p>This mode is crazy and we have plenty of tips!</p>
+<ul>
+<li>Send the same signal to both the IN and <strong>EXCITE</strong> input to get a strange gating/expansion effect.</li>
+<li>Play with the log/lin response knob or with the <strong>LEVEL</strong> knob (used as an offset) to get gating effects.</li>
+<li>Set the <strong>MOD</strong> knob to its maximum setting, unplug the IN jack, and get an envelope follower signal on the <strong>OUT</strong>.</li>
+</ul>
+<p>Now some technical details... The module does more than extracting the envelope of the EXCITE signal. It splits it into 3 frequency bands (bass - 100 Hz, mids - 1kHz, and highs - 8kHz) and detects the envelope in each band - with different attack and release times tailored for each band. These envelopes are then recombined to produce a single envelope. This detection process makes the envelope more representative of the events contained in the audio stream. For example, consider a signal with crisp drums playing on top of a loud drone. A traditional envelope follower wouldn't show much variation, because the waveform is dominated by the drone. Band-wise processing makes the detection process more sensitive to the drums.</p>
+<p>The spectral centroid is approximated by weighting the signal RMS level in each of these 3 bands.</p>
+<p><img alt="" src="../images/icon_compressor.png" /></p>
+<p>This mode operates as a dynamics compressor. It requires the channel VCA response curve to be set to exponential (full counter-clockwise position) - otherwise the linear VCA won't be able to create the extreme gains required for compression; and the <strong>LEVEL MOD</strong> knob to be set to its minimal position (unless you want weird things to happen!).</p>
+<p>The <strong>EXCITE</strong> input works as a sidechain - when a signal is detected on the <strong>EXCITE</strong> input, its level determines the amount of gain reduction applied to <strong>IN</strong>. Do not plug anything in the <strong>EXCITE</strong> input, and the module will work like a normal compressor on the <strong>IN</strong> signal. Please note that it takes about ten seconds for the module to detect that the <strong>EXCITE</strong> input has gone AWOL.</p>
+<p>The attack and release times are 0.2ms and 150ms respectively. </p>
+<p><img alt="" src="../images/compressor.png" /></p>
+<p>The <strong>MOD</strong> knob does something quite interesting. At 12 o'clock, no compression is applied. From 12 o'clock, turning the knob counter-clockwise, will progressively increase the compression ratio, until a ratio of 25:1 is reached. Since no make-up gain is applied, this has the effect of taming the loudest parts of the signal. From 12 o'clock, tuning the knob clockwise, will progressively increase the compression ratio and will apply a matching amount of make-up gain. This has the effect of pumping the quietest parts of the signal, while leaving peaks untouched.</p>
+<h2 id="you-really-asked-for-it">(You really asked for it)</h2>
+<h3 id="five-more-things">Five more things</h3>
+<p>Hold channel 1 or 2's function selection button to access a bank of 5 alternate functions. The function indicator LED is lit in red to indicate that the second bank is active. The 5 functions are:</p>
+<ul>
+<li>AR Envelope. This is a variant of the envelope mode in which the envelope has a sustain and release phase, rather than just an attack and decay.</li>
+<li>Plucked vactrol. An alternate vactrol model in which the <strong>EXCITE</strong> input acts as a trigger input, pinging the virtual vactrol.</li>
+<li>Cutoff controller. This variant of the follower only tracks the cutoff level of the input signal, and maps it onto the amplitude of the IN signal. By leaving the IN input unpatched, you can generate a cutoff CV on OUT - and route it to the filter of your choice.</li>
+<li>Softer, slower compressor. This variant has a softer attack and release time, and a soft knee.</li>
+<li>Direct VCF control (all LEDs lit). In this mode, <strong>EXCITE</strong> works as a CV input routed to the VCF section of the VCFA. <strong>SHAPE</strong> behaves as a cutoff frequency control; and <strong>MOD</strong> behaves as an attenuverter for the <strong>EXCITE</strong> CV input.</li>
+</ul>
+<h3 id="siamese-twins-mode">Siamese twins mode</h3>
+<p>Hold channel 1 and 2 function selection button simultaneously to link the two channels. In this mode the two channel LEDs will alternately blink. The two channels will operate in the same mode and will share the same attack/release time - which can now be independently controlled. The attack time is set by channel 1's <strong>SHAPE</strong> knob ; and the decay/release time by channel 2's <strong>SHAPE</strong> knob.</p>
+<p>In compressor mode, you gain complete control over all parameters:</p>
+<ul>
+<li>Channel 1 <strong>SHAPE</strong> -&gt; Attack time.</li>
+<li>Channel 2 <strong>SHAPE</strong> -&gt; Release time.</li>
+<li>Channel 1 <strong>MOD</strong> -&gt; Threshold.</li>
+<li>Channel 2 <strong>MOD</strong> -&gt; Ratio &amp; Makeup.</li>
+</ul>
+<h3 id="firmware-update-procedure"><a name="firmware"></a> Firmware update procedure</h3>
+<p>Connect the output of your audio interface/sound card to channel 1's <strong>EXCITE</strong> input. Power on your modular system with channel 1's function selection button pressed. The four LEDs on the left side of the bargraph will blink in orange. Set the channel 1's <strong>SHAPE</strong> knob in its middle position.</p>
+<p>Make sure that no additional sound (such as email notification sounds, background music etc.) from your computer will be played during the procedure. Make sure that your speakers/monitors are not connected to your audio interface - the noises emitted during the procedure are aggressive and can harm your hearing. On non-studio audio equipment (for example the line output from a Desktop computer), you might have to turn up the gain to the maximum.</p>
+<p>When you are all set, play the firmware update file into the module. The LEDs show a cyclic pattern and periodically flash upon receiving a valid block of data. The right side of the bargraph shows the signal level. When the end of the audio file is reached, the module automatically restarts - if it is not the case, please retry the procedure.</p>
+<p>In case the signal level is inadequate or too high, the procedure will stop and the LEDs will blink in RED. Press channel 1's function selection button to retry. The input gain can be adjusted with channel 1's <strong>SHAPE</strong> knob. The upgrade procedure works optimally when 2 green LEDs and 1 orange LED are lit on the right side of the bargraph.</p>
+<h2 id="calibration-procedure">Calibration procedure</h2>
+<p>The symptoms of a miscalibration are the following:</p>
+<ul>
+<li>The bagraphs display inaccurate values - for example a LED is lit when you monitor a silent channel.</li>
+<li>There is some faint signal ("bleed") even if the level of a channel ought to be null.</li>
+</ul>
+<p>If this happens, please follow this procedure:</p>
+<h3 id="step-1-inputs-calibration">Step 1: Inputs calibration.</h3>
+<p>Set the response curve <strong>(E)</strong> of both channels to linear.</p>
+<p>Plug 6 patch cables into all inputs, while leaving the other end of the cable unconnected. Hold the METER button for 1s. The bargraphs show a "C" letter. The bargraphs are now calibrated.</p>
+<h3 id="step-2-channel-1-offset-calibration">Step 2: Channel 1 offset calibration.</h3>
+<p>(The bargraphs are still showing a "C" letter)</p>
+<p>Connect the output of an oscillator to channel 1 input. Monitor the signal on channel 1 output and adjust channel 1's shape potentiometer until you reach a point where the faint signal you can hear (bleed) disappears. The ideal position is the point at which the bleed just starts disappearing.</p>
+<h3 id="step-3-channel-2-offset-calibration">Step 3: Channel 2 offset calibration.</h3>
+<p>(The bargraphs still showing a "C" letter)</p>
+<p>Same as step 2, but for channel 2. Once you are done, press any button to write the settings and leave the calibration mode.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../firmware/" class="btn btn-neutral float-left" title="Firmware"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../open_source/" class="btn btn-neutral float-right" title="Open source">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../firmware/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../open_source/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '../../..';</script>
+    <script src="../../../js/theme_extra.js" defer></script>
+    <script src="../../../js/theme.js" defer></script>
+      <script src="../../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
