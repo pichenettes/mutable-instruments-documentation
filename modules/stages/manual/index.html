@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Émilie Gillet" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+    <title>Manual - Mutable Instruments Documentation</title>
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Manual";
+        var mkdocs_page_input_path = "modules/stages/manual.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <script src="../../../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../.." class="icon icon-home"> Mutable Instruments Documentation
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Modules</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="#">Beads</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../beads/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../beads/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../beads/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Blades</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../blades/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../blades/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../blades/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../blades/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Blinds</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../blinds/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../blinds/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../blinds/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../blinds/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Braids</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../braids/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../braids/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../braids/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../braids/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../braids/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Branches</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../branches/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../branches/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../branches/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../branches/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../branches/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Clouds</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../clouds/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../clouds/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../clouds/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../clouds/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../clouds/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Ears</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../ears/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ears/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ears/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ears/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Edges</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../edges/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../edges/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../edges/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../edges/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../edges/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Elements</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../elements/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../elements/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../elements/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../elements/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../elements/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Frames</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../frames/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../frames/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../frames/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../frames/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../frames/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Grids</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../grids/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../grids/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../grids/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../grids/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../grids/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Kinks</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../kinks/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kinks/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kinks/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kinks/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Links</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../links/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../links/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../links/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../links/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Marbles</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../marbles/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../marbles/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../marbles/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../marbles/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../marbles/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Peaks</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../peaks/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../peaks/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../peaks/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../peaks/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../peaks/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Plaits</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../plaits/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../plaits/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../plaits/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../plaits/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../plaits/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Rings</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../rings/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../rings/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../rings/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../rings/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../rings/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Ripples 2020</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../ripples_2020/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ripples_2020/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ripples_2020/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ripples_2020/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Ripples original</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../ripples_original/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ripples_original/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ripples_original/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ripples_original/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Shades 2020</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../shades_2020/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shades_2020/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shades_2020/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shades_2020/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Shades original</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../shades_original/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shades_original/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shades_original/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shades_original/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Shelves</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../shelves/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shelves/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shelves/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../shelves/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Stages</a>
+    <ul class="current">
+                <li class="toctree-l2"><a class="reference internal" href="../">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2 current"><a class="reference internal current" href="./">Manual</a>
+    <ul class="current">
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../..">Mutable Instruments Documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../.." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+          <li>Modules &raquo;</li>
+          <li>Stages &raquo;</li>
+      <li>Manual</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h2 id="installation">Installation</h2>
+<p>Stages requires a <strong>-12V/+12V</strong> power supply (2x5 pin connector). The red stripe of the ribbon cable (-12V side) must be oriented on the same side as the “Red stripe” marking on the module and on your power distribution board.
+The module draws <strong>80mA</strong> from the +12V rail, and <strong>20mA</strong> from the -12V rail.</p>
+<h2 id="chaining-modules">Chaining modules</h2>
+<p>Use the 3-pin cables provided with the modules to daisy-chain up to six modules together. Make sure your Eurorack system is powered off whenever you connect or disconnect units from the chain. Once several adjacent modules are linked, they behave collectively like a single <strong>Stages</strong> module which would have a larger number of segments.</p>
+<p><img alt="" src="../images/daisychain.jpg" /></p>
+<h2 id="grouping-segments">Grouping segments</h2>
+<p>Whether <strong>Stages</strong> behaves like six independent decay envelopes, or a single 6-segment envelope generator, or something in-between, depends on which of its <strong>GATE</strong> inputs are patched.</p>
+<p>Inserting a jack in a <strong>GATE</strong> input marks the beginning of a group of segments. All unpatched segments at its right become part of this group. The first output of a group generates the envelope signal itself. The following outputs generate segment activity signals – ramps going from 8V to 0V whenever the corresponding segment is active.</p>
+<p>In the illustration below, <strong>GATE inputs 1 and 5 are patched</strong>. The module behaves as:</p>
+<ul>
+<li><strong>A 4-segment envelope generator</strong>, configured by segments 1 to 4, generating its envelope signal on output 1, and segment activity signals on outputs 2, 3, and 4.</li>
+<li><strong>An independent 2-segment envelope generator</strong>, configured by segments 5 and 6, generating the envelope signal on output 5, and an end-of-attack signal on output 6.</li>
+</ul>
+<p><img alt="" src="../images/groups.png" /></p>
+<p>What happens if only <strong>GATE</strong> input 5 is patched? Segments 5 and 6 act as a 2-segment envelope generator; and segments 1, 2, 3 and 4 are four independent free-running generators. Even if these four independent generators do not receive gates or triggers, looping can be enabled for them, turning them, for example, into four LFOs.</p>
+<p>A few more examples:</p>
+<ul>
+<li><strong>No GATE input is patched</strong>: Segments 1 to 6 are all independent, free running segments.</li>
+<li><strong>GATE inputs 1, 3 and 5 are patched</strong>: Three independent 2-segment envelopes.</li>
+<li><strong>GATE inputs 1, 5 and 6 are patched</strong>: One 4-segment envelope and two single-segment envelopes.</li>
+<li><strong>All GATE inputs are patched</strong>: Six independent single-segment envelopes.</li>
+</ul>
+<h4 id="tips">Tips</h4>
+<p>When building a patch, patch from right to left. For example, starting from a blank page, if you need an AD envelope, patch your gate signal into the <strong>GATE</strong> input of segment 5 – leaving you segments 1 to 4 for LFOs, utility functions... or other envelopes.</p>
+<p>Self-patching is rewarding with <strong>Stages</strong>! For example, configure segment 1 as an independent, free running LFO to modulate other segments.</p>
+<p>It is sometimes handy to use "dummy" patch cables (or just a jack with no cable attached to it). For example, if you have created a 6-segment envelope spanning segments 1 to 6, and if you want to change its shape to a classic 4-segment ADSR, patch a dummy cable into input 5 to "detach" segments 5 and 6 from the chain starting at segment 1.</p>
+<h4 id="segment-activity-signals">Segment activity signals</h4>
+<p>The illustration below shows the signals produced on outputs 1 to 4, assuming the module is used as a 4-segment ADSR (segments 5 and 6 are used for other duties).</p>
+<p><img alt="" src="../images/segment_activity.jpg" /></p>
+<h2 id="configuring-segments">Configuring segments</h2>
+<p><img alt="" src="../images/manual.png" /></p>
+<p>Press the button <strong>[B]</strong> to modify the action performed by a segment.</p>
+<p><img alt="" src="../images/segment_ramp.png" /></p>
+<p>The output <strong>smoothly ramps from one voltage to another</strong>, then the next segment is activated. The ramping time is controlled by the slider <strong>[C]</strong> and the CV input <strong>[1]</strong>. The shape of the curve is controlled by the potentiometer <strong>[A]</strong>, from accelerating, through uniform, to decelerating.</p>
+<p><img alt="" src="../images/ramp_shapes.jpg" /></p>
+<p>The following illustration shows how these shapes can be combined for an AD envelope:</p>
+<p><img alt="" src="../images/ad_shapes.jpg" /></p>
+<p><img alt="" src="../images/segment_step.png" /></p>
+<p>The output <strong>glides to the target voltage</strong>, stays at this voltage until a trigger is received, and then the next segment is activated. Just like a step in a sequence! The voltage (from 0V to 8V) is controlled by the slider <strong>[C]</strong> and the CV input <strong>[1]</strong>. The glide amount is set by the potentiometer <strong>[A]</strong>.</p>
+<p><img alt="" src="../images/segment_hold.png" /></p>
+<p>The output <strong>stays at the same voltage for an adjustable duration</strong>, then the next segment is activated. The voltage (from 0V to 8V) is controlled by the slider <strong>[C]</strong> and the CV input <strong>[1]</strong>. The duration of the segment is set by the potentiometer <strong>[A]</strong>.</p>
+<p><img alt="" src="../images/loop_icon.png" /></p>
+<p>To make a segment loop on itself, hold the button <strong>[B]</strong> for one second. The LED now blinks to indicate the loop.</p>
+<p>To create a loop spanning several segments within the same group, simultaneously press the button <strong>[B]</strong> of the first and last segments in the loop. The corresponding LEDs will blink with a “ping pong” pattern.</p>
+<p>To disable a loop, hold the button <strong>[B]</strong> of either the start or end segment of the loop.</p>
+<p><strong>Important:</strong> a loop can only span segments belonging to the same group. And what defines groups? The presence of jacks in the <strong>GATE</strong> input! For example, if you want to use <strong>Stages</strong> as 3 self-looping AD envelopes, you'll need to insert "dummy" patch cables into the inputs #1, #3, #5 to explicitly tell the module that segments 1 and 2, 3 and 4, 5 and 6 are grouped together.</p>
+<h2 id="segment-rules">Segment rules</h2>
+<p><img alt="" src="../images/segment_rules.png" /></p>
+<ol>
+<li>The first <strong>RAMP</strong> segment ramps up to 8V, starting from whatever level the output currently stays at.</li>
+<li>The last <strong>RAMP</strong> segment ramps down to 0V.</li>
+<li>The level of a <strong>HOLD</strong> or <strong>STEP</strong> segment defines the start (end) level of the RAMP segment that follows (precedes) it. For example, in the preceding illustration, the end level of segment 3, and the start level of segment 5 are both set by the level of the <strong>HOLD</strong> segment 4.</li>
+<li>If the end level of a <strong>RAMP</strong> segment cannot be determined by rules 1, 2 or 3, this level is explicitly set by the potentiometer <strong>[A]</strong>. For example, in the preceding illustration, the end level of segments 2 and 5 are set by their potentiometer.</li>
+<li>If a <strong>LOOP</strong> is defined, the loop is played while the <strong>GATE</strong> signal is high. Once the <strong>GATE</strong> goes low, the envelope proceeds with the segment(s) that follow the loop end point. If the loop end is the last segment, there’s no escape from the loop, and the loop keeps going on forever.</li>
+<li>If the envelope contains a <strong>STEP</strong> segment, it follows its course normally until it gets trapped at the first <strong>STEP</strong> segment. It will stay at this segment until the next trigger is received. When this trigger is received, it will then proceed to the next segment... until the last segment or another <strong>STEP</strong> segment is reached. If an envelope contains a <strong>STEP</strong> segment inside a loop, there is no way of escaping this loop!</li>
+</ol>
+<h2 id="single-segment-processing">Single segment processing</h2>
+<p>As a direct consequence of the segment rules (with a few tweaks!), an independent, isolated segment can perform a variety of interesting functions.</p>
+<p><img alt="" src="../images/segment_ramp.png" /></p>
+<p>A non-looping single <strong>RAMP</strong> segment is a Decay envelope generator, with its decay time adjusted by the slider <strong>[C]</strong> and CV input <strong>[1]</strong>, and its curve adjusted by the potentiometer <strong>[A]</strong>.</p>
+<p>A looping single <strong>RAMP</strong> segment behaves like an LFO, the waveform of which is controlled by the potentiometer <strong>[A]</strong>. Instead of the simple logarithmic/linear/exponential curves, a more sensible selection of waveforms is provided: variable slope saw/triangle, sine, variable slope trapezoid. If the <strong>GATE</strong> input is not patched, the LFO frequency is set by the slider <strong>[C]</strong> and CV input <strong>[1]</strong>. If the <strong>GATE</strong> input is patched, the LFO follows the tempo set by the <strong>GATE</strong> signal, with a clock division/multiplication factor from 1/4 to 4 set by the slider.</p>
+<p><img alt="" src="../images/lfo_shapes.jpg" /></p>
+<p><img alt="" src="../images/segment_step.png" /></p>
+<p>A single <strong>STEP</strong> segment works as a sample and hold: at every rising edge of the <strong>GATE</strong>, it records and holds the voltage set by the slider <strong>[C]</strong> and CV input <strong>[1]</strong>. Use the potentiometer <strong>[A]</strong> to change the glide rate.</p>
+<p>If nothing is patched in the <strong>GATE</strong> input, the slider and CV input will be continuously tracked, but will still be subject to the glide effect.</p>
+<p><img alt="" src="../images/segment_hold.png" /></p>
+<p>If the <strong>GATE</strong> input is patched, an independent <strong>HOLD</strong> segment behaves as a pulse generator. The slider <strong>[C]</strong> and CV input <strong>[1]</strong> set the pulse voltage, while the potentiometer <strong>[A]</strong> controls the pulse duration. If looping is enabled, the pulse lasts for as long as the gate signal is high.</p>
+<p>If the <strong>GATE</strong> input is not patched, the segment behaves as a CV delay. The voltage set by the slider <strong>[C]</strong> and CV input <strong>[1]</strong> is sent to the output with a delay set by the potentiometer <strong>[A]</strong>.  Even without an external CV patched into the input, you can use this as a slider-controlled CV source with delayed action.</p>
+<h2 id="examples">Examples</h2>
+<p>Many envelope shapes can be programmed with Stages. The arrows denote the loop region.</p>
+<p><img alt="" src="../images/example_1.png" /></p>
+<p>Classic ADSR envelope.</p>
+<p><img alt="" src="../images/example_2.png" /></p>
+<p>Classic ADSR envelope with an adjustable pre-delay and initial level.</p>
+<p><img alt="" src="../images/example_3.png" /></p>
+<p>ADSR envelope with a non-zero rest level, adjusted by the last <strong>HOLD</strong> segment. The CV output for the last segment can be used as an end-of-release trigger.</p>
+<p><img alt="" src="../images/example_4.png" /></p>
+<p>AHDSR envelope – the hold level and time are controlled by the second segment.</p>
+<p><img alt="" src="../images/example_5.png" /></p>
+<p>AD1D2SR envelope with a break point between the apex and sustain. The potentiometer <strong>[A]</strong> of the second segment controls the voltage at this break point.</p>
+<p><img alt="" src="../images/example_6.png" /></p>
+<p>An even more complex AD1D2SR1R2 envelope, with break points at both the decay and the release stages.</p>
+<p><img alt="" src="../images/example_7.png" /></p>
+<p>AD envelope.</p>
+<p><img alt="" src="../images/example_8.png" /></p>
+<p>AR envelope. The sustain level is set by the HOLD segment.</p>
+<p><img alt="" src="../images/example_9.png" /></p>
+<p>A trapezoid LFO, with the minimum and maximum level and plateau durations set by the segment 2 and 4; and the time and curve of the ramp set by the segment 1 and 3.</p>
+<p><img alt="" src="../images/example_10.png" /></p>
+<p>A 5-note sequence. Modify the loop points to loop on a subset of this sequence. Patch external voltages into the CV inputs of each stage, to turn this into a 5-stage sequential switch.</p>
+<p><img alt="" src="../images/example_11.png" /></p>
+<p>A 3-note sequence, with adjustable linear glide between each step.</p>
+<h2 id="advanced-topics">Advanced topics</h2>
+<h3 id="firmware-update-procedure"><a name="firmware"></a> Firmware update procedure</h3>
+<p>Unplug all CV inputs/outputs from the module. Connect the output of your audio interface/sound card to the <strong>TIME/LEVEL</strong> CV input <strong>(1)</strong> of the <strong>last segment</strong>. Set the <strong>TIME/LEVEL</strong> slider <strong>[C]</strong> of the last segment to an intermediate position. Power on your modular system with the last segment action selection button <strong>(B)</strong> pressed.</p>
+<p>Make sure that no additional sound (such as email notification sounds, background music etc.) from your computer will be played during the procedure. Make sure that your speakers/monitors are not connected to your audio interface - the noises emitted during the procedure are aggressive and can harm your hearing. On non-studio audio equipment (for example the line output from a desktop computer), you might have to turn up the gain to the maximum.</p>
+<p>When you are all set, play the firmware update file into the module. While the module receives data, the six LEDs will act as vu-meter (3 or 4 LEDs are lit when the signal level is optimal). Try moving the <strong>TIME/LEVEL</strong> slider to adjust gain. When the end of the audio file is reached, the module automatically restarts - if it is not the case, please retry the procedure from the beginning.</p>
+<p>In case the signal level is inadequate, all LEDs will blink in red. Press the button <strong>(B)</strong> and retry with a higher gain. If this does not help, please retry the procedure from another computer/audio interface, and make sure that no piece of equipment or software effect (equalizer, automatic gain control, FX processor) is inserted in the signal chain.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../firmware/" class="btn btn-neutral float-left" title="Firmware"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../open_source/" class="btn btn-neutral float-right" title="Open source">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../firmware/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../open_source/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '../../..';</script>
+    <script src="../../../js/theme_extra.js" defer></script>
+    <script src="../../../js/theme.js" defer></script>
+      <script src="../../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
