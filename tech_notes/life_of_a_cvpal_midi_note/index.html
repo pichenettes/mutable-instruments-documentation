@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Émilie Gillet" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Life of a cvpal midi note - Mutable Instruments Documentation</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Life of a cvpal midi note";
+        var mkdocs_page_input_path = "tech_notes/life_of_a_cvpal_midi_note.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <script src="../../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Mutable Instruments Documentation
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Modules</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Beads</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/beads/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/beads/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/beads/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Blades</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/blades/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/blades/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/blades/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/blades/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Blinds</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/blinds/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/blinds/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/blinds/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/blinds/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Braids</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/braids/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/braids/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/braids/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/braids/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/braids/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Branches</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/branches/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/branches/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/branches/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/branches/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/branches/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Clouds</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/clouds/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/clouds/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/clouds/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/clouds/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/clouds/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Ears</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/ears/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/ears/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/ears/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/ears/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Edges</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/edges/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/edges/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/edges/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/edges/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/edges/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Elements</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/elements/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/elements/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/elements/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/elements/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/elements/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Frames</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/frames/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/frames/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/frames/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/frames/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/frames/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Grids</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/grids/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/grids/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/grids/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/grids/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/grids/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Kinks</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/kinks/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/kinks/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/kinks/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/kinks/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Links</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/links/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/links/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/links/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/links/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Marbles</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/marbles/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/marbles/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/marbles/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/marbles/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/marbles/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Peaks</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/peaks/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/peaks/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/peaks/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/peaks/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/peaks/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Plaits</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/plaits/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/plaits/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/plaits/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/plaits/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/plaits/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Rings</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/rings/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/rings/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/rings/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/rings/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/rings/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Ripples 2020</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/ripples_2020/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/ripples_2020/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/ripples_2020/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/ripples_2020/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Ripples original</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/ripples_original/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/ripples_original/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/ripples_original/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/ripples_original/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Shades 2020</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/shades_2020/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/shades_2020/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/shades_2020/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/shades_2020/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Shades original</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/shades_original/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/shades_original/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/shades_original/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/shades_original/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Shelves</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/shelves/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/shelves/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/shelves/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/shelves/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Stages</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/stages/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/stages/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/stages/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/stages/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/stages/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Streams</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/streams/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/streams/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/streams/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/streams/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/streams/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Tides 2018</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/tides_2018/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/tides_2018/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/tides_2018/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/tides_2018/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/tides_2018/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Tides original</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/tides_original/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/tides_original/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/tides_original/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/tides_original/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/tides_original/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Veils 2020</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/veils_2020/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/veils_2020/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/veils_2020/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/veils_2020/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Veils original</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/veils_original/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/veils_original/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/veils_original/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/veils_original/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Warps</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/warps/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/warps/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/warps/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/warps/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/warps/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Yarns</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/yarns/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/yarns/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/yarns/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/yarns/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/yarns/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Tech notes</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../avr_miscellania/">Avr miscellania</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cv_inputs/">Cv inputs</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../exponential_conversion_in_digital_oscillators/">Exponential conversion in digital oscillators</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../four_quadrant_multiplication_with_a_vca/">Four quadrant multiplication with a vca</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../interfacing_with_converters/">Interfacing with converters</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Life of a cvpal midi note</a>
+    <ul class="current">
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../life_of_an_audio_buffer/">Life of an audio buffer</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../manufacturing_notes/">Manufacturing notes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../speech_synthesis_algorithms/">Speech synthesis algorithms</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../stm32_miscellania/">Stm32 miscellania</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../switches/">Switches</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../timing_and_processes/">Timing and processes</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Mutable Instruments Documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+          <li>Tech notes &raquo;</li>
+      <li>Life of a cvpal midi note</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h2 id="life-of-a-midi-note-and-dac-code">Life of a MIDI note and DAC code</h2>
+<p><a href="https://github.com/pichenettes/cvpal/blob/master/cvpal/calibration_table.cc#L88-L99">(Explanations for this bit of CVpal code)</a></p>
+<p>The argument <code>note</code> is a 16-bit integer containing the MIDI note &lt;&lt; 7 (ie, 7680 for middle C, MIDI note 60) – which is a common unit of pitch in all Mutable Instruments MIDI projects (the increased precision allows pitch bend).</p>
+<p>The goal is to convert this into a DAC code such that note <code>36&lt;&lt;7</code> (the lowest C note on a 61 notes keyboard) is converted into 0V, and we'll get an increase of 1V for each increase of <code>note</code> by <code>12&lt;&lt;7</code>. Hence the <code>- 36 &lt;&lt; 7</code> subtraction at the beginning of the code. From now on, 0 means lowest C (#36) means 0V. The DAC is 12-bit and has a 4.096V internal reference, it is connected straight to the CV out with only a low protection resistor in-between, so ideally, a DAC code of 1000 translates into a voltage of 1.000V. <em>Ideally</em>, it would thus be a matter of taking this note, and multiplying it by 1000/1536 (we have <code>1536 = 12 &lt;&lt; 7</code>). Alas, the DAC and its reference aren't perfect!</p>
+<p>Instead, we use a calibration table. The calibration table stores the 9 DAC codes which will cause the DAC to output exactly 0.000V, 0.500V, 1.000V, 1.500V, 2.000V, and so on...</p>
+<p>So <code>note 0</code> is mapped to calibration table entry 0
+Note <code>6&lt;&lt;7</code> is mapped to calibration table entry 1
+Note <code>12&lt;&lt;7</code> is mapped to calibration table entry 2
+and so on..</p>
+<p>(As an aside, you'll see <a href="https://github.com/pichenettes/cvpal/blob/master/cvpal/calibration_table.cc#L36">here</a> that the calibration table is initialized with the "ideal" values of 0, 500, 1000 and so on).</p>
+<p>For the notes which fall inbetween, we will use linear interpolation. For this purpose, we need to compute a 16-bit fractional part, which expresses how close we are to the next entry in the table (0 = exactly at an entry, 32768 = half-way between entries, 65535 = almost at the next entry). So what we really need is both <code>note / 768</code> (integral part), and <code>(note % 768) / 768 * 65536</code> (fractional part).</p>
+<p>So <code>note 0</code> is mapped to 0 (integral), 0 (fractional)
+<code>note 3&lt;&lt;7</code> is mapped to 0 (integral), 32768 (fractional)
+<code>note 4&lt;&lt;7</code> is mapped to 0 (integral), 43691 (fractional)
+<code>note 6&lt;&lt;7</code> is mapped to 1 (integral), 0 (fractional)
+<code>note 7&lt;&lt;7</code> is mapped to 1 (integral), 10923 (fractional)
+<code>note 9&lt;&lt;7</code> is mapped to 1 (integral), 32768 (fractional)</p>
+<p>To do all this, the first <code>while</code> loops computes <code>note / 192</code> (stored in <code>first_index</code>), and <code>note % 192</code> (stored in <code>note</code>).</p>
+<p>After this preliminary step, the integral part is just <code>first_index</code> divided by 4, because <code>note / 192 / 4 = note / 768</code>.</p>
+<p>To compute the fractional part, we use a lookup table which stores <code>x / 768 * 65536 = x / 3 * 256</code> for all values of x between 0 and 191. If x is below 192, it's a direct lookup. If x is between 192 and 384, we just add 16384 for the result, if x is between 384 and 576, we add 32768 to the result and so on... that is the purpose of the second <code>while</code> loop.</p>
+<p>Note that if we were lazy, we could have used first a while loop which divides by 768, and used a lookup table with the full 768 entries, but this would have used 1152 more bytes of flash memory!</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../interfacing_with_converters/" class="btn btn-neutral float-left" title="Interfacing with converters"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../life_of_an_audio_buffer/" class="btn btn-neutral float-right" title="Life of an audio buffer">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../interfacing_with_converters/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../life_of_an_audio_buffer/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme_extra.js" defer></script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
