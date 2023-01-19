@@ -68,3 +68,52 @@ persistent_data_.channel_calibration_data[5].dac_scale = -32263.0f /* FIXME */;
 persistent_data_.channel_calibration_data[5].adc_offset = 0.0f /* FIXME */;
 persistent_data_.channel_calibration_data[5].adc_scale = -1.0f /* FIXME */;
 ```
+## About the serial connection
+
+Which information transits on the serial link connecting two Stages modules?
+
+    struct LeftToRightPacket {
+      uint8_t last_patched_channel;
+      int8_t segment;
+      float phase;
+      Loop last_loop;
+      ChannelBitmask switch_pressed[kMaxChainSize];
+      ChannelBitmask input_patched[kMaxChainSize];
+    };
+  
+    struct RightToLeftPacket {
+      ChannelState channel[kNumChannels];
+    };
+  
+    enum Request {
+      REQUEST_NONE,
+      REQUEST_SET_SEGMENT_TYPE = 0xfe,
+      REQUEST_SET_LOOP = 0xff
+    };
+  
+    struct RequestPacket {
+      uint8_t request;
+      uint8_t argument[4];
+    };
+  
+    struct DiscoveryPacket {
+      uint32_t key;
+      uint8_t counter;
+    };
+  
+    union Packet {
+      RightToLeftPacket to_left;
+      LeftToRightPacket to_right;
+      DiscoveryPacket discovery;
+      RequestPacket request;
+      uint8_t bytes[kPacketSize];
+    };
+
+
+* Information about which inputs have signals patched into them.
+* Current active segment and envelope phase (if an envelope spans two modules, the module on the left is in charge of generating it, but the module on the right must still generate the segment activity signals for its 6 outputs).
+* Loop points.
+* Information about which switches are pressed (to handle the creation of a loop spanning several modules).
+* Channel state (position of the pot, of the slider, value of the CV input).
+* Notifications that the user is trying to perform some action, so that it can be vetted by a module (eg: trying to create a loop between module 1 and 3 while there's a jack patched in module 2).
+* Neighbor discovery messages (when the module is powered on, it searches for neighbors).

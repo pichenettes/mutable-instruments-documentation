@@ -4,7 +4,12 @@ Just one or two interrupts and `main()`.
 
 ### Highest priority: DSP
 
-A high-priority ISR tied to the DAC/Codec's DMA is responsible for processing audio. In that ISR, CVs and Gate inputs are also read, once per block of audio samples. The "control rate" is thus defined by the buffer size. It is typically 1, 2 or 4kHz.
+A high-priority ISR tied to the DAC/Codec's DMA is responsible for processing audio (see [life of an audio buffer](../life_of_an_audio_buffer)). In that ISR, CVs and Gate inputs are also read, once per block of audio samples. The "control rate" is thus defined by the buffer size. It is typically 1, 2 or 4kHz.
+
+Processing audio samples in block has several advantages:
+
+-   Sometimes there are samples which are more complex to compute than others - for example you're resetting an envelope or handling a discontinuity, or you're hitting wavetable data which is not in cache. By processing samples in a block, the timing constraint is on the total time needed to process the block, not on the time needed to process a single sample.
+-   The code processing several samples at a time is way more efficient than code processing one sample at a time - because you can keep all your state variables / phase counter in registers while the loop takes place. You also save the cost of pushing/saving all your registers on the stack - which will happen all the time with an ISR.
 
 ### Lower priority: UI Polling (optional)
 
