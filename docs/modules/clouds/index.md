@@ -65,3 +65,5 @@ Codec        | WM8731
 Hardware revision labelled "v3" with the following differences:
 
 * Metal-shaft **IN GAIN** potentiometer (originally, plastic shaft, with a wobbly feel since it was not fastened to the panel). This potentiometer is hand-soldered, since it can become very scratchy when exposed to the heat of a regular wave-soldering process.
+* TL072 op-amp for the audio input and output (originally LME49720, a large stock of which had been bought for other projects).
+* External 12.288 MHz crystal for clocking the codec (originally: the MCU generates the codec's master clock).
