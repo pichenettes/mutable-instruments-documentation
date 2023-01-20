@@ -26,7 +26,7 @@ Business aspects are well covered in D. Lancaster’s “Incredible Secret Money
 
 ## CS or EE degree?
 
-**Don't take any decision regarding your education with the sole purpose of making audio gear in mind**
+**Don't take any decision regarding your education with the sole purpose of making audio gear!**
 
 The degree title doesn't mean much, what matters is what you learn. Some guys have an "electronic engineering" degree and learnt everything and anything about industrial controllers and plant automation. Some guys have a "software engineering" degree and learnt everything about integration schemes for systems of non-linear differential equations. Guess who'll be the best at writing MS20 filter emulation DSP code.
 
