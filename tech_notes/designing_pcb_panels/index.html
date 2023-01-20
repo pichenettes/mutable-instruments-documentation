@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Émilie Gillet" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Designing pcb panels - Mutable Instruments Documentation</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Designing pcb panels";
+        var mkdocs_page_input_path = "tech_notes/designing_pcb_panels.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <script src="../../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Mutable Instruments Documentation
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Modules</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Beads</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/beads/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/beads/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/beads/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Blades</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/blades/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/blades/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/blades/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/blades/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Blinds</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/blinds/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/blinds/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/blinds/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/blinds/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Braids</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/braids/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/braids/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/braids/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/braids/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/braids/original_blurb/">Original blurb</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/braids/secrets/">Secrets</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Branches</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/branches/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/branches/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/branches/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/branches/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/branches/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Clouds</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/clouds/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/clouds/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/clouds/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/clouds/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/clouds/original_blurb/">Original blurb</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/clouds/secrets/">Secrets</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Ears</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/ears/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/ears/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/ears/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/ears/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Edges</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/edges/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/edges/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/edges/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/edges/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/edges/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Elements</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/elements/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/elements/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/elements/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/elements/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/elements/original_blurb/">Original blurb</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/elements/secrets/">Secrets</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Frames</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/frames/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/frames/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/frames/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/frames/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/frames/original_blurb/">Original blurb</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/frames/secrets/">Secrets</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Grids</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/grids/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/grids/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/grids/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/grids/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/grids/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Kinks</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/kinks/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/kinks/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/kinks/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/kinks/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Links</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/links/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/links/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/links/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/links/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Marbles</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/marbles/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/marbles/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/marbles/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/marbles/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/marbles/original_blurb/">Original blurb</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/marbles/secrets/">Secrets</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Peaks</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/peaks/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/peaks/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/peaks/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/peaks/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/peaks/original_blurb/">Original blurb</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/peaks/secrets/">Secrets</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Plaits</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/plaits/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/plaits/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/plaits/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/plaits/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/plaits/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Rings</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/rings/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/rings/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/rings/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/rings/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/rings/original_blurb/">Original blurb</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/rings/secrets/">Secrets</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Ripples 2020</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/ripples_2020/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/ripples_2020/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/ripples_2020/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/ripples_2020/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Ripples original</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/ripples_original/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/ripples_original/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/ripples_original/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/ripples_original/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Shades 2020</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/shades_2020/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/shades_2020/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/shades_2020/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/shades_2020/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Shades original</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/shades_original/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/shades_original/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/shades_original/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/shades_original/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Shelves</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/shelves/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/shelves/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/shelves/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/shelves/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Stages</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/stages/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/stages/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/stages/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/stages/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/stages/original_blurb/">Original blurb</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/stages/secrets/">Secrets</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Streams</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/streams/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/streams/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/streams/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/streams/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/streams/original_blurb/">Original blurb</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/streams/secrets/">Secrets</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Tides 2018</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/tides_2018/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/tides_2018/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/tides_2018/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/tides_2018/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/tides_2018/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Tides original</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/tides_original/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/tides_original/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/tides_original/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/tides_original/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/tides_original/original_blurb/">Original blurb</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/tides_original/secrets/">Secrets</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Veils 2020</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/veils_2020/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/veils_2020/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/veils_2020/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/veils_2020/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Veils original</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/veils_original/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/veils_original/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/veils_original/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/veils_original/original_blurb/">Original blurb</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Warps</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/warps/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/warps/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/warps/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/warps/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/warps/original_blurb/">Original blurb</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/warps/secrets/">Secrets</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Yarns</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/yarns/">Index</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/yarns/firmware/">Firmware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/yarns/manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/yarns/open_source/">Open source</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/yarns/original_blurb/">Original blurb</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../modules/yarns/secrets/">Secrets</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Tech notes</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../avr_miscellania/">Avr miscellania</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../clock_processing_with_ramps/">Clock processing with ramps</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../coding_miscellania/">Coding miscellania</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cv_inputs/">Cv inputs</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../dco_vs_digital_oscillator/">Dco vs digital oscillator</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Designing pcb panels</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../education/">Education</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../emc_certification_process/">Emc certification process</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../exponential_conversion_in_digital_oscillators/">Exponential conversion in digital oscillators</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../four_quadrant_multiplication_with_a_vca/">Four quadrant multiplication with a vca</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../hardware_miscellania/">Hardware miscellania</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../interfacing_with_converters/">Interfacing with converters</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../life_of_a_cvpal_midi_note/">Life of a cvpal midi note</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../life_of_an_audio_buffer/">Life of an audio buffer</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../speech_synthesis_algorithms/">Speech synthesis algorithms</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../stm32_miscellania/">Stm32 miscellania</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../switches/">Switches</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../timing_and_processes/">Timing and processes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../why_did_color_knobs_disappear/">Why did color knobs disappear</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Trivia and history</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../trivia_and_history/beads_history/">Beads history</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../trivia_and_history/cancelled_projects/">Cancelled projects</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../trivia_and_history/clouds_history/">Clouds history</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Mutable Instruments Documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+          <li>Tech notes &raquo;</li>
+      <li>Designing pcb panels</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <p>(With Illustrator and Eagle)</p>
+<ol>
+<li>Draw the outline of the panel around your main PCB. Set the coordinates origin to the bottom left corner of the panel outline.</li>
+<li>Set units to mm.</li>
+<li>Use the Export / Partlist function to get a text file with the XY coordinates of all parts. You can use grep to remove the lines with R/C components or IC and only get the jacks/LEDs/pots :)</li>
+<li>Create a new blank board and draw the outline. Set the coordinates origin to the bottom left corner. In all the next steps, don't bother putting things exactly at the right position - put things at approximative locations, and then edit the object properties to fix the coordinates with the exact ones you have in your text file (Note: one of Mutable Instruments' secret weapons, along with autobom.py is a python script that converts such text files to DXF ASCII for panel CAD).</li>
+<li>For the mounting holes coordinates, refer to <a href="http://www.doepfer.de/a100_man/a100m_e.htm">this</a>. You can use the <strong>via</strong> tool, this will expose a bit of copper (or gold) around the <a href="http://vintageking.com/media/catalog/product/cache/1/image/454x339/9df78eab33525d08d6e5fb8d27136e95/m/a/make_noise_teleplexer.jpg">hole</a>.</li>
+<li>For the pots, jacks, LEDs, buttons use the <strong>hole</strong> tool. The "Drill" property sets the diameter (6.5mm for jacks, 7.5mm for pots, 3.1mm for LEDs...)</li>
+<li>For artwork, you have 3 colors in your palette: PCB soldermask color (green, black) is the background color, silkscreen color (white) is what you draw on the tPlace layer, but you can also expose traces (silver for HASL finish, gold for ENIG finish). To draw something in golden/silver, draw it on the Top layer (red color), duplicate it, and set it to the tStop layer (grey hatchings) - in other words, something appears golden or silver on the PCB because there's a trace there (Top) and because the soldermask is not applied on top of it (tStop).</li>
+<li>Use the Print command to print a 1:1 PDF of your board.</li>
+<li>Import the PDF in Illustrator or any other vector graphics program. Create all your type/artwork on top of it.</li>
+<li>Export the result as a 600 dpi BMP file. Process it in Gimp / Photoshop to get a 1-bit bitmap. I start by going into Greyscale mode, then use Curves to get a high contrast B&amp;W image, then convert to bitmap with 50% thresholding - don't use dithering - it won't look good and will make huge Gerber files. Depending on the PCB fab, your resolution on the silkscreen is in the 200-400 dpi range only because it will bleed. The soldermask/traces are a bit more precise, but some PCB houses will run a simplification process on the soldermask (tStop) layers to remove small islands.</li>
+<li>Use "run import-bmp" to import your artwork in Eagle. Pick the first color in the first dialog box shown by Eagle (I am not sure if I understand how this step works or if there's a bug in the Eagle script - I often have to pick the black when I want to import the white! - so if you get your artwork in negative try again with the other color!). In the next dialog box, input the correct DPI value to have the graphics imported to scale (otherwise there's a lot of trial and error to align it with the board, and you can't resize it in Eagle once it's imported). The text will be added to a new layer. Select everything and move it to the tPlace layer.</li>
+<li>Bonus trick: if you have elaborate graphics in gold/silver, you can have a uniform polygon ("ground plane") on Top under the area taken by the graphics, and use only the tStop layer for the graphics - rather than having two copies of the artwork, one on Top and one on tStop. This can help with the Gerber file size.</li>
+</ol>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../dco_vs_digital_oscillator/" class="btn btn-neutral float-left" title="Dco vs digital oscillator"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../education/" class="btn btn-neutral float-right" title="Education">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../dco_vs_digital_oscillator/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../education/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme_extra.js" defer></script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
