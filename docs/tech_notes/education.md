@@ -10,7 +10,7 @@ Brush up on high-school calculus and complex numbers, to get ready for signal pr
 
 Back to basics: write simple command line python programs doing stuff on .wav files, or programs generating .wav files (don’t get distracted with real-time processing, user interface, etc). Write signal generators, filters, etc using what you learnt from the signal processing book.
 
-Your new-found understanding of signal processing theory will allow you to dig into Udo Zolzer’s “DAFX” book and learn about synthesis techniques, FX, etc. Try implementing some effects in the book as Python programs, or with pd. This is something you’ll end up doing a lot anyway to sketch ideas.
+Your new-found understanding of signal processing theory will allow you to dig into Udo Zolzer’s “DAFX” book and learn about synthesis techniques, FX, etc. You can also read the [online books on J. O'smith's website](https://ccrma.stanford.edu/~jos/Welcome.html). Try implementing some effects in the book as Python programs, or with pd. This is something you’ll end up doing a lot anyway to sketch ideas.
 
 Understand that python or pd are towers of abstractions and that writing code for an embedded processor is done at a much lower level. A good online course for understanding towers of abstraction, and what’s going on inside processors is [Nand 2 Tetris](https://www.nand2tetris.org/).
 

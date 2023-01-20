@@ -216,8 +216,6 @@ This model generates - in the audio frequency range - the kind of modulated sign
 
 ## Calibration
 
-**The module is factory-calibrated using precision voltage sources. Follow this procedure only if you want to compensate for inaccuracies in your CV sources, or if your module has lost its calibration settings following a fault or the installation of alternative firmware.**
-
 To calibrate the unit, disconnect any signal from the FM input, and connect the note CV output of a well-calibrated keyboard interface or MIDI-CV converter to the V/OCT input. Move the **COARSE** and **FINE** knobs to 12 o'clock position. Go to **CAL.** in the options list, and keep the encoder pressed for 1s (this is not an option you want to select by mistake during a performance !). The screen displays **>C2**.
 
 Send a voltage of 1V to the CV input. Click on the encoder.

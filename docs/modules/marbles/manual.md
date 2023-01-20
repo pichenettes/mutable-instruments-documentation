@@ -160,6 +160,8 @@ We'll get, right after 12 o'clock, **C D E F G A B** ; then **C D F G A** (least
 * When the X section is not externally clocked, ***X<sub>1</sub>***, ***X<sub>2</sub>*** and ***X<sub>3</sub>*** are rhythmically independent from each other, each output changing its voltage at its own pace. Setting the loop **LENGTH** to 3 (for example), will cause each output to go through a 3-note sequence independently from the other, creating polyrhythmic effects.
 * Self-patching is a rewarding technique with Marbles! In particular, the ***Y*** output provides a useful slow modulation source for randomizing the other parameters of the module.
 
+* * *
+
 ## Advanced topics
 
 ### <a name="firmware"></a> Firmware update procedure
@@ -171,3 +173,45 @@ Make sure that no additional sound (such as email notification sounds, backgroun
 When you are all set, play the firmware update file into the module. While the module receives data, the **RATE** LED will act as vu-meter (lit in orange when the signal level is optimal). Try adjusting the **RATE** knob to adjust gain. When the end of the audio file is reached, the module automatically restarts - if it is not the case, please retry the procedure from the beginning.
 
 In case the signal level is inadequate, all LEDs will blink in red. Press the button **(F)** and retry with a higher gain. If this does not help, please retry the procedure from another computer/audio interface, and make sure that no piece of equipment or software effect (equalizer, automatic gain control, FX processor) is inserted in the signal chain.
+
+* * *
+
+## Common issues
+
+### The output range selection LED is off
+
+(... and the three **X** output do not seem to work).
+
+This is normal behavior when external processing mode **O** is enabled.
+
+In external processing mode, there is no point defining what would be an output voltage range, since the output voltage is related to whatever you decide to feed into the module input! As a result, the output voltage range goes off.
+
+## The sequence does not have the expected **LENGTH**
+
+A common misunderstanding is that **LENGTH** adjusts a global loop length – that would cause everything in the module to reset itself after *N* clock ticks.
+
+However, setting the loop length to 3 does not mean that you will create a looping 3-beat pattern. It means that each "decision" (internally, sampling a value from the internal random source) will cycle over 3 values:
+
+  > When the X section is not externally clocked, ***X1***, ***X2*** and ***X3*** are rhythmically independent from each other, each output changing its voltage at its own pace. Setting the loop **LENGTH** to 3 (for example), will cause each output to go through a 3-note sequence independently from the other, creating polyrhythmic effects.
+
+Let's take an example... If the t section is in green mode a "decision" is taken at each pulse of the clock, and is used to select between t1 and t3. So if they repeat with a length of 3, you could get a pattern like this:
+
+    t1: x--x--x--x--x--x--
+    t3: -xx-xx-xx-xx-xx-xx
+
+X1 will pick a voltage at each pulse of t1, and will repeat these decisions (A, F, G in the example below) with a cycle length of 3. X3 will pick a voltage at each pulse of t3, and will repeat the same 3 decisions (C, F, E in the example below). This will result in the following pattern:
+
+    t1: A--F--G--A--F--G--
+    t3: -CF-EC-FE-CF-EC-FE
+
+As you can see, it does not loop over 3 beats, it loops over 9.
+
+If you want a more structured "global" loop length of 3, you can self-patch t2 to the clock input of the X section. Then all the X outputs will all change at the same "master" rate:
+
+    t1: AFGAFGAFG
+    t3: CFECFECFE
+
+And you can use an external S&H on t1/X1 and t3/X3 to hold the voltages:
+
+    t1: A--A--A--
+    t3: -FE-FE-FE

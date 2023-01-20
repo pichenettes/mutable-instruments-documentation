@@ -53,3 +53,24 @@ Each model provides a unified set of parameters, all voltage controlled, with an
 * CV inputs: 100k impedance, +/- 8V, 12-bit 2kHz.
 * Audio I/O: 16-bit, 48kHz.
 * Internal processing: 32-bit floating point.
+
+## Design philosophy notes: Rings vs Elements
+
+Elements = Exciter + Resonator + Reverb.
+
+Rings = just the resonator.
+
+Rings uses the same resonator code as Elements, with two additions:
+
+* The ability to split the 60 filters into 2x30 or 4x15 to do polyphony.
+* Two other string synthesis models which are not based on band-pass filters, but on comb filters - and which sound totally different from what Elements is doing.
+
+All this is possible on Rings because 40% of the CPU is freed by the lack of exciter or reverb. This means that Rings will rely on external modules if you really want a large sound palette. For example, if you want to generate bowed string sounds, or blown tube sounds, you’ll need an external VCA, envelope generator, and colored noise source and patch them into Rings - while Elements has all the tools onboard to do this. Elements also benefits from the coupling of the exciter and resonator parameters - some knobs in Elements achieve their effect by controlling at the same time parameters of the exciter, of the resonator, and the mixing of the raw exciter and resonator signal.
+
+So let’s take a comparison you might understand better: Elements would be a complex oscillator + filter, tuned to work very well with each other. Rings would be a multimode filter - it does more but in a narrower domain and your success rate depends on what you decide to throw at it.
+
+During the design of Elements I thought a lot about breaking it into two modules (exciter and resonator), but I did not do it. The reason was that while the resonator would have worked great with other existing modules, the exciter module itself would have been quite useless since the only proper resonator available would have been its counterpart.
+
+Also, Elements implements some coupling between the two (the BOW section of Elements is a combination of a specific excitation signal and a feedback path in the resonator; the BLOW knob acts on both the excitation signal and the level of a secondary resonator that runs in parallel to the modal one).
+
+My favorite choice of exciters for Rings: field recordings from a Radio Music, Ears, Plaits, Beads with a noisy thing in its buffer.

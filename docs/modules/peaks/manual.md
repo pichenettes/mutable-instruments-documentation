@@ -27,7 +27,7 @@ Finally, if breaking the *one knob per function* rule is not a taboo for you, an
 
 ![](images/manual.png)
 
-The **split** button toggles between the **twin** (LED off) and **split** (LED on) modes. Hold it for a second to enter the **expert** mode. In this mode, the button toggles between channel 1 and 2. Hold it for a second to get back to normal operation.
+The **SPLIT** button toggles between the **twin** (LED off) and **split** (LED on) modes. Hold it for a second to enter the **expert** mode. In this mode, the button toggles between channel 1 and 2. Hold it for a second to get back to normal operation.
 
 The **FUNCTION** button cycles through the 4 main functions.
 

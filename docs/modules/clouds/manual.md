@@ -91,6 +91,8 @@ There are a few things worth knowing about these settings:
 -   All settings are automatically saved, and will be restored the next time the module is powered on.
 -   Strange things happen when **FREEZE** is enabled. Because feedback/layering can no longer occur in the recording buffer (hey, it's frozen...), we route the output signal through delays and all-pass filters, and let the feedback build-up occur in this extra recording space - giving the sound a very reverb-like nature.
 
+* * *
+
 ## Advanced topics
 
 ### Audio quality
@@ -128,8 +130,6 @@ If you press the **Load/Save** button by mistake, do not press any button for a 
 
 ### Calibration procedure
 
-**The module is factory-calibrated using precision voltage sources. Follow this procedure only if you want to compensate for inaccuracies in your CV sources, or if your module has lost its calibration settings following a fault or the installation of alternative firmware.**
-
 To calibrate the unit:
 
 1.  Disconnect all CV inputs.
@@ -151,57 +151,16 @@ When you are all set, play the firmware update file into the module. While the m
 
 In case the signal level is inadequate, the LEDs will blink in red. Press the **FREEZE** push-button and retry with a higher gain. If this does not help, please retry the procedure from another computer/audio interface, and make sure that no piece of equipment (equalizer, FX processor) is inserted in the signal chain.
 
-## The infamous alternate modes
+* * *
 
-In its tumultuous teenage years, Clouds tried to be everything, including a delay/pitch-shifter, a spectral processor, a projectionist and a cab driver in Rouen. This experimental code is still available in the module, by pressing the **B** button for 5 seconds until one of the LEDs glows in orange, and then repeatedly pressing the button to select one of 4 functions:
+## Common issues
 
--   (First LED lit) Granular processor (normal operation).
--   (Second LED lit) Pitch shifter/time-stretcher.
--   (Third LED lit) Looping delay.
--   (Fourth LED lit) Spectral processor.
+### The module just lets the original audio pass through
 
-These features are experimental, and the knobs might be reassigned to functions very different from what is printed on the panel. It is not recommended to use these alternate modes if you plan to let Tony Rolando come play with your system.
+(and turning the knobs has no audible effect)
 
-### Granular mode
+This is because the **DRY/WET** balance is set to fully dry.
 
-Home sweet home.
+The **BLEND** knob is not a dry-wet setting! It is a multi-function knob that can control dry/wet balance, feedback, random panning and reverb.
 
-### Pitch-shifter/time-stretcher
-
-This mode is quite similar to the granular mode, except that it uses two overlapping grains synchronized with the most salient period of the sound. The grains are carefully spliced so that they mesh well with each other (a technique similar to the "deglitching" of early pitch-shifters). Modulating **POSITION** when recording is frozen will "scrub" through the audio buffer. Clouds' uses classic time-domain methods which are not suitable for polyphonic or percussive material (unless this percussive material is breakbeats and you liked Akai samplers. Then: smile).
-
-**DENSITY** creates a granular diffusion effect based on all-pass filters. 
-
-**TEXTURE** acts as a low-pass/high-pass filter.
-
-**SIZE** controls the size of the overlapping windows used for pitch-shifting and time-stretching – from an extremely grainy "drilling" sound to smooth bits of loops.
-
-Sending a trigger to the **TRIG** input creates a clock-synchronized loop (when **FREEZE** is enabled) or stuttering effect – equivalent to applying a tempo-synchronized decaying envelope on the **POSITION** parameter.
-
-### Looping delay
-
-The looping delay mode continuously plays back audio from the buffer without any kind of granularization.
-
-**POSITION** controls the distance between the playback head and the recording head (in other words, the delay time). Modulating **POSITION** will create effects similar to vinyl scratching or manual manipulation of tape.
-
-When **FREEZE** is activated, the content of the audio buffer is looped (stutter effect). **POSITION** controls the loop start and **SIZE** the loop duration. **DENSITY** creates a granular diffusion effect based on all-pass filters; and **TEXTURE** acts as a low-pass/high-pass filter.
-
-**SIZE** controls the size of the overlapping windows used for pitch-shifting – fully clockwise for a smooth result that might smear transients, fully counterclockwise for a grainy, almost ring-modulated sound.
-
-When **FREEZE** is enabled, sending a trigger on the **TRIG** input creates a clock-synchronized stuttering loop. Otherwise, the period of the trigger pulses sets the delay time – provided this delay is shorter than the recording buffer size.
-
-### Spectral madness
-
-In this mode, the incoming signal is converted into "frames" of spectral data, that are stored, transformed, recombined, and resynthesized as a time-domain signal.
-
-**POSITION** selects into which buffer the audio is poured (when **FREEZE** is not active), or from which buffer the audio is synthesised (when **FREEZE** is active). For example, set **POSITION** to its minimum value. Press **FREEZE**. You get a first texture. Set **POSITION** to its maximum value. **UNFREEZE**. Wait for something else to happen in the incoming audio. Press **FREEZE** again. By moving **POSITION** you interpolate between the two textures which had been captured at the press of **FREEZE**. Depending on the quality settings there are 2 to 7 buffers laid out over the course of the **POSITION** knob. What the module does is crossfade between a "wavetable" of FFT slices.
-
-**SIZE** changes the coefficients of a polynomial that determines how frequencies are mapped between the analysis and synthesis buffers. It's like a 1-knob GRM Warp. Over the course of the knob it will do spectral shifting, but also spectral reversal.
-
-**PITCH** controls the transposition (pitch-shifting).
-
-**DENSITY** determines how results from the analyzer are passed to the resynthesizer. Below 12 o'clock, there's some increasing probability that a given FFT bin won't get updated, causing a kind of partial freeze. After 12 o'clock, adjacent analysis frames are increasingly merged together (like a low-pass filter in the amplitude each frequency bin). At extreme settings, random phase modulation is applied to smooth things - giving you different flavours of spectral muddling/reverb.
-
-**TEXTURE** does two things: below 12 o'clock, it increasingly quantizes the amplitudes of the spectral components, like a very low-bitrate audio file. After 12 o'clock, it increasingly weakens the strongest partials and amplifies the weakest ones. This has the effect of making the spectrum more noise-like. 
-
-Sending a trigger to the **TRIG** input creates various frequency-domain glitches typical of corrupted (encoded) audio files. It works as a kind of build-up/feedback effect - the shorter the pulse, the smaller the effect. With a continuous gate, it'll really start to rot.
+Press the button **B** until the first LED is lit, then adjust **BLEND** to reach a different dry/wet balance.

@@ -331,3 +331,24 @@ Make sure that no additional sound (such as email notification sounds, backgroun
 When you are all set, play the firmware update file into the module. While the module receives data, the first group of 4 LEDs will act as vu-meter (2 or 3 LEDs are lit when the signal level is optimal), while the remaining 4 LEDs represent which proportion of the current packet has been received. Try adjusting the **FREQUENCY** knob to adjust gain. When the end of the audio file is reached, the module automatically restarts - if it is not the case, please retry the procedure from the beginning.
 
 In case the signal level is inadequate, all LEDs will blink in red. Press the button **(A)** and retry with a higher gain. If this does not help, please retry the procedure from another computer/audio interface, and make sure that no piece of equipment or software effect (equalizer, automatic gain control, FX processor) is inserted in the signal chain.
+
+* * *
+
+## Common issues
+
+### The module makes odd clicking sounds
+
+The module is set to the lowest frequency range. Check the *Adjusting the **FREQUENCY** knob range* section of this manual.
+
+### The **TRIG** input does not work
+
+The calibration procedure has been entered by mistake while the **TRIG** input was patched. Follow carefully the calibration procedure to re-calibrate the module.
+
+### Two LEDs are lit, one of them blinking
+
+When the module displays two LEDs, it means that it reads a non-zero voltage on the MODEL CV input. There are several reasons why the module would read a non-zero voltage on the MODEL CV input even if nothing is plugged into it:
+
+1. The CV input circuitry is not working correctly because one supply rail is missing. 1. The symptom for a missing -12V supply is that the last red LED is always lit, and the module produces no sound.
+2. The CV input circuitry is not operating in the same conditions as in the factory, because the -12V rail deviates from more than 5% from this voltage.
+3. The calibration procedure has not been run correctly, or it has been entered by accident. The module will have "learnt" that a non-null voltage present on the input corresponds to 0V.
+

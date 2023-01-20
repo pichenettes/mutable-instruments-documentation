@@ -117,11 +117,11 @@ The main frequency of the sound is controlled by the **COARSE / FINE** knobs, co
 
 **1.** Resonator CV inputs.
 
+* * *
+
 ## Advanced topics
 
 ### Calibration procedure
-
-**The module is factory-calibrated using precision voltage sources. Follow this procedure only if you want to compensate for inaccuracies in your CV sources, or if your module has lost its calibration following a firmware update or fault.**
 
 To calibrate the unit:
 
@@ -143,3 +143,17 @@ Make sure that no additional sound (such as email notification sounds, backgroun
 When you are all set, play the firmware update file into the module. While the module receives data, the exciter and resonator LEDs act as a level meter. Signal reception is optimal when the resonator LED is barely lit. Try adjusting the **BLOW** knob to change gain. When the end of the audio file is reached, the module automatically restarts - if it is not the case, please retry the procedure.
 
 In case the signal level is inadequate, the LEDs will blink with an alternating pattern. Press the encoder and retry with a higher gain. If this does not help, please retry the procedure from another computer/audio interface, and make sure that no piece of equipment (equalizer, FX processor) is inserted in the signal chain.
+
+* * *
+
+## Common issues
+
+### The tuning is very odd
+
+The frequency of the first mode (and thus, of the first harmonic of the spectrum) corresponds simply and predictably to the root note set by the **COARSE** and **FINE** knobs, transposed by the **V/OCT** input.
+
+If the module is configured to generate a harmonic spectrum (which means that the spectrum has harmonics at f0, 2 x f0, 3 x f0, 4 x f0 ; or equivalently, that the generated waveform is periodic), the perceived pitch is the same thing as the frequency of the first harmonic.
+
+If the module is configured to generate a non-harmonic spectrum (which means the waveform does not repeat itself, and the spectrum is made of partials in non-integer frequency ratios), then the pitch is a matter of perception - two people might disagree as to which note is actually produced.
+
+If you have a keyboard with a ring modulator, try a patch in which the two oscillators are detuned (not by an exact octave or fifth - something inbetween) and ring-moded. Now play an A on the keyboard. Does it really sound like an A or like some dissonant bell-ish tone? This bellish tone will perfectly and evenly follow what you play on the keyboard, it’s just that it’ll sound like a dissonant chord - not like a pure, periodic waveform. You might also be familiar with this phenomenon if you tried to identify the notes played by bells or cymbals, or a big sheet of metal or a plastic bucket. Elements can easily make such sounds - there’s only one position of **GEOMETRY** that generates a pure, harmonic spectrum (but it’s fairly easy to find it, because the pot has a “virtual notch” at this position).

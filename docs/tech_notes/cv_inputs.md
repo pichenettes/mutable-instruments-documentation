@@ -37,6 +37,49 @@ Last thing to keep in mind: the minimum value is mapped to 0V, the maximum value
 * k: position of the knob.
 * Purple curve: how your parameter evolves, from minimum (0) to maximum (5).
 
+## Hardware implementation
+
+### Principle
+
+The main pot and attenuverters are read by the MCU's ADC – they do not offset or attenuate the CV in the analog domain.
+
+The CV input is scaled to the 0..3.3V range and read by the MCU's ADC. Typically, the bottom of the CV input range is mapped to 3.3V, and the top of the CV input range is mapped to 0V. This scaling is done with a rail to rail op-amp, in inverting configuration. In this configuration, the op-amp input is never directly exposed to the external voltage.
+
+The MCP600x is a good candidate for this task: it’s super cheap and designed for low supply voltages, like MCUs. No need to use anything fancier - the MCU’s ADC will be the weakest link in terms of noise and bandwidth anyway.
+
+### Advantages
+
+* 100k input impedance guaranteed.
+* The V- input of the op-amp is a summing point - you can attach there as many CV inputs or pots if you want to offer multiple CV inputs.
+* The circuit can be easily adjusted for various CV input ranges (as opposed to a lazier design in which the CV is clamped and directly connected to the MCU's ADC input).
+* The capacitor in the feedback path of the op-amp acts as a 1-pole low-pass filter which removes some of the high frequencies in the CV signal - providing cleaner readouts.
+* The output of the op-amp works as a very low impedance source for the ADC. The successive approximation ADC found in MCUs does not like being driven from sources with high ouptut impedances!
+* It makes factory testing easier, since one can test the pot, attenuverter, and CV input separately.
+* From the perspective of the user, hardware attenuverters like those used in Braids make it more difficult to adjust subtle modulation amounts, and since they work by crossfading the original signal and the signal inverted through an op-amp, the circuit cannot entirely cancel very fast edges. There is also the issue of ADC resolution: if your ADC has a resolution of 10-bit and if your hardware attenuverter attenuates the signal by a factor of 16, you’ll capture the signal with only 6-bits of resolution. Whereas doing the attenuation in software preserves resolution, especially in the recent modules which all use 32-bit floating point numbers internally.
+* Individually acquiring the main potentiometer and attenuverter position gives freedom to tweak the response curve of these pots, for example to add “virtual notches” to them - a plateau near 12 o'clock for the attenuverter, or an enlarged spot around middle C for a pitch control.
+
+### Design of the negative voltage reference
+
+As a case study, let's consider [Grids](../modules/grids/downloads/grids_v02.pdf)
+
+The voltage reference receives current through a shunt resistor `Rshunt`, here `R8`.
+
+The -5V voltage it provides goes to six 100k resistors to (virtual) ground, that is to say, `ILoad = 5 x 6 / 100k = 0.3mA`. Or if you want to think in terms of `RLoad`, this is equivalent to six 100k resistors in parallel, that is to say 16.7k.
+
+Where does `Iload` come from?
+
+Assuming the -12V rail is stable, we have `(12 - 5) / 10k = 0.7mA` flowing through the shunt resistor, into the reference.
+
+Thus, `0.7 - 0.3 = 0.4mA` will be sunk by the reference. And `0.4e-3 x 5 = 2mW` of heat will be dissipated by the reference which is way below the maximum rated dissipation.
+
+One can think of it this way: the reference takes an excess of current, supply some of it to the load, and the rest is sunk by it. It is important not to starve the device (providing through `Rshunt` less current than the load will take) - but the opposite (providing through `Rshunt` more current than the load will take) is possible, as long as the dissipated heat stays reasonable. And that's kind of the point of using a reference!
+
+One might wonder why 0.4mA are "wasted" like that. To reduce the waste, I could have used a lower `Rshunt` like 22k, which would have given 0.32mA flowing through Rs, 0.3mA through the load and only 0.02mA sunk by the reference. But then, what if the PSU regulation is bad and it supplies only -11.8V? We would starve the reference!
+
+So I usually allow 20 to 30% more current. And I really don't see the point of picking a specific resistor value just for this one resistor. So if I need 15k and there's nowhere else in the circuit where this value is used... then I go for 10k, which is very often used somewhere else. Or sometimes I put two resistors in parallel to get the value I need. The module will be wasting a few extra tenths of mA, but we don't have the extra cost and wastage of loading another resistor reel in the pick and place when making the boards.
+
+In the schematics of more recent modules, the voltage reference is annotated with the actual current delivered to the load, and how much it receives through the shunt resistor.
+
 ## Software implementation
 
 ### Normalization probe

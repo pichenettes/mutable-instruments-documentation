@@ -79,6 +79,8 @@ If there should be one take-home (take-to-the-studio?) message from this, it is 
 
 **5. Odd and even audio outputs.** In monophonic mode, these two outputs carries two complementary components of the signal (odd and even numbered partials with the modal resonator, dephased components due to picking position and pickup placement with the string resonators). In polyphonic mode, splits the signal into odd and even numbered strings/plates. Note that you need to insert a jack into each output to split the signals: when only one jack is inserted, both signals are mixed together.
 
+* * *
+
 ## Advanced topics
 
 ### Calibration procedure
@@ -94,8 +96,6 @@ To calibrate the unit:
 7.  Play a C4 note, or send a 3V voltage from your CV source.
 8.  Press the polyphony button to complete the calibration. If the calibration is successful, the module returns to its normal state. Otherwise, the two LEDs will blink in RED for a couple of seconds.
 
-Note: a symptom of incorrectly performing (or forgetting) step 3 is that the **FREQUENCY** attenuverter will no longer work as a fine tuning control when the corresponding input is left unpatched.
-
 ### <a name="firmware"></a> Firmware update procedure
 
 Unplug all CV inputs/outputs from the module. Connect the output of your audio interface/sound card to the **IN** input. Set the **FREQUENCY \(C)** knob to 12 o'clock. Power on your modular system with the polyphony button **(A)** pressed. Both LEDs will blink in orange.
@@ -105,3 +105,36 @@ Make sure that no additional sound (such as email notification sounds, backgroun
 When you are all set, play the firmware update file into the module. While the module receives data, the first LED will blink in green, and the second LED will monitor the signal level. Signal reception is optimal when the second LED is lit in green or yellow. Try adjusting the **FREQUENCY** knob to change gain. The module periodically pauses with both LEDs lit in orange to write data on its permanent memory. When the end of the audio file is reached, the module automatically restarts - if it is not the case, please retry the procedure from the beginning.
 
 In case the signal level is inadequate, the LEDs will blink in red with an alternating pattern. Press the polyphony button **(A)** and retry with a higher gain. If this does not help, please retry the procedure from another computer/audio interface, and make sure that no piece of equipment (equalizer, FX processor) is inserted in the signal chain.
+
+* * *
+
+## Common issues
+
+### The FM attenuverter does not allow fine-tuning
+
+A symptom of incorrectly performing (or forgetting) step 3 of the calibration procedure is that the **FREQUENCY** attenuverter will no longer work as a fine tuning control when the corresponding input is left unpatched.
+
+Re-calibrate the module by following the instructions carefully.
+
+### The module makes a continuous noise
+
+... even when nothing is patched in the **STRUM** or **IN** input.
+
+Recalibrate the normalization detector with the following procedure:
+
+1. Make sure nothing is plugged in the module (no input, no output).
+2. Hold the two buttons simultaneously, until the first LED blinks in orange (the second LED is then off). Release the buttons.
+3. Again, hold the two buttons simultaneously, until the 2 LEDs blink in red. Release the buttons.
+4. Press shortly on the first button. The 2 LEDs blink in green.
+5. Press shortly on the first button. The module should go back to normal.
+
+### The tuning is very odd in modal synthesis mode
+
+The frequency of the first mode (and thus, of the first harmonic of the spectrum) corresponds simply and predictably to the root note set by the **FREQUENCY** knob, transposed by the **V/OCT** input.
+
+If the module is configured to generate a harmonic spectrum (which means that the spectrum has harmonics at f0, 2 x f0, 3 x f0, 4 x f0 ; or equivalently, that the generated waveform is periodic), the perceived pitch is the same thing as the frequency of the first harmonic.
+
+If the module is configured to generate a non-harmonic spectrum (which means the waveform does not repeat itself, and the spectrum is made of partials in non-integer frequency ratios), then the pitch is a matter of perception - two people might disagree as to which note is actually produced.
+
+If you have a keyboard with a ring modulator, try a patch in which the two oscillators are detuned (not by an exact octave or fifth - something inbetween) and ring-moded. Now play an A on the keyboard. Does it really sound like an A or like some dissonant bell-ish tone? This bellish tone will perfectly and evenly follow what you play on the keyboard, it’s just that it’ll sound like a dissonant chord - not like a pure, periodic waveform. You might also be familiar with this phenomenon if you tried to identify the notes played by bells or cymbals, or a big sheet of metal or a plastic bucket. Rings can easily make such sounds - there’s only one position of **STRUCTURE** that generates a pure, harmonic spectrum (but it’s fairly easy to find it, because the pot has a “virtual notch” at this position).
+

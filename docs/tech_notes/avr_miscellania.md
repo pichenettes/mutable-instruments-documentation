@@ -85,3 +85,23 @@ So what the code really does is:
 		8 times
 
 A lot of tedious work, but still less work than a software implementation of SPI!
+
+## Shruthi/Ambika button and LED I/O
+
+Both use:
+
+* One (or several daisy-chained) 595 serial to parallel converter driving all the LEDs.
+* One (or several daisy-chained) 165 parallel to serial converter to read the switches.
+
+These are connected to the `MISO`, `MOSI`, `SCK` line of the AVR's SPI peripheral, and an additional GPIO output, labelled `IO_ENABLE`.
+
+When I want to read the 165s:
+
+* I strobe the `IO_ENABLE` line (quickly set it from high to low back to high). This causes the 165 to load its data.
+* I do one SPI read per byte of data to be read. The SPI hardware correctly shifts the data in on the `MISO` and `SCK`lines. Whatever happens with `MOSI` is ignored by the 595 because the `IO_ENABLE` (connected to its `RCLK` pin) remains high during the transfer.
+
+When I want to write to the 595s:
+
+* I set `IO_ENABLE` low.
+* I do my writes. The SPI hardware shifts things out on the `MOSI` and `SCK` lines. Because `IO_ENABLE` is low, the 165 won't read and shift any data.
+* I set `IO_ENABLE` high.
