@@ -52,7 +52,3 @@ Bag of cables                          | July 2015        | July 2020
 - **Secrets** documents easter egg or quirks.
 
 * * *
-
-## Tech notes and Trivia
-
-Written over the years on forums.
