@@ -50,3 +50,17 @@
 ### v1.3
 
 Initial release.
+
+## Miscellaneous builds
+
+### v1.9 (unreleased)
+
+After the release of version 1.8, new sub-oscillator models were added, but development halted here without any further changes that would have.
+
+[Download (1.9)](downloads/braids_1.9.zip)
+
+### Odd FM input range fix
+
+On some modules, the FM input does not reach the full range, causing some models to be unreachable in **META** mode.
+
+[Download (fm_range_fix)](downloads/braids_fm_range_fix.zip)
