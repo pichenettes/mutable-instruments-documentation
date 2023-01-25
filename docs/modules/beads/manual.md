@@ -200,11 +200,21 @@ The **PITCH** attenurandomizer always controls the amount of pitch randomization
 
 ### Loud pops/clicks
 
-Read that section again:
+Only on one channel? Reacting to changes on the **DENSITY** knob or to presses on **SEED**? Read that section again:
 
 > Hold the button **[M]** and press the **SEED** button **[C]** to enable (or disable) the generation of a grain trigger signal on the R output. A patch cable will have to be inserted in the R output for this to work without affecting the L output!
 
-### Feedback does not appear work
+### Background hiss/noise
+
+You might experience high background noise in the following situations:
+* The patch cable connected to Beads' input is not connected to any module on the other end.
+* The sound source connected to Beads is muted, or is sending notes intermittently, with a long gap between them (typically, several seconds).
+
+In both cases, Beads' automatic gain control circuit is hard at work pushing the gain in order to recover a signal from the silence, effectively amplifying faint background noise. In these situations, it is recommended to disable automatic gain control:
+
+> Holding this button **[A]** while turning the feedback knob **[J]** allows manual gain adjustments. The manually-set gain is memorized and applied until a long press on **[A]** re-enables automatic gain control.
+
+### Feedback does not appear to work
 
 You might not hear feedback because:
 
