@@ -336,6 +336,12 @@ In case the signal level is inadequate, all LEDs will blink in red. Press the bu
 
 ## Common issues
 
+### My settings are lost every time I power the module on
+
+Settings that can be modified with a button and knob combo, such as octave, LPG decay time, and LPG response are saved in permanent memory only when the active model is changed with a press on either button **A**. The reason for this is twofold:
+* The FLASH memory used in the module allows a limited (but quite large) number of write cycles. Saving these settings at every single tweak would be wasteful.
+* Saving settings to FLASH occasionally causes a gap in sound lasting a few hundred milliseconds, as the processor freezes to erase a new page of memory. Since the octave or LPG settings might be adjusted during a performance, we do not want to run the risk of these gaps occurring!
+
 ### The module makes odd clicking sounds
 
 The module is set to the lowest frequency range. Check the *Adjusting the **FREQUENCY** knob range* section of this manual.
