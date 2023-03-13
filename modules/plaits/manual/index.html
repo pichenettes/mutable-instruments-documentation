@@ -731,6 +731,10 @@ The module draws <strong>50mA</strong> from the <strong>+12V</strong> rail, and 
 <p>In case the signal level is inadequate, all LEDs will blink in red. Press the button <strong>(A)</strong> and retry with a higher gain. If this does not help, please retry the procedure from another computer/audio interface, and make sure that no piece of equipment or software effect (equalizer, automatic gain control, FX processor) is inserted in the signal chain.</p>
 <hr />
 <h2 id="common-issues">Common issues</h2>
+<h3 id="my-settings-are-lost-every-time-i-power-the-module-on">My settings are lost every time I power the module on</h3>
+<p>Settings that can be modified with a button and knob combo, such as octave, LPG decay time, and LPG response are saved in permanent memory only when the active model is changed with a press on either button <strong>A</strong>. The reason for this is twofold:
+* The FLASH memory used in the module allows a limited (but quite large) number of write cycles. Saving these settings at every single tweak would be wasteful.
+* Saving settings to FLASH occasionally causes a gap in sound lasting a few hundred milliseconds, as the processor freezes to erase a new page of memory. Since the octave or LPG settings might be adjusted during a performance, we do not want to run the risk of these gaps occurring!</p>
 <h3 id="the-module-makes-odd-clicking-sounds">The module makes odd clicking sounds</h3>
 <p>The module is set to the lowest frequency range. Check the <em>Adjusting the </em><em>FREQUENCY</em><em> knob range</em> section of this manual.</p>
 <h3 id="the-trig-input-does-not-work">The <strong>TRIG</strong> input does not work</h3>
